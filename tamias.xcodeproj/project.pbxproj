@@ -97,8 +97,8 @@
 		28DCCA261FCD878B00610076 /* tamias */ = {
 			isa = PBXGroup;
 			children = (
-				28DCCA271FCD878B00610076 /* AppDelegate.swift */,
 				28DCCA291FCD878B00610076 /* ViewController.swift */,
+				28DCCA271FCD878B00610076 /* AppDelegate.swift */,
 				28DCCA2B1FCD878B00610076 /* Main.storyboard */,
 				28DCCA2E1FCD878B00610076 /* Assets.xcassets */,
 				28DCCA301FCD878B00610076 /* LaunchScreen.storyboard */,
