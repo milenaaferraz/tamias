@@ -9,7 +9,12 @@
 import UIKit
 
 class Exercicio2ViewController: UIViewController {
-
+    @IBOutlet weak var numeroPontos: UILabel!
+    @IBOutlet weak var suaPontuacao: UILabel!
+    
+    @IBOutlet weak var instrucaoNoJogo: UILabel!
+    @IBAction func botaox(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

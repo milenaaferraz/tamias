@@ -760,6 +760,9 @@ terra crescer bem!</string>
                                         <state key="normal" title="x">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="botaox:" destination="ROI-2v-rgV" eventType="touchUpInside" id="WIl-bc-tKl"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VIDAS  5/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-8t-HuZ">
                                         <rect key="frame" x="36" y="20" width="248" height="63"/>
@@ -812,6 +815,11 @@ terra crescer bem!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2bi-XC-gvN"/>
                     </view>
+                    <connections>
+                        <outlet property="instrucaoNoJogo" destination="GZ9-wv-rCT" id="Eiv-44-9qR"/>
+                        <outlet property="numeroPontos" destination="hnC-2c-dVJ" id="l5o-7D-aW6"/>
+                        <outlet property="suaPontuacao" destination="GlF-Na-Jns" id="OSo-aF-013"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtE-df-FKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
