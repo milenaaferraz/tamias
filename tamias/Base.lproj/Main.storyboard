@@ -34,136 +34,44 @@
                                 <rect key="frame" x="-1" y="175" width="321" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cerca" translatesAutoresizingMaskIntoConstraints="NO" id="51t-Bg-6nl">
-                                        <rect key="frame" x="14" y="-2" width="298" height="156"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CercaComSombra" translatesAutoresizingMaskIntoConstraints="NO" id="51t-Bg-6nl">
+                                        <rect key="frame" x="8" y="-6" width="298" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" translatesAutoresizingMaskIntoConstraints="NO" id="jP3-1Y-wRl">
-                                        <rect key="frame" x="126" y="41" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uah-rG-xCD">
+                                        <rect key="frame" x="113" y="35" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YWg-rx-kbQ">
-                                        <rect key="frame" x="90" y="62" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LKy-J9-hUJ">
+                                        <rect key="frame" x="63" y="64" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WUk-UZ-etD">
-                                        <rect key="frame" x="54" y="83" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GAy-Dc-fQp">
+                                        <rect key="frame" x="13" y="93" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GdR-Ls-yj4">
-                                        <rect key="frame" x="18" y="104" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQY-ku-qjf">
+                                        <rect key="frame" x="163" y="64" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" translatesAutoresizingMaskIntoConstraints="NO" id="leQ-rN-7sH">
-                                        <rect key="frame" x="162" y="62" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmE-pu-b3H">
+                                        <rect key="frame" x="113" y="93" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdw-FL-6xf">
-                                        <rect key="frame" x="126" y="83" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-3Y-sTo">
+                                        <rect key="frame" x="63" y="122" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ju5-JS-kpQ">
-                                        <rect key="frame" x="90" y="104" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R7x-yB-L0d">
+                                        <rect key="frame" x="213" y="93" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gv1-uo-mA4">
-                                        <rect key="frame" x="54" y="125" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" translatesAutoresizingMaskIntoConstraints="NO" id="5df-kP-lX0">
-                                        <rect key="frame" x="198" y="83" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-0D-9jS">
-                                        <rect key="frame" x="162" y="104" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stT-cN-8bK">
-                                        <rect key="frame" x="126" y="125" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-SD-HuM">
-                                        <rect key="frame" x="90" y="146" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" translatesAutoresizingMaskIntoConstraints="NO" id="wJm-Bw-WiP">
-                                        <rect key="frame" x="234" y="104" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6p-qE-2vk">
-                                        <rect key="frame" x="198" y="125" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tti-c0-4uW">
-                                        <rect key="frame" x="162" y="146" width="73" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORM-54-2GH">
+                                        <rect key="frame" x="163" y="122" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAE-BE-lBv">
-                                        <rect key="frame" x="126" y="167" width="73" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUr-q7-hBN">
-                                        <rect key="frame" x="107" y="138" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-qg-s2P">
-                                        <rect key="frame" x="251" y="104" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-t0-u3L">
-                                        <rect key="frame" x="215" y="117" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-1h-bDP">
-                                        <rect key="frame" x="179" y="138" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yrh-1y-Hdw">
-                                        <rect key="frame" x="141" y="159" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9In-Fs-GBc">
-                                        <rect key="frame" x="141" y="117" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9s-cl-0RW">
-                                        <rect key="frame" x="179" y="96" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="twr-cn-3Qe">
-                                        <rect key="frame" x="215" y="73" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFP-kt-FxE">
-                                        <rect key="frame" x="71" y="117" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zCb-uw-xDR">
-                                        <rect key="frame" x="107" y="96" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="og7-ye-n9n">
-                                        <rect key="frame" x="141" y="73" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-79-5Ji">
-                                        <rect key="frame" x="179" y="52" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s83-lZ-m0N">
-                                        <rect key="frame" x="35" y="96" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yy4-UX-Asw">
-                                        <rect key="frame" x="71" y="73" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qu-rj-8ip">
-                                        <rect key="frame" x="107" y="52" width="38" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6DT-Hw-AgW">
-                                        <rect key="frame" x="144" y="31" width="38" height="44"/>
+                                        <rect key="frame" x="113" y="151" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -251,38 +159,6 @@
                         <outlet property="imagemDoSol" destination="poV-Ts-GMe" id="dT4-jT-udu"/>
                         <outlet property="jardimOutlet" destination="thd-Ar-KeV" id="Lp0-fP-5mg"/>
                         <outlet property="metasOutlet" destination="FYs-eu-Vs7" id="677-Fb-cDm"/>
-                        <outlet property="planta00" destination="Yrh-1y-Hdw" id="rjT-aq-9T6"/>
-                        <outlet property="planta01" destination="OoY-1h-bDP" id="zu1-ah-w0k"/>
-                        <outlet property="planta02" destination="qwM-t0-u3L" id="shX-Dv-XYM"/>
-                        <outlet property="planta03" destination="FmG-qg-s2P" id="ceF-0F-4cG"/>
-                        <outlet property="planta10" destination="iUr-q7-hBN" id="83o-AI-0QY"/>
-                        <outlet property="planta11" destination="9In-Fs-GBc" id="SaA-Xg-KrH"/>
-                        <outlet property="planta12" destination="A9s-cl-0RW" id="G1F-yv-Uu5"/>
-                        <outlet property="planta13" destination="twr-cn-3Qe" id="s8d-du-Kj0"/>
-                        <outlet property="planta20" destination="EFP-kt-FxE" id="ZsT-Ff-XbG"/>
-                        <outlet property="planta21" destination="zCb-uw-xDR" id="9TI-ie-z6U"/>
-                        <outlet property="planta22" destination="og7-ye-n9n" id="bo0-Ao-qFn"/>
-                        <outlet property="planta23" destination="2eu-79-5Ji" id="LLH-B5-idf"/>
-                        <outlet property="planta30" destination="s83-lZ-m0N" id="e1f-ma-H5C"/>
-                        <outlet property="planta31" destination="yy4-UX-Asw" id="GHi-QO-019"/>
-                        <outlet property="planta32" destination="6Qu-rj-8ip" id="Ijf-jH-x2s"/>
-                        <outlet property="planta33" destination="6DT-Hw-AgW" id="138-6b-SOG"/>
-                        <outlet property="terra00" destination="uAE-BE-lBv" id="ki0-X4-5d8"/>
-                        <outlet property="terra01" destination="tti-c0-4uW" id="IOK-Nh-4N8"/>
-                        <outlet property="terra02" destination="i6p-qE-2vk" id="uoL-iE-fgX"/>
-                        <outlet property="terra03" destination="wJm-Bw-WiP" id="HUg-6A-yHN"/>
-                        <outlet property="terra10" destination="2Oq-SD-HuM" id="RN3-KT-JuB"/>
-                        <outlet property="terra11" destination="stT-cN-8bK" id="cv6-tP-Oja"/>
-                        <outlet property="terra12" destination="Ssf-0D-9jS" id="iUy-qp-UNK"/>
-                        <outlet property="terra13" destination="5df-kP-lX0" id="zjk-aA-8U3"/>
-                        <outlet property="terra20" destination="gv1-uo-mA4" id="iCi-LZ-4t7"/>
-                        <outlet property="terra21" destination="Ju5-JS-kpQ" id="Rqy-eZ-rta"/>
-                        <outlet property="terra22" destination="Hdw-FL-6xf" id="o2S-QQ-w6y"/>
-                        <outlet property="terra23" destination="leQ-rN-7sH" id="G8k-FU-j3F"/>
-                        <outlet property="terra30" destination="GdR-Ls-yj4" id="Ndn-Ho-udg"/>
-                        <outlet property="terra31" destination="WUk-UZ-etD" id="reM-jA-jH3"/>
-                        <outlet property="terra32" destination="YWg-rx-kbQ" id="vp0-AO-Yll"/>
-                        <outlet property="terra33" destination="jP3-1Y-wRl" id="9zI-Ko-VdS"/>
                         <outlet property="textoDasGotas" destination="ncp-Ii-nZ5" id="2oH-Jc-ryJ"/>
                         <outlet property="textoDoSol" destination="mIU-6h-5oq" id="dZy-Ms-Rtp"/>
                         <outlet property="viewDasGotas" destination="B4x-UW-T6h" id="j0Y-4e-tdE"/>
@@ -687,7 +563,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-Ws-rbx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1capa" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-Ws-rbx">
                                 <rect key="frame" x="0.0" y="89" width="320" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -706,15 +582,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-3F-ZHJ">
                                 <rect key="frame" x="27" y="363" width="269" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Tem algo estranho no jardim hoje... Apareceram algumas pragas! É hora de achar os culpados entre as plantinhas. Procure os seres que não existem no seu jardim, e clique para mandá-los embora. Se você deixar  5 passarem despercebidos, o jardim já era!</string>
+                                <string key="text">Um jardim tem necessidades especiais! E cadapequena coisa que ele precisa deve ser dosada.Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho deterra crescer bem!</string>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSTRUÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-P0-k5G">
-                                <rect key="frame" x="27" y="334" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -743,6 +612,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSTRUÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-P0-k5G">
+                                <rect key="frame" x="27" y="334" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hmr-t1-zm9"/>
@@ -768,13 +644,53 @@
                     <view key="view" contentMode="scaleToFill" id="yAY-zh-Hcy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1imagem1" translatesAutoresizingMaskIntoConstraints="NO" id="7dA-vA-2RL">
+                                <rect key="frame" x="61" y="278" width="199" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Para 1 pedaço de terra, você precisa de 3 gotas de água!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHf-DN-dPe">
+                                <rect key="frame" x="61" y="137" width="199" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO4-gc-7XM">
+                                <rect key="frame" x="61" y="388" width="199" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70457679033279419" green="0.79448419809341431" blue="0.20337402820587158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <state key="normal" title="ENTENDI!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="UEo-cM-Pbp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VhM-ug-6Jg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tb9-Ge-b5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2409" y="-299"/>
+            <point key="canvasLocation" x="2306" y="-299"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pau-OO-3P3">
+            <objects>
+                <viewController id="IqP-fO-yFL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3gt-tT-Gt8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Qlw-q6-vzg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nui-2A-bnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="-299"/>
         </scene>
         <!--Recompensa View Controller-->
         <scene sceneID="wMN-Hn-hJl">
@@ -840,13 +756,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYF-lu-tWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3242" y="-300"/>
+            <point key="canvasLocation" x="3737" y="-300"/>
         </scene>
     </scenes>
     <resources>
         <image name="Cacto1 NaBolinha" width="2247" height="2409"/>
         <image name="Cacto2 NaBolinha" width="2248" height="2308"/>
-        <image name="Cerca" width="2667" height="1040"/>
+        <image name="CercaComSombra" width="2767" height="1039"/>
         <image name="CertoMarrom" width="187" height="139"/>
         <image name="Estrela" width="233" height="222"/>
         <image name="FlorRosa NaBolinha" width="2247" height="2367"/>
@@ -856,12 +772,14 @@
         <image name="Gota NaBolinha" width="1128" height="1128"/>
         <image name="Sol" width="234" height="234"/>
         <image name="TerraVazia" width="657" height="427"/>
+        <image name="exercicio1capa" width="2481" height="2411"/>
+        <image name="exercicio1imagem1" width="1804" height="546"/>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zGh-Ff-h4C"/>
-        <segue reference="LFe-ep-5zC"/>
-        <segue reference="9O4-yR-ZbS"/>
-        <segue reference="Tr2-qd-0Km"/>
+        <segue reference="inb-Db-Mcl"/>
+        <segue reference="23Z-dV-IP3"/>
+        <segue reference="mZX-D0-7C3"/>
     </inferredMetricsTieBreakers>
 </document>
