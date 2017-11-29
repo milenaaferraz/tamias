@@ -16,7 +16,7 @@ class RecompensaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() { // tu eh um lixo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
