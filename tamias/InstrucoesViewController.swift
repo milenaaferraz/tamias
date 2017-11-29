@@ -10,6 +10,23 @@ import UIKit
 
 class InstrucoesViewController: UIViewController {
 
+    // Título
+    @IBOutlet weak var tituloView: UIView!
+    @IBOutlet weak var tituloTexto: UILabel!
+    @IBOutlet weak var tituloVoltar: UILabel!
+    
+    // Capa
+    @IBOutlet weak var imagemCapa: UIImageView!
+    
+    // Instrucoes
+    @IBOutlet weak var instrucoesTitulo: UILabel!
+    @IBOutlet weak var instrucoesDescricao: UILabel!
+    
+    // Comecar desafio
+    @IBOutlet weak var comecarOutlet: UIButton!
+    @IBAction func comecarBotao(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

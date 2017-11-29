@@ -521,7 +521,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIA 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yc-pU-Xse">
-                                                        <rect key="frame" x="0.0" y="12" width="45" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -546,7 +546,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIA 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEj-1s-BXN">
-                                                        <rect key="frame" x="0.0" y="12" width="45" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
                                                         <nil key="textColor"/>
@@ -579,6 +579,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="jardimBotao:" destination="OEH-QA-38o" eventType="touchUpInside" id="jCD-Cc-7Iw"/>
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="Tr2-qd-0Km"/>
                                 </connections>
                             </button>
@@ -631,10 +632,48 @@
                                 <rect key="frame" x="127" y="395" width="86" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-MS-iyu">
+                                <rect key="frame" x="33" y="177" width="124" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="irParaExercOutlet1:" destination="OEH-QA-38o" eventType="touchUpInside" id="nXZ-sV-vYu"/>
+                                    <segue destination="RqB-2N-yi1" kind="show" animates="NO" id="K7f-0O-sBw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngk-ql-Zto">
+                                <rect key="frame" x="165" y="177" width="124" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="irParaExercBotao2:" destination="OEH-QA-38o" eventType="touchUpInside" id="PEz-jM-E1H"/>
+                                    <segue destination="RqB-2N-yi1" kind="show" animates="NO" id="zGh-Ff-h4C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4NT-fX-CBc"/>
                     </view>
+                    <connections>
+                        <outlet property="bauBotao" destination="5e6-0h-Yzf" id="So1-Uy-lVq"/>
+                        <outlet property="bauOutlet" destination="5e6-0h-Yzf" id="Sjq-Di-fYL"/>
+                        <outlet property="dia1Ok" destination="9ML-lo-Gqt" id="0cC-c5-h3l"/>
+                        <outlet property="dia1View" destination="mVN-jN-jo3" id="0hW-6a-2jz"/>
+                        <outlet property="dia2Ok" destination="cGx-YU-VBy" id="Yhs-ai-JBD"/>
+                        <outlet property="dia2View" destination="eyE-9X-2gz" id="YfK-2J-OqJ"/>
+                        <outlet property="dia3Texto" destination="9Yc-pU-Xse" id="wId-ay-OOu"/>
+                        <outlet property="dia3View" destination="Uv2-nD-259" id="RGf-e8-zp9"/>
+                        <outlet property="dia4Texto" destination="eEj-1s-BXN" id="EFR-C8-lr4"/>
+                        <outlet property="dia4View" destination="zmn-gK-Sji" id="RMD-sh-BWQ"/>
+                        <outlet property="dia5Estrela" destination="b9F-84-bkJ" id="wPP-kb-A03"/>
+                        <outlet property="dia5View" destination="bAn-fv-pps" id="V60-yw-GKC"/>
+                        <outlet property="irParaExercImagem1" destination="4GZ-wx-d64" id="ueG-tz-lsS"/>
+                        <outlet property="irParaExercImagem2" destination="LG3-bp-khw" id="4Pa-1g-AYm"/>
+                        <outlet property="irParaExercOutlet1" destination="EAw-MS-iyu" id="D0x-Z9-ixb"/>
+                        <outlet property="irParaExercOutlet2" destination="ngk-ql-Zto" id="SIC-AI-hmQ"/>
+                        <outlet property="jardimOutlet" destination="9XM-sJ-Qzv" id="2Pf-kW-yd4"/>
+                        <outlet property="metasOutlet" destination="TjJ-BV-aH3" id="SVe-Rx-rCb"/>
+                        <outlet property="paraHojeTexto" destination="mgI-EA-8Ot" id="sCy-ML-lK3"/>
+                        <outlet property="recompensaTexto" destination="Pwe-Tw-Bpz" id="CKU-2t-heV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eL-QY-NFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -660,11 +699,14 @@
                                 <state key="normal" title="COMEÇAR DESAFIO">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="InU-BF-OLr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-3F-ZHJ">
-                                <rect key="frame" x="27" y="363" width="264" height="137"/>
+                                <rect key="frame" x="27" y="363" width="269" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Tem algo estranho no jardim hoje... Apareceram algumas pragas! É hora de achar os culpados entre as plantinhas.Procure os seres que não existem no seu jardim, e clique para mandá-los embora. Se você deixar  5 passarem despercebidos, o jardim já era!</string>
+                                <string key="text">Tem algo estranho no jardim hoje... Apareceram algumas pragas! É hora de achar os culpados entre as plantinhas. Procure os seres que não existem no seu jardim, e clique para mandá-los embora. Se você deixar  5 passarem despercebidos, o jardim já era!</string>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -677,7 +719,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksp-Po-sjt">
-                                <rect key="frame" x="-1" y="0.0" width="320" height="91"/>
+                                <rect key="frame" x="-1" y="0.0" width="321" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-vt-sZb">
@@ -687,6 +729,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="OEH-QA-38o" kind="show" animates="NO" id="LFe-ep-5zC"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOME DO DESAFIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-sz-e8o">
                                         <rect key="frame" x="16" y="19" width="304" height="63"/>
@@ -702,10 +747,34 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hmr-t1-zm9"/>
                     </view>
+                    <connections>
+                        <outlet property="comecarOutlet" destination="fB2-hr-fEf" id="5NC-Gk-MhV"/>
+                        <outlet property="imagemCapa" destination="U7c-Ws-rbx" id="HgD-mE-uaH"/>
+                        <outlet property="instrucoesDescricao" destination="GNy-3F-ZHJ" id="ThX-t7-ADG"/>
+                        <outlet property="instrucoesTitulo" destination="Ysa-P0-k5G" id="mxX-VE-PFE"/>
+                        <outlet property="tituloTexto" destination="lpG-sz-e8o" id="QK3-aR-ntV"/>
+                        <outlet property="tituloView" destination="ksp-Po-sjt" id="gDX-vT-cPx"/>
+                        <outlet property="tituloVoltar" destination="lpG-sz-e8o" id="fgh-mb-Zq2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQk-Ta-jb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="-299"/>
+            <point key="canvasLocation" x="1531.875" y="-300"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d5K-HO-0eg">
+            <objects>
+                <viewController id="dkX-i1-nmh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yAY-zh-Hcy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="VhM-ug-6Jg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb9-Ge-b5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409" y="-299"/>
         </scene>
         <!--Recompensa View Controller-->
         <scene sceneID="wMN-Hn-hJl">
@@ -771,7 +840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYF-lu-tWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513.125" y="-1986.9718309859154"/>
+            <point key="canvasLocation" x="3242" y="-300"/>
         </scene>
     </scenes>
     <resources>
@@ -790,7 +859,8 @@
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WXv-In-ufc"/>
+        <segue reference="zGh-Ff-h4C"/>
+        <segue reference="LFe-ep-5zC"/>
         <segue reference="9O4-yR-ZbS"/>
         <segue reference="Tr2-qd-0Km"/>
     </inferredMetricsTieBreakers>
