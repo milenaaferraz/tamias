@@ -652,7 +652,7 @@
                                 </state>
                                 <connections>
                                     <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="InU-BF-OLr"/>
-                                    <segue destination="dkX-i1-nmh" kind="show" id="7DH-X1-thG"/>
+                                    <segue destination="dkX-i1-nmh" kind="show" animates="NO" id="7DH-X1-thG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-3F-ZHJ">
@@ -688,7 +688,7 @@ terra crescer bem!</string>
                                             <segue destination="OEH-QA-38o" kind="show" animates="NO" id="LFe-ep-5zC"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOME DO DESAFIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-sz-e8o">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QUANTAS GOTAS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-sz-e8o">
                                         <rect key="frame" x="16" y="19" width="304" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
@@ -743,7 +743,7 @@ terra crescer bem!</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="RqB-2N-yi1" kind="show" id="mgK-46-Gr4"/>
+                                            <segue destination="RqB-2N-yi1" kind="show" animates="NO" id="mgK-46-Gr4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -771,7 +771,7 @@ terra crescer bem!</string>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="UEo-cM-Pbp"/>
-                                    <segue destination="XmA-bq-GpO" kind="show" id="ZqZ-rM-8IH"/>
+                                    <segue destination="XmA-bq-GpO" kind="show" animates="NO" id="ZqZ-rM-8IH"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1imagem1" translatesAutoresizingMaskIntoConstraints="NO" id="Tq1-oP-Pr2">
@@ -800,12 +800,23 @@ terra crescer bem!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VIDAS  5/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-GT-bf7">
-                                        <rect key="frame" x="8" y="14" width="304" height="63"/>
+                                        <rect key="frame" x="8" y="17" width="304" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsT-Ez-9U5">
+                                        <rect key="frame" x="266" y="-1" width="54" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="28"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="yNz-xT-zRi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -940,7 +951,7 @@ terra crescer bem!</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3oN-iv-3H1" kind="show" id="x2A-Gv-MG8"/>
+                                    <segue destination="3oN-iv-3H1" kind="show" animates="NO" id="x2A-Gv-MG8"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gota NaBolinha" translatesAutoresizingMaskIntoConstraints="NO" id="AcE-gO-g6k">
@@ -993,9 +1004,10 @@ terra crescer bem!</string>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xce-vo-7dq"/>
-        <segue reference="K7f-0O-sBw"/>
-        <segue reference="LFe-ep-5zC"/>
+        <segue reference="7DH-X1-thG"/>
+        <segue reference="4RU-87-eI3"/>
+        <segue reference="mgK-46-Gr4"/>
+        <segue reference="WXv-In-ufc"/>
         <segue reference="x2A-Gv-MG8"/>
         <segue reference="mZX-D0-7C3"/>
     </inferredMetricsTieBreakers>
