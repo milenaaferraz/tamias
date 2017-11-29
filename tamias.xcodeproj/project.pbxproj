@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D413391FCED4A20093491C /* MetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413381FCED4A20093491C /* MetasViewController.swift */; };
+		05D4133B1FCED4BE0093491C /* BauCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133A1FCED4BE0093491C /* BauCollectionViewController.swift */; };
+		05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */; };
+		05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */; };
+		05D413411FCEE1370093491C /* BauViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413401FCEE1370093491C /* BauViewController.swift */; };
 		28DCCA281FCD878B00610076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA271FCD878B00610076 /* AppDelegate.swift */; };
 		28DCCA2A1FCD878B00610076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA291FCD878B00610076 /* ViewController.swift */; };
 		28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DCCA2B1FCD878B00610076 /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05D413381FCED4A20093491C /* MetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasViewController.swift; sourceTree = "<group>"; };
+		05D4133A1FCED4BE0093491C /* BauCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BauCollectionViewController.swift; sourceTree = "<group>"; };
+		05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
+		05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecompensaViewController.swift; sourceTree = "<group>"; };
+		05D413401FCEE1370093491C /* BauViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BauViewController.swift; sourceTree = "<group>"; };
 		28DCCA241FCD878B00610076 /* tamias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DCCA271FCD878B00610076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28DCCA291FCD878B00610076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +124,11 @@
 				28DCCA291FCD878B00610076 /* ViewController.swift */,
 				28DCCA271FCD878B00610076 /* AppDelegate.swift */,
 				28DCCA2B1FCD878B00610076 /* Main.storyboard */,
+				05D413401FCEE1370093491C /* BauViewController.swift */,
+				05D4133A1FCED4BE0093491C /* BauCollectionViewController.swift */,
+				05D413381FCED4A20093491C /* MetasViewController.swift */,
+				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
+				05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */,
 				3DDF3AA41FCDFDA500DB2446 /* DosisFont */,
 				3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */,
 				28DCCA2E1FCD878B00610076 /* Assets.xcassets */,
@@ -295,8 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DCCA2A1FCD878B00610076 /* ViewController.swift in Sources */,
+				05D413411FCEE1370093491C /* BauViewController.swift in Sources */,
+				05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */,
 				3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */,
+				05D413391FCED4A20093491C /* MetasViewController.swift in Sources */,
 				28DCCA281FCD878B00610076 /* AppDelegate.swift in Sources */,
+				05D4133B1FCED4BE0093491C /* BauCollectionViewController.swift in Sources */,
+				05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

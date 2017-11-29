@@ -30,75 +30,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3a-NC-ChV">
-                                <rect key="frame" x="0.0" y="42" width="99" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sol" translatesAutoresizingMaskIntoConstraints="NO" id="poV-Ts-GMe">
-                                        <rect key="frame" x="63" y="8" width="26" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIU-6h-5oq">
-                                        <rect key="frame" x="6" y="0.0" width="49" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4x-UW-T6h">
-                                <rect key="frame" x="221" y="42" width="99" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gota" translatesAutoresizingMaskIntoConstraints="NO" id="kCd-9j-yXv">
-                                        <rect key="frame" x="14" y="11" width="20" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-Ii-nZ5">
-                                        <rect key="frame" x="42" y="0.0" width="49" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYs-eu-Vs7">
-                                <rect key="frame" x="-1" y="525" width="108" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="METAS">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thd-Ar-KeV">
-                                <rect key="frame" x="106" y="525" width="106" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68727588650000004" green="0.45589631800000002" blue="0.2959817052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="JARDIM">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF1-Pv-Ssy">
-                                <rect key="frame" x="212" y="525" width="108" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="BAÚ">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36s-tD-04y">
                                 <rect key="frame" x="-1" y="175" width="321" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cerca" translatesAutoresizingMaskIntoConstraints="NO" id="51t-Bg-6nl">
-                                        <rect key="frame" x="18" y="5" width="288" height="152"/>
+                                        <rect key="frame" x="14" y="-2" width="298" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TerraVazia" translatesAutoresizingMaskIntoConstraints="NO" id="jP3-1Y-wRl">
@@ -165,21 +102,202 @@
                                         <rect key="frame" x="126" y="167" width="73" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUr-q7-hBN">
+                                        <rect key="frame" x="107" y="138" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-qg-s2P">
+                                        <rect key="frame" x="251" y="104" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-t0-u3L">
+                                        <rect key="frame" x="215" y="117" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-1h-bDP">
+                                        <rect key="frame" x="179" y="138" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yrh-1y-Hdw">
+                                        <rect key="frame" x="141" y="159" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9In-Fs-GBc">
+                                        <rect key="frame" x="141" y="117" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9s-cl-0RW">
+                                        <rect key="frame" x="179" y="96" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="twr-cn-3Qe">
+                                        <rect key="frame" x="215" y="73" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFP-kt-FxE">
+                                        <rect key="frame" x="71" y="117" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zCb-uw-xDR">
+                                        <rect key="frame" x="107" y="96" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="og7-ye-n9n">
+                                        <rect key="frame" x="141" y="73" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-79-5Ji">
+                                        <rect key="frame" x="179" y="52" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s83-lZ-m0N">
+                                        <rect key="frame" x="35" y="96" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yy4-UX-Asw">
+                                        <rect key="frame" x="71" y="73" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qu-rj-8ip">
+                                        <rect key="frame" x="107" y="52" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6DT-Hw-AgW">
+                                        <rect key="frame" x="144" y="31" width="38" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3a-NC-ChV">
+                                <rect key="frame" x="0.0" y="42" width="99" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sol" translatesAutoresizingMaskIntoConstraints="NO" id="poV-Ts-GMe">
+                                        <rect key="frame" x="63" y="8" width="26" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIU-6h-5oq">
+                                        <rect key="frame" x="6" y="0.0" width="49" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4x-UW-T6h">
+                                <rect key="frame" x="221" y="42" width="99" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gota" translatesAutoresizingMaskIntoConstraints="NO" id="kCd-9j-yXv">
+                                        <rect key="frame" x="14" y="11" width="20" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-Ii-nZ5">
+                                        <rect key="frame" x="42" y="0.0" width="49" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYs-eu-Vs7">
+                                <rect key="frame" x="-1" y="525" width="108" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <state key="normal" title="METAS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="metasBotao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oo4-tH-pW6"/>
+                                    <segue destination="OEH-QA-38o" kind="show" animates="NO" id="inb-Db-Mcl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF1-Pv-Ssy">
+                                <rect key="frame" x="212" y="525" width="108" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <state key="normal" title="BAÚ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3oN-iv-3H1" kind="show" animates="NO" id="23Z-dV-IP3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thd-Ar-KeV">
+                                <rect key="frame" x="107" y="525" width="106" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68727588650000004" green="0.45589631800000002" blue="0.2959817052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <state key="normal" title="JARDIM">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70397619579374304" green="0.84933332668156658" blue="0.54921311414577956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bauBotao" destination="GF1-Pv-Ssy" id="3Xt-I7-Yfd"/>
+                        <outlet property="bauOutlet" destination="GF1-Pv-Ssy" id="EgB-Po-Ivi"/>
+                        <outlet property="imagemDaCerca" destination="51t-Bg-6nl" id="piJ-aS-IMp"/>
+                        <outlet property="imagemDaGota" destination="kCd-9j-yXv" id="ZV9-si-uY2"/>
+                        <outlet property="imagemDoFundo" destination="uvX-kN-69m" id="cda-oJ-VOf"/>
+                        <outlet property="imagemDoSol" destination="poV-Ts-GMe" id="dT4-jT-udu"/>
+                        <outlet property="jardimOutlet" destination="thd-Ar-KeV" id="Lp0-fP-5mg"/>
+                        <outlet property="metasOutlet" destination="FYs-eu-Vs7" id="677-Fb-cDm"/>
+                        <outlet property="planta00" destination="Yrh-1y-Hdw" id="rjT-aq-9T6"/>
+                        <outlet property="planta01" destination="OoY-1h-bDP" id="zu1-ah-w0k"/>
+                        <outlet property="planta02" destination="qwM-t0-u3L" id="shX-Dv-XYM"/>
+                        <outlet property="planta03" destination="FmG-qg-s2P" id="ceF-0F-4cG"/>
+                        <outlet property="planta10" destination="iUr-q7-hBN" id="83o-AI-0QY"/>
+                        <outlet property="planta11" destination="9In-Fs-GBc" id="SaA-Xg-KrH"/>
+                        <outlet property="planta12" destination="A9s-cl-0RW" id="G1F-yv-Uu5"/>
+                        <outlet property="planta13" destination="twr-cn-3Qe" id="s8d-du-Kj0"/>
+                        <outlet property="planta20" destination="EFP-kt-FxE" id="ZsT-Ff-XbG"/>
+                        <outlet property="planta21" destination="zCb-uw-xDR" id="9TI-ie-z6U"/>
+                        <outlet property="planta22" destination="og7-ye-n9n" id="bo0-Ao-qFn"/>
+                        <outlet property="planta23" destination="2eu-79-5Ji" id="LLH-B5-idf"/>
+                        <outlet property="planta30" destination="s83-lZ-m0N" id="e1f-ma-H5C"/>
+                        <outlet property="planta31" destination="yy4-UX-Asw" id="GHi-QO-019"/>
+                        <outlet property="planta32" destination="6Qu-rj-8ip" id="Ijf-jH-x2s"/>
+                        <outlet property="planta33" destination="6DT-Hw-AgW" id="138-6b-SOG"/>
+                        <outlet property="terra00" destination="uAE-BE-lBv" id="ki0-X4-5d8"/>
+                        <outlet property="terra01" destination="tti-c0-4uW" id="IOK-Nh-4N8"/>
+                        <outlet property="terra02" destination="i6p-qE-2vk" id="uoL-iE-fgX"/>
+                        <outlet property="terra03" destination="wJm-Bw-WiP" id="HUg-6A-yHN"/>
+                        <outlet property="terra10" destination="2Oq-SD-HuM" id="RN3-KT-JuB"/>
+                        <outlet property="terra11" destination="stT-cN-8bK" id="cv6-tP-Oja"/>
+                        <outlet property="terra12" destination="Ssf-0D-9jS" id="iUy-qp-UNK"/>
+                        <outlet property="terra13" destination="5df-kP-lX0" id="zjk-aA-8U3"/>
+                        <outlet property="terra20" destination="gv1-uo-mA4" id="iCi-LZ-4t7"/>
+                        <outlet property="terra21" destination="Ju5-JS-kpQ" id="Rqy-eZ-rta"/>
+                        <outlet property="terra22" destination="Hdw-FL-6xf" id="o2S-QQ-w6y"/>
+                        <outlet property="terra23" destination="leQ-rN-7sH" id="G8k-FU-j3F"/>
+                        <outlet property="terra30" destination="GdR-Ls-yj4" id="Ndn-Ho-udg"/>
+                        <outlet property="terra31" destination="WUk-UZ-etD" id="reM-jA-jH3"/>
+                        <outlet property="terra32" destination="YWg-rx-kbQ" id="vp0-AO-Yll"/>
+                        <outlet property="terra33" destination="jP3-1Y-wRl" id="9zI-Ko-VdS"/>
+                        <outlet property="textoDasGotas" destination="ncp-Ii-nZ5" id="2oH-Jc-ryJ"/>
+                        <outlet property="textoDoSol" destination="mIU-6h-5oq" id="dZy-Ms-Rtp"/>
+                        <outlet property="viewDasGotas" destination="B4x-UW-T6h" id="j0Y-4e-tdE"/>
+                        <outlet property="viewDoJardim" destination="36s-tD-04y" id="CCE-B6-ZcS"/>
+                        <outlet property="viewDoSol" destination="I3a-NC-ChV" id="yPt-OU-7A5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-133.125" y="130.98591549295776"/>
         </scene>
-        <!--View Controller-->
+        <!--Bau View Controller-->
         <scene sceneID="01I-2G-EHG">
             <objects>
-                <viewController id="3oN-iv-3H1" sceneMemberID="viewController">
+                <viewController id="3oN-iv-3H1" customClass="BauViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="55w-SZ-sZi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,6 +437,9 @@
                                 <state key="normal" title="METAS">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="OEH-QA-38o" kind="show" animates="NO" id="WXv-In-ufc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14C-sp-5Kb">
                                 <rect key="frame" x="107" y="525" width="105" height="43"/>
@@ -328,6 +449,9 @@
                                 <state key="normal" title="JARDIM">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="mZX-D0-7C3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aip-xT-35N">
                                 <rect key="frame" x="212" y="525" width="108" height="43"/>
@@ -342,15 +466,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="v4P-Fo-slu"/>
                     </view>
+                    <connections>
+                        <outlet property="bauOutlet" destination="aip-xT-35N" id="wmE-7J-wUb"/>
+                        <outlet property="jardimBotao" destination="14C-sp-5Kb" id="Gkp-Zd-6mp"/>
+                        <outlet property="jardimOutlet" destination="14C-sp-5Kb" id="cnv-On-JEB"/>
+                        <outlet property="metasBotao" destination="gRn-gi-Tfz" id="Rx2-ap-gde"/>
+                        <outlet property="metasOutlet" destination="gRn-gi-Tfz" id="fE3-Vx-SYz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iji-8n-rAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="697.5" y="446.83098591549299"/>
         </scene>
-        <!--View Controller-->
+        <!--Metas View Controller-->
         <scene sceneID="V8V-8z-EeI">
             <objects>
-                <viewController id="OEH-QA-38o" sceneMemberID="viewController">
+                <viewController id="OEH-QA-38o" customClass="MetasViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kfx-oi-QsR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -360,11 +491,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-XN-bBd">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-9X-2gz">
-                                                <rect key="frame" x="80" y="28" width="45" height="45"/>
+                                                <rect key="frame" x="80" y="37" width="45" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CertoMarrom" translatesAutoresizingMaskIntoConstraints="NO" id="cGx-YU-VBy">
@@ -375,7 +506,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-jN-jo3">
-                                                <rect key="frame" x="22" y="28" width="45" height="45"/>
+                                                <rect key="frame" x="22" y="37" width="45" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CertoMarrom" translatesAutoresizingMaskIntoConstraints="NO" id="9ML-lo-Gqt">
@@ -386,7 +517,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uv2-nD-259">
-                                                <rect key="frame" x="138" y="28" width="45" height="45"/>
+                                                <rect key="frame" x="138" y="37" width="45" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIA 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yc-pU-Xse">
@@ -400,7 +531,7 @@
                                                 <color key="backgroundColor" red="0.68727588650000004" green="0.45589631800000002" blue="0.2959817052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAn-fv-pps">
-                                                <rect key="frame" x="257" y="28" width="45" height="45"/>
+                                                <rect key="frame" x="257" y="37" width="45" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrela" translatesAutoresizingMaskIntoConstraints="NO" id="b9F-84-bkJ">
@@ -411,7 +542,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmn-gK-Sji">
-                                                <rect key="frame" x="198" y="28" width="45" height="45"/>
+                                                <rect key="frame" x="198" y="37" width="45" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIA 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEj-1s-BXN">
@@ -447,6 +578,9 @@
                                 <state key="normal" title="JARDIM">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="Tr2-qd-0Km"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e6-0h-Yzf">
                                 <rect key="frame" x="213" y="525" width="108" height="43"/>
@@ -456,6 +590,9 @@
                                 <state key="normal" title="BAÚ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3oN-iv-3H1" kind="show" animates="NO" id="9O4-yR-ZbS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1m-vI-vcW">
                                 <rect key="frame" x="16" y="363" width="0.0" height="0.0"/>
@@ -501,12 +638,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eL-QY-NFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698" y="-298"/>
+            <point key="canvasLocation" x="697.5" y="-298.94366197183098"/>
         </scene>
-        <!--View Controller-->
+        <!--Instrucoes View Controller-->
         <scene sceneID="TqD-kl-hCf">
             <objects>
-                <viewController id="RqB-2N-yi1" sceneMemberID="viewController">
+                <viewController id="RqB-2N-yi1" customClass="InstrucoesViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I3K-7J-dAQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -570,10 +707,10 @@
             </objects>
             <point key="canvasLocation" x="1532" y="-299"/>
         </scene>
-        <!--View Controller-->
+        <!--Recompensa View Controller-->
         <scene sceneID="wMN-Hn-hJl">
             <objects>
-                <viewController id="djS-jv-hyu" sceneMemberID="viewController">
+                <viewController id="djS-jv-hyu" customClass="RecompensaViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wDJ-4H-s6j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -636,81 +773,6 @@
             </objects>
             <point key="canvasLocation" x="1513.125" y="-1986.9718309859154"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Rnu-Uf-3Kj">
-            <objects>
-                <viewController id="BlP-tD-jYg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QZ9-QP-ewm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="yip-E2-QUv"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iET-aT-VsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1532" y="-1130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="AlZ-0M-H0f">
-            <objects>
-                <viewController id="ZPg-e2-ZD9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DVI-CJ-RLE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="w8q-ii-pN0"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DZ9-ZY-pST" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2271" y="-1130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mg6-9o-4M0">
-            <objects>
-                <viewController id="D0E-VM-XWq" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ewc-k4-zyg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="CJ1-sR-RvQ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wgo-t2-sTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3013" y="-1130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="9ay-A3-rae">
-            <objects>
-                <viewController id="cXr-KJ-Xdz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dKr-pb-tbb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="cxw-Go-Pqi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TiM-qx-7dY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="812" y="-1130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Ddd-Zb-cAO">
-            <objects>
-                <viewController id="qmX-HW-npj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4zj-7w-tQq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="qBp-is-ydv"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fXM-Jq-R1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="79" y="-1130"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Cacto1 NaBolinha" width="2247" height="2409"/>
@@ -727,4 +789,9 @@
         <image name="TerraVazia" width="657" height="427"/>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WXv-In-ufc"/>
+        <segue reference="9O4-yR-ZbS"/>
+        <segue reference="Tr2-qd-0Km"/>
+    </inferredMetricsTieBreakers>
 </document>
