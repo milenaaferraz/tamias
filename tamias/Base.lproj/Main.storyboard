@@ -793,19 +793,19 @@ terra crescer bem!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="SFu-jG-kbs">
-                                <rect key="frame" x="41" y="192" width="95" height="120"/>
+                                <rect key="frame" x="47" y="192" width="95" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Girassol ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="Oss-H1-9fJ">
-                                <rect key="frame" x="184" y="192" width="95" height="120"/>
+                                <rect key="frame" x="177" y="192" width="95" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cacto1 ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="ZrX-vo-hnr">
-                                <rect key="frame" x="41" y="354" width="95" height="120"/>
+                                <rect key="frame" x="47" y="354" width="95" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRoxa ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-cu-q6p">
-                                <rect key="frame" x="184" y="354" width="95" height="120"/>
+                                <rect key="frame" x="177" y="354" width="95" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
