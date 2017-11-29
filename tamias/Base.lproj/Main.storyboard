@@ -74,28 +74,8 @@
                                         <rect key="frame" x="113" y="151" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-U7-qbT">
-                                        <rect key="frame" x="134" y="139" width="55" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-Lv-tN3">
-                                        <rect key="frame" x="134" y="83" width="55" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-Ya-6XE">
                                         <rect key="frame" x="134" y="23" width="55" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="PkX-xO-Ikr">
-                                        <rect key="frame" x="184" y="109" width="55" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="VRL-gD-yeS">
-                                        <rect key="frame" x="234" y="80" width="55" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="7gf-aZ-fr9">
-                                        <rect key="frame" x="184" y="53" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="DUI-RL-TGq">
@@ -106,8 +86,28 @@
                                         <rect key="frame" x="34" y="80" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="7gf-aZ-fr9">
+                                        <rect key="frame" x="184" y="53" width="55" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-Lv-tN3">
+                                        <rect key="frame" x="134" y="83" width="55" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-xu-Ob0">
                                         <rect key="frame" x="84" y="109" width="55" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="VRL-gD-yeS">
+                                        <rect key="frame" x="234" y="80" width="55" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="PkX-xO-Ikr">
+                                        <rect key="frame" x="184" y="109" width="55" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-U7-qbT">
+                                        <rect key="frame" x="134" y="139" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -205,6 +205,24 @@
                         <outlet property="imagemDoSol" destination="poV-Ts-GMe" id="dT4-jT-udu"/>
                         <outlet property="jardimOutlet" destination="thd-Ar-KeV" id="Lp0-fP-5mg"/>
                         <outlet property="metasOutlet" destination="FYs-eu-Vs7" id="677-Fb-cDm"/>
+                        <outlet property="planta00" destination="vl2-U7-qbT" id="CUj-Ta-lT2"/>
+                        <outlet property="planta01" destination="PkX-xO-Ikr" id="uNc-22-dW1"/>
+                        <outlet property="planta02" destination="VRL-gD-yeS" id="c4j-Gh-Ozj"/>
+                        <outlet property="planta10" destination="xcX-xu-Ob0" id="5TW-ze-ug0"/>
+                        <outlet property="planta11" destination="DHm-Lv-tN3" id="0Vb-zJ-nnD"/>
+                        <outlet property="planta12" destination="7gf-aZ-fr9" id="aDr-Om-PBi"/>
+                        <outlet property="planta20" destination="RvX-jP-pjk" id="6GO-fO-YiE"/>
+                        <outlet property="planta21" destination="DUI-RL-TGq" id="KXq-9o-Wjm"/>
+                        <outlet property="planta22" destination="Ve3-Ya-6XE" id="EBv-kz-7tt"/>
+                        <outlet property="terra00" destination="uAE-BE-lBv" id="AR5-gL-NXe"/>
+                        <outlet property="terra01" destination="ORM-54-2GH" id="V9b-9w-cKO"/>
+                        <outlet property="terra02" destination="R7x-yB-L0d" id="Qqa-V7-2df"/>
+                        <outlet property="terra10" destination="SBF-3Y-sTo" id="iX9-yQ-Wxw"/>
+                        <outlet property="terra11" destination="dmE-pu-b3H" id="qnH-Lp-veu"/>
+                        <outlet property="terra12" destination="dQY-ku-qjf" id="jrB-a3-gOW"/>
+                        <outlet property="terra20" destination="GAy-Dc-fQp" id="LXB-xx-Vg8"/>
+                        <outlet property="terra21" destination="LKy-J9-hUJ" id="JPQ-7p-qDw"/>
+                        <outlet property="terra22" destination="Uah-rG-xCD" id="Wit-Bp-wGF"/>
                         <outlet property="textoDasGotas" destination="ncp-Ii-nZ5" id="2oH-Jc-ryJ"/>
                         <outlet property="textoDoSol" destination="mIU-6h-5oq" id="dZy-Ms-Rtp"/>
                         <outlet property="viewDasGotas" destination="B4x-UW-T6h" id="j0Y-4e-tdE"/>
@@ -723,10 +741,10 @@ terra crescer bem!</string>
             </objects>
             <point key="canvasLocation" x="1531.875" y="-300"/>
         </scene>
-        <!--View Controller-->
+        <!--Pre Exercicio View Controller-->
         <scene sceneID="d5K-HO-0eg">
             <objects>
-                <viewController id="dkX-i1-nmh" sceneMemberID="viewController">
+                <viewController id="dkX-i1-nmh" customClass="PreExercicioViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yAY-zh-Hcy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -787,10 +805,10 @@ terra crescer bem!</string>
             </objects>
             <point key="canvasLocation" x="2304.375" y="-300"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercicio1 View Controller-->
         <scene sceneID="0h9-78-3xC">
             <objects>
-                <viewController id="XmA-bq-GpO" sceneMemberID="viewController">
+                <viewController id="XmA-bq-GpO" customClass="Exercicio1ViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C8B-T3-IuD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -824,7 +842,7 @@ terra crescer bem!</string>
                                 <rect key="frame" x="0.0" y="89" width="320" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1soma3" translatesAutoresizingMaskIntoConstraints="NO" id="ecG-Iq-0W5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecG-Iq-0W5">
                                 <rect key="frame" x="54" y="267" width="223" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -906,6 +924,9 @@ terra crescer bem!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dCj-wq-LnH"/>
+                        <connections>
+                            <outlet property="imagemGuia" destination="ecG-Iq-0W5" id="fAV-82-K5P"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC3-ps-DIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -999,16 +1020,14 @@ terra crescer bem!</string>
         <image name="exercicio1Icone" width="1141" height="1143"/>
         <image name="exercicio1capa" width="2481" height="2411"/>
         <image name="exercicio1imagem1" width="797" height="921"/>
-        <image name="exercicio1soma3" width="2678" height="954"/>
         <image name="exercicio2Icones" width="1142" height="1142"/>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7DH-X1-thG"/>
         <segue reference="4RU-87-eI3"/>
         <segue reference="mgK-46-Gr4"/>
-        <segue reference="WXv-In-ufc"/>
+        <segue reference="inb-Db-Mcl"/>
         <segue reference="x2A-Gv-MG8"/>
-        <segue reference="mZX-D0-7C3"/>
+        <segue reference="yNz-xT-zRi"/>
     </inferredMetricsTieBreakers>
 </document>
