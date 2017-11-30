@@ -29,7 +29,11 @@ class Exercicio1ViewController: UIViewController {
     @IBOutlet weak var alternativasView: UIView!
     @IBOutlet weak var alternativa1Outlet: UIButton!
     @IBAction func alternativa1Botao(_ sender: Any) {
+        if (rodadaEx1 < 2) {
         proximaOutlet.isHidden = false
+        } else {
+        verRecompensaOutlet.isHidden = false
+        }
         alternativasView.isHidden = true
     }
     @IBOutlet weak var alternativa2Outlet: UIButton!
@@ -49,14 +53,20 @@ class Exercicio1ViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var verRecompensaOutlet: UIButton!
+    @IBAction func verRecompensaBotao(_ sender: Any) {
+    }
+    
     @IBOutlet weak var proximaOutlet: UIButton!
     @IBAction func proximaBotao(_ sender: Any) {
-        proximaOutlet.isHidden = true
-        alternativasView.isHidden = false
-        rodadaEx1 = rodadaEx1 + 1
-        enunciadoLabel.text = conjuntoPerguntas[rodadaEx1].enunciado
-        enunciadoImagem.image = conjuntoPerguntas[rodadaEx1].imagemGuia
-        alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
+        if rodadaEx1 < 2 {
+            proximaOutlet.isHidden = true
+            alternativasView.isHidden = false
+            rodadaEx1 = rodadaEx1 + 1
+            enunciadoLabel.text = conjuntoPerguntas[rodadaEx1].enunciado
+            enunciadoImagem.image = conjuntoPerguntas[rodadaEx1].imagemGuia
+            alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
+        }
     }
     
     override func viewDidLoad() {
@@ -65,7 +75,7 @@ class Exercicio1ViewController: UIViewController {
         // Do any additional setup after loading the view.
        
         proximaOutlet.isHidden = true
-        
+        verRecompensaOutlet.isHidden = true
         var perg1 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?",
                                        respostaCerta: "9 gotas",
                                        alternativa1: "9 gotas",

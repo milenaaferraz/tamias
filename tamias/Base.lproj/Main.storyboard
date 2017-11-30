@@ -907,6 +907,9 @@ terra crescer bem!</string>
                                         <state key="normal" title="x">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fecharBotao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="fce-aP-mYG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -915,7 +918,7 @@ terra crescer bem!</string>
                                 <rect key="frame" x="0.0" y="89" width="320" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecG-Iq-0W5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1soma3" translatesAutoresizingMaskIntoConstraints="NO" id="ecG-Iq-0W5">
                                 <rect key="frame" x="49" y="229" width="223" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -936,7 +939,6 @@ terra crescer bem!</string>
                                 </state>
                                 <connections>
                                     <action selector="proximaBotao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="Rzp-mb-uk5"/>
-                                    <segue destination="djS-jv-hyu" kind="show" animates="NO" id="5MK-EJ-Xd4"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aar-GR-hj4">
@@ -1014,6 +1016,20 @@ terra crescer bem!</string>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-XN-y0v">
+                                <rect key="frame" x="0.0" y="525" width="320" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <state key="normal" title="VER RECOMPENSA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="proximaBotao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="9p2-Ex-c2t"/>
+                                    <action selector="verRecompensaBotao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="FMP-r9-iAV"/>
+                                    <segue destination="djS-jv-hyu" kind="show" id="Anh-Jo-JBN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dCj-wq-LnH"/>
@@ -1026,8 +1042,10 @@ terra crescer bem!</string>
                         <outlet property="alternativasView" destination="aar-GR-hj4" id="vPF-Ze-SZE"/>
                         <outlet property="enunciadoImagem" destination="ecG-Iq-0W5" id="Obq-gH-g9t"/>
                         <outlet property="enunciadoLabel" destination="t7z-jx-Wdf" id="Myt-UF-d7d"/>
+                        <outlet property="fecharOutlet" destination="qsT-Ez-9U5" id="gv2-oM-HgP"/>
                         <outlet property="progressBar" destination="IwZ-Mc-grz" id="tyP-c2-BI8"/>
                         <outlet property="proximaOutlet" destination="fMU-T6-AMJ" id="BSa-vI-gQn"/>
+                        <outlet property="verRecompensaOutlet" destination="e5M-XN-y0v" id="tNM-bj-FET"/>
                         <outlet property="vidasTexto" destination="GzA-GT-bf7" id="Quq-om-3Fv"/>
                         <outlet property="vidasView" destination="7qr-61-haa" id="8yY-AN-v4t"/>
                     </connections>
@@ -1126,6 +1144,7 @@ terra crescer bem!</string>
         <image name="exercicio1Icone" width="1141" height="1143"/>
         <image name="exercicio1capa" width="2481" height="2411"/>
         <image name="exercicio1imagem1" width="797" height="921"/>
+        <image name="exercicio1soma3" width="2141" height="637"/>
         <image name="exercicio2Icones" width="1142" height="1142"/>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
