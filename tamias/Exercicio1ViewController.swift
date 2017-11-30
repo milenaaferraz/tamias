@@ -30,8 +30,6 @@ class Exercicio1ViewController: UIViewController {
     @IBOutlet weak var alternativa1Outlet: UIButton!
     @IBAction func alternativa1Botao(_ sender: Any) {
         
-        rodadaEx1 = rodadaEx1 + 1
-
         if alternativa1Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
             feedbackLabel.text = "Você acertou! Parabéns 🌵"
         }
@@ -39,7 +37,7 @@ class Exercicio1ViewController: UIViewController {
             feedbackLabel.text = "Poxa, você errou..."
         }
         
-        if (rodadaEx1 <= 4) {
+        if (rodadaEx1 < 4) {
         proximaOutlet.isHidden = false
         } else {
         verRecompensaOutlet.isHidden = false
@@ -47,16 +45,15 @@ class Exercicio1ViewController: UIViewController {
         alternativasView.isHidden = true
         feedbackLabel.isHidden = false
         
-        alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
-        alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
-        alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
-        alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
+        alternativa1Outlet.setTitle("", for: .normal)
+        alternativa2Outlet.setTitle("", for: .normal)
+        alternativa3Outlet.setTitle("", for: .normal)
+        alternativa4Outlet.setTitle("", for: .normal)
     }
+    
     @IBOutlet weak var alternativa2Outlet: UIButton!
     @IBAction func alternativa2Botao(_ sender: Any) {
         
-        rodadaEx1 = rodadaEx1 + 1
-
         if alternativa2Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
             feedbackLabel.text = "Você acertou! Parabéns 🌵"
         }
@@ -64,7 +61,7 @@ class Exercicio1ViewController: UIViewController {
             feedbackLabel.text = "Poxa, você errou..."
         }
         
-        if (rodadaEx1 <= 4) {
+        if (rodadaEx1 < 4) {
             proximaOutlet.isHidden = false
         } else {
             verRecompensaOutlet.isHidden = false
@@ -72,16 +69,15 @@ class Exercicio1ViewController: UIViewController {
         alternativasView.isHidden = true
         feedbackLabel.isHidden = false
         
-        alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
-        alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
-        alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
-        alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
+        alternativa1Outlet.setTitle("", for: .normal)
+        alternativa2Outlet.setTitle("", for: .normal)
+        alternativa3Outlet.setTitle("", for: .normal)
+        alternativa4Outlet.setTitle("", for: .normal)
+
     }
     @IBOutlet weak var alternativa3Outlet: UIButton!
     @IBAction func alternativa3Botao(_ sender: Any) {
         
-        rodadaEx1 = rodadaEx1 + 1
-
         if alternativa3Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
             feedbackLabel.text = "Você acertou! Parabéns 🌵"
         }
@@ -89,7 +85,7 @@ class Exercicio1ViewController: UIViewController {
             feedbackLabel.text = "Poxa, você errou..."
         }
         
-        if (rodadaEx1 <= 4) {
+        if (rodadaEx1 < 4) {
             proximaOutlet.isHidden = false
             
         } else {
@@ -99,17 +95,15 @@ class Exercicio1ViewController: UIViewController {
         alternativasView.isHidden = true
         feedbackLabel.isHidden = false
         
-        alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
-        alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
-        alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
-        alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
+        alternativa1Outlet.setTitle("", for: .normal)
+        alternativa2Outlet.setTitle("", for: .normal)
+        alternativa3Outlet.setTitle("", for: .normal)
+        alternativa4Outlet.setTitle("", for: .normal)
         
     }
     @IBOutlet weak var alternativa4Outlet: UIButton!
     @IBAction func alternativa4Botao(_ sender: Any) {
         
-        rodadaEx1 = rodadaEx1 + 1
-
         if alternativa4Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
             feedbackLabel.text = "Você acertou! Parabéns 🌵"
         }
@@ -117,7 +111,7 @@ class Exercicio1ViewController: UIViewController {
             feedbackLabel.text = "Poxa, você errou..."
         }
         
-        if (rodadaEx1 <= 4) {
+        if (rodadaEx1 < 4) {
             proximaOutlet.isHidden = false
         } else {
             verRecompensaOutlet.isHidden = false
@@ -125,10 +119,12 @@ class Exercicio1ViewController: UIViewController {
         alternativasView.isHidden = true
         feedbackLabel.isHidden = false
         
-        alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
-        alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
-        alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
-        alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
+        alternativa1Outlet.setTitle("", for: .normal)
+        alternativa2Outlet.setTitle("", for: .normal)
+        alternativa3Outlet.setTitle("", for: .normal)
+        alternativa4Outlet.setTitle("", for: .normal)
+        
+        
     }
     
     @IBOutlet weak var verRecompensaOutlet: UIButton!
@@ -137,7 +133,18 @@ class Exercicio1ViewController: UIViewController {
     
     @IBOutlet weak var proximaOutlet: UIButton!
     @IBAction func proximaBotao(_ sender: Any) {
-        if rodadaEx1 < 4 {
+        
+        rodadaEx1 = rodadaEx1 + 1
+        progressBar.progress = progressBar.progress + 0.2
+
+ 
+        if rodadaEx1 < 5 {
+           
+            alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
+            alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
+            alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
+            alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
+            
             proximaOutlet.isHidden = true
             feedbackLabel.isHidden = true
            
@@ -146,6 +153,7 @@ class Exercicio1ViewController: UIViewController {
             
             alternativasView.isHidden = false
         }
+
     }
     
     @IBOutlet weak var feedbackLabel: UILabel!
@@ -159,7 +167,7 @@ class Exercicio1ViewController: UIViewController {
         verRecompensaOutlet.isHidden = true
         feedbackLabel.isHidden = true
         
-        var perg1 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 3 terras
+        var perg1 = Exercicio1Pergunta(enunciado: "Lembrando que, para cada pedaço de terra,você precisa de 3 gotas de água, quantas gotas você precisa para essa quantidade de terra?", // 3 terras
                                        respostaCerta: "9 GOTAS",
                                        alternativa1: "9 GOTAS",
                                        alternativa2: "6 GOTAS",
@@ -171,7 +179,7 @@ class Exercicio1ViewController: UIViewController {
                                        alternativa1: "10 GOTAS",
                                        alternativa2: "15 GOTAS",
                                        alternativa3: "20 GOTAS",
-                                       alternativa4: "30 GOTAS",
+                                       alternativa4: "25 GOTAS",
                                        imagemGuia: #imageLiteral(resourceName: "exercicio1soma5"))
         var perg3 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 6 terras
                                        respostaCerta: "18 GOTAS",
