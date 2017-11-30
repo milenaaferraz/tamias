@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1052,13 +1052,14 @@ terra crescer bem!</string>
                         <outlet property="alternativa3Outlet" destination="XD0-N5-7Cc" id="tQd-4N-oqN"/>
                         <outlet property="alternativa4Outlet" destination="Qpr-hq-8gn" id="g3y-y2-08b"/>
                         <outlet property="alternativasView" destination="aar-GR-hj4" id="vPF-Ze-SZE"/>
+                        <outlet property="barraSuperiorView" destination="7qr-61-haa" id="sRb-2K-HJr"/>
                         <outlet property="enunciadoImagem" destination="Ies-aA-0QK" id="79i-Y0-WTa"/>
                         <outlet property="enunciadoLabel" destination="t7z-jx-Wdf" id="Myt-UF-d7d"/>
                         <outlet property="fecharOutlet" destination="qsT-Ez-9U5" id="gv2-oM-HgP"/>
+                        <outlet property="feedbackLabel" destination="iky-Qh-7hf" id="Jh9-E9-lqN"/>
                         <outlet property="progressBar" destination="IwZ-Mc-grz" id="tyP-c2-BI8"/>
                         <outlet property="proximaOutlet" destination="fMU-T6-AMJ" id="BSa-vI-gQn"/>
                         <outlet property="verRecompensaOutlet" destination="e5M-XN-y0v" id="tNM-bj-FET"/>
-                        <outlet property="vidasView" destination="7qr-61-haa" id="8yY-AN-v4t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC3-ps-DIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
