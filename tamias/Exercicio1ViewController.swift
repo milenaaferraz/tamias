@@ -29,7 +29,7 @@ class Exercicio1ViewController: UIViewController {
     @IBOutlet weak var alternativasView: UIView!
     @IBOutlet weak var alternativa1Outlet: UIButton!
     @IBAction func alternativa1Botao(_ sender: Any) {
-        if (rodadaEx1 < 2) {
+        if (rodadaEx1 < conjuntoPerguntas.count) {
         proximaOutlet.isHidden = false
         } else {
         verRecompensaOutlet.isHidden = false
@@ -59,13 +59,16 @@ class Exercicio1ViewController: UIViewController {
     
     @IBOutlet weak var proximaOutlet: UIButton!
     @IBAction func proximaBotao(_ sender: Any) {
-        if rodadaEx1 < 2 {
+        if rodadaEx1 < conjuntoPerguntas.count {
             proximaOutlet.isHidden = true
             alternativasView.isHidden = false
             rodadaEx1 = rodadaEx1 + 1
             enunciadoLabel.text = conjuntoPerguntas[rodadaEx1].enunciado
             enunciadoImagem.image = conjuntoPerguntas[rodadaEx1].imagemGuia
             alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
+            alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
+            alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
+            alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
         }
     }
     
@@ -76,19 +79,20 @@ class Exercicio1ViewController: UIViewController {
        
         proximaOutlet.isHidden = true
         verRecompensaOutlet.isHidden = true
+        
         var perg1 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?",
-                                       respostaCerta: "9 gotas",
-                                       alternativa1: "9 gotas",
-                                       alternativa2: "6 gotas",
-                                       alternativa3: "3 gotas",
-                                       alternativa4: "15 gotas",
+                                       respostaCerta: "9 GOTAS",
+                                       alternativa1: "9 GOTAS",
+                                       alternativa2: "6 GOTAS",
+                                       alternativa3: "3 GOTAS",
+                                       alternativa4: "15 GOTAS",
                                        imagemGuia:#imageLiteral(resourceName: "exercicio1soma3"))
         var perg2 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?",
-                                       respostaCerta: "15 gotas",
-                                       alternativa1: "10 gotas",
-                                       alternativa2: "15 gotas",
-                                       alternativa3: "20 gotas",
-                                       alternativa4: "30 gotas",
+                                       respostaCerta: "15 GOTAS",
+                                       alternativa1: "10 GOTAS",
+                                       alternativa2: "15 GOTAS",
+                                       alternativa3: "20 GOTAS",
+                                       alternativa4: "30 GOTAS",
                                        imagemGuia: #imageLiteral(resourceName: "exercicio1soma5"))
         
         conjuntoPerguntas = [perg1, perg2]
