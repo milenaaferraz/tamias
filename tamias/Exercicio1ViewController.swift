@@ -64,7 +64,7 @@ class Exercicio1ViewController: UIViewController {
             alternativasView.isHidden = false
             rodadaEx1 = rodadaEx1 + 1
             enunciadoLabel.text = conjuntoPerguntas[rodadaEx1].enunciado
-            enunciadoImagem.image = conjuntoPerguntas[rodadaEx1].imagemGuia
+            enunciadoImagem.image = self.conjuntoPerguntas[rodadaEx1].imagemGuia.withRenderingMode(.alwaysOriginal)
             alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
             alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
             alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
@@ -80,22 +80,45 @@ class Exercicio1ViewController: UIViewController {
         proximaOutlet.isHidden = true
         verRecompensaOutlet.isHidden = true
         
-        var perg1 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?",
+        var perg1 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 3 terras
                                        respostaCerta: "9 GOTAS",
                                        alternativa1: "9 GOTAS",
                                        alternativa2: "6 GOTAS",
                                        alternativa3: "3 GOTAS",
                                        alternativa4: "15 GOTAS",
                                        imagemGuia:#imageLiteral(resourceName: "exercicio1soma3"))
-        var perg2 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?",
+        var perg2 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 5 terras
                                        respostaCerta: "15 GOTAS",
                                        alternativa1: "10 GOTAS",
                                        alternativa2: "15 GOTAS",
                                        alternativa3: "20 GOTAS",
                                        alternativa4: "30 GOTAS",
                                        imagemGuia: #imageLiteral(resourceName: "exercicio1soma5"))
+        var perg3 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 6 terras
+                                       respostaCerta: "18 GOTAS",
+                                       alternativa1: "10 GOTAS",
+                                       alternativa2: "16 GOTAS",
+                                       alternativa3: "12 GOTAS",
+                                       alternativa4: "30 GOTAS",
+                                       imagemGuia: #imageLiteral(resourceName: "exercicio1soma5"))
+       
+        var perg4 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 8 terras
+                                       respostaCerta: "24 GOTAS",
+                                       alternativa1: "20 GOTAS",
+                                       alternativa2: "8 GOTAS",
+                                       alternativa3: "24 GOTAS",
+                                       alternativa4: "16 GOTAS",
+                                       imagemGuia: #imageLiteral(resourceName: "exercicio1soma5"))
+
+        var perg5 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 10 terras
+                                       respostaCerta: "30 GOTAS",
+                                       alternativa1: "50 GOTAS",
+                                       alternativa2: "20 GOTAS",
+                                       alternativa3: "10 GOTAS",
+                                       alternativa4: "30 GOTAS",
+                                       imagemGuia: #imageLiteral(resourceName: "exercicio1soma5"))
         
-        conjuntoPerguntas = [perg1, perg2]
+        conjuntoPerguntas = [perg1, perg2, perg3, perg4, perg5]
         
     }
 
