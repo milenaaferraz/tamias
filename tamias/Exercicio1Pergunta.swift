@@ -22,7 +22,7 @@ class Exercicio1Pergunta {
         alternativa2:String,
         alternativa3:String,
         alternativa4:String,
-        imagemGuia:UIImageView) {
+        imagemGuia:UIImage) {
         
         self.enunciado = enunciado
         self.respostaCerta = respostaCerta

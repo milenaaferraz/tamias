@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -816,6 +816,10 @@ terra crescer bem!</string>
                         <viewLayoutGuide key="safeArea" id="2bi-XC-gvN"/>
                     </view>
                     <connections>
+                        <outlet property="imagem1" destination="SFu-jG-kbs" id="jOF-6p-ndl"/>
+                        <outlet property="imagem2" destination="Oss-H1-9fJ" id="fup-N6-Ncx"/>
+                        <outlet property="imagem3" destination="ZrX-vo-hnr" id="Thb-7o-2gC"/>
+                        <outlet property="imagem4" destination="g8m-cu-q6p" id="QHu-CD-idH"/>
                         <outlet property="instrucaoNoJogo" destination="GZ9-wv-rCT" id="Eiv-44-9qR"/>
                         <outlet property="numeroPontos" destination="hnC-2c-dVJ" id="l5o-7D-aW6"/>
                         <outlet property="suaPontuacao" destination="GlF-Na-Jns" id="OSo-aF-013"/>
@@ -901,13 +905,6 @@ terra crescer bem!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VIDAS  5/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-GT-bf7">
-                                        <rect key="frame" x="8" y="17" width="304" height="63"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsT-Ez-9U5">
                                         <rect key="frame" x="266" y="-1" width="54" height="92"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -926,10 +923,6 @@ terra crescer bem!</string>
                                 <rect key="frame" x="0.0" y="89" width="320" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1soma3" translatesAutoresizingMaskIntoConstraints="NO" id="ecG-Iq-0W5">
-                                <rect key="frame" x="49" y="229" width="223" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantas gotas de água você precisa para essa quantidade de terra?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7z-jx-Wdf">
                                 <rect key="frame" x="49" y="123" width="223" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1038,6 +1031,17 @@ terra crescer bem!</string>
                                     <segue destination="djS-jv-hyu" kind="show" id="Anh-Jo-JBN"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1soma3" translatesAutoresizingMaskIntoConstraints="NO" id="Ies-aA-0QK">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iky-Qh-7hf">
+                                <rect key="frame" x="101" y="489" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dCj-wq-LnH"/>
@@ -1048,13 +1052,12 @@ terra crescer bem!</string>
                         <outlet property="alternativa3Outlet" destination="XD0-N5-7Cc" id="tQd-4N-oqN"/>
                         <outlet property="alternativa4Outlet" destination="Qpr-hq-8gn" id="g3y-y2-08b"/>
                         <outlet property="alternativasView" destination="aar-GR-hj4" id="vPF-Ze-SZE"/>
-                        <outlet property="enunciadoImagem" destination="ecG-Iq-0W5" id="Obq-gH-g9t"/>
+                        <outlet property="enunciadoImagem" destination="Ies-aA-0QK" id="79i-Y0-WTa"/>
                         <outlet property="enunciadoLabel" destination="t7z-jx-Wdf" id="Myt-UF-d7d"/>
                         <outlet property="fecharOutlet" destination="qsT-Ez-9U5" id="gv2-oM-HgP"/>
                         <outlet property="progressBar" destination="IwZ-Mc-grz" id="tyP-c2-BI8"/>
                         <outlet property="proximaOutlet" destination="fMU-T6-AMJ" id="BSa-vI-gQn"/>
                         <outlet property="verRecompensaOutlet" destination="e5M-XN-y0v" id="tNM-bj-FET"/>
-                        <outlet property="vidasTexto" destination="GzA-GT-bf7" id="Quq-om-3Fv"/>
                         <outlet property="vidasView" destination="7qr-61-haa" id="8yY-AN-v4t"/>
                     </connections>
                 </viewController>
@@ -1157,9 +1160,9 @@ terra crescer bem!</string>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K7f-0O-sBw"/>
+        <segue reference="mgK-46-Gr4"/>
         <segue reference="inb-Db-Mcl"/>
-        <segue reference="23Z-dV-IP3"/>
+        <segue reference="x2A-Gv-MG8"/>
         <segue reference="Tr2-qd-0Km"/>
     </inferredMetricsTieBreakers>
 </document>

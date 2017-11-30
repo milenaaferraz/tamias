@@ -8,16 +8,28 @@
 
 import UIKit
 
-class Exercicio2ViewController: UIViewController {
+class Exercicio2ViewController:
+    
+    UIViewController {
+    @IBOutlet weak var imagem4: UIImageView!
+    @IBOutlet weak var imagem3: UIImageView!
+    @IBOutlet weak var imagem1: UIImageView!
+    @IBOutlet weak var imagem2: UIImageView!
     @IBOutlet weak var numeroPontos: UILabel!
     @IBOutlet weak var suaPontuacao: UILabel!
-    
     @IBOutlet weak var instrucaoNoJogo: UILabel!
     @IBAction func botaox(_ sender: Any) {
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imagem1.isHidden = true
+        imagem2.isHidden = true
+        imagem3.isHidden = true
+        imagem4.isHidden = true
+        
+        
+       
         // Do any additional setup after loading the view.
     }
 

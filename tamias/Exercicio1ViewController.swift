@@ -14,6 +14,7 @@ class Exercicio1ViewController: UIViewController {
     var conjuntoPerguntas:[Exercicio1Pergunta] = []
     
     // barra superior
+   
     @IBOutlet weak var vidasView: UIView!
     @IBOutlet weak var vidasTexto: UILabel!
     @IBOutlet weak var fecharOutlet: UIButton!
