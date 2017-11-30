@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,39 +74,39 @@
                                         <rect key="frame" x="113" y="151" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-Ya-6XE">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-Ya-6XE">
                                         <rect key="frame" x="134" y="23" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="DUI-RL-TGq">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUI-RL-TGq">
                                         <rect key="frame" x="84" y="52" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="RvX-jP-pjk">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvX-jP-pjk">
                                         <rect key="frame" x="34" y="80" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="7gf-aZ-fr9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gf-aZ-fr9">
                                         <rect key="frame" x="184" y="53" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-Lv-tN3">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-Lv-tN3">
                                         <rect key="frame" x="134" y="83" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-xu-Ob0">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-xu-Ob0">
                                         <rect key="frame" x="84" y="109" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="VRL-gD-yeS">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VRL-gD-yeS">
                                         <rect key="frame" x="234" y="80" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="PkX-xO-Ikr">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PkX-xO-Ikr">
                                         <rect key="frame" x="184" y="109" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa SemVaso" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-U7-qbT">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-U7-qbT">
                                         <rect key="frame" x="134" y="139" width="55" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -205,15 +205,15 @@
                         <outlet property="imagemDoSol" destination="poV-Ts-GMe" id="dT4-jT-udu"/>
                         <outlet property="jardimOutlet" destination="thd-Ar-KeV" id="Lp0-fP-5mg"/>
                         <outlet property="metasOutlet" destination="FYs-eu-Vs7" id="677-Fb-cDm"/>
-                        <outlet property="planta00" destination="vl2-U7-qbT" id="CUj-Ta-lT2"/>
-                        <outlet property="planta01" destination="PkX-xO-Ikr" id="uNc-22-dW1"/>
-                        <outlet property="planta02" destination="VRL-gD-yeS" id="c4j-Gh-Ozj"/>
-                        <outlet property="planta10" destination="xcX-xu-Ob0" id="5TW-ze-ug0"/>
-                        <outlet property="planta11" destination="DHm-Lv-tN3" id="0Vb-zJ-nnD"/>
-                        <outlet property="planta12" destination="7gf-aZ-fr9" id="aDr-Om-PBi"/>
-                        <outlet property="planta20" destination="RvX-jP-pjk" id="6GO-fO-YiE"/>
-                        <outlet property="planta21" destination="DUI-RL-TGq" id="KXq-9o-Wjm"/>
-                        <outlet property="planta22" destination="Ve3-Ya-6XE" id="EBv-kz-7tt"/>
+                        <outlet property="planta00" destination="vl2-U7-qbT" id="elW-VC-RBa"/>
+                        <outlet property="planta01" destination="PkX-xO-Ikr" id="DEF-Pg-jyo"/>
+                        <outlet property="planta02" destination="VRL-gD-yeS" id="Poj-ug-40s"/>
+                        <outlet property="planta10" destination="xcX-xu-Ob0" id="8Ms-UL-SeJ"/>
+                        <outlet property="planta11" destination="DHm-Lv-tN3" id="Jzc-gZ-Zi9"/>
+                        <outlet property="planta12" destination="7gf-aZ-fr9" id="hV4-JU-um7"/>
+                        <outlet property="planta20" destination="RvX-jP-pjk" id="10J-Ea-HUx"/>
+                        <outlet property="planta21" destination="DUI-RL-TGq" id="duN-C9-JZe"/>
+                        <outlet property="planta22" destination="Ve3-Ya-6XE" id="1VJ-qY-ccW"/>
                         <outlet property="terra00" destination="uAE-BE-lBv" id="AR5-gL-NXe"/>
                         <outlet property="terra01" destination="ORM-54-2GH" id="V9b-9w-cKO"/>
                         <outlet property="terra02" destination="R7x-yB-L0d" id="Qqa-V7-2df"/>
@@ -907,9 +907,6 @@ terra crescer bem!</string>
                                         <state key="normal" title="x">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="yNz-xT-zRi"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -919,91 +916,121 @@ terra crescer bem!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecG-Iq-0W5">
-                                <rect key="frame" x="54" y="267" width="223" height="95"/>
+                                <rect key="frame" x="49" y="229" width="223" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKL-1p-gSj">
-                                <rect key="frame" x="60" y="403" width="94" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
-                                <state key="normal" title="9 GOTAS">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="djS-jv-hyu" kind="show" animates="NO" id="p6r-5F-GR4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLK-5b-Fuc">
-                                <rect key="frame" x="164" y="403" width="97" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
-                                <state key="normal" title="6 GOTAS">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="djS-jv-hyu" kind="show" animates="NO" id="4RU-87-eI3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD0-N5-7Cc">
-                                <rect key="frame" x="60" y="459" width="94" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
-                                <state key="normal" title="3 GOTAS">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="djS-jv-hyu" kind="show" animates="NO" id="xce-vo-7dq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpr-hq-8gn">
-                                <rect key="frame" x="164" y="459" width="97" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
-                                <state key="normal" title="15 GOTAS">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="djS-jv-hyu" kind="show" animates="NO" id="N5n-KE-wsF"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantas gotas de água você precisa para essa quantidade de terra?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7z-jx-Wdf">
-                                <rect key="frame" x="54" y="148" width="223" height="94"/>
+                                <rect key="frame" x="49" y="123" width="223" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-T6-AMJ">
+                                <rect key="frame" x="0.0" y="525" width="320" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <state key="normal" title="PRÓXIMA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="proximaBotao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="Rzp-mb-uk5"/>
+                                    <segue destination="djS-jv-hyu" kind="show" animates="NO" id="5MK-EJ-Xd4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aar-GR-hj4">
+                                <rect key="frame" x="49" y="358" width="223" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKL-1p-gSj">
+                                        <rect key="frame" x="10" y="5" width="94" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
+                                        <state key="normal" title="9 GOTAS">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="alternativa1Botao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="WSN-Y6-PtK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLK-5b-Fuc">
+                                        <rect key="frame" x="115" y="5" width="97" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
+                                        <state key="normal" title="6 GOTAS">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="alternativa2Botao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="KwG-3g-UjP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD0-N5-7Cc">
+                                        <rect key="frame" x="10" y="62" width="94" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
+                                        <state key="normal" title="3 GOTAS">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="alternativa3Botao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="dU5-5Y-ZgT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpr-hq-8gn">
+                                        <rect key="frame" x="115" y="62" width="97" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
+                                        <state key="normal" title="15 GOTAS">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="alternativa4Botao:" destination="XmA-bq-GpO" eventType="touchUpInside" id="J4G-3Q-drR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dCj-wq-LnH"/>
-                        <connections>
-                            <outlet property="imagemGuia" destination="ecG-Iq-0W5" id="fAV-82-K5P"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="alternativa1Outlet" destination="fKL-1p-gSj" id="7HA-Av-9UT"/>
+                        <outlet property="alternativa2Outlet" destination="HLK-5b-Fuc" id="gLI-vF-Yyh"/>
+                        <outlet property="alternativa3Outlet" destination="XD0-N5-7Cc" id="tQd-4N-oqN"/>
+                        <outlet property="alternativa4Outlet" destination="Qpr-hq-8gn" id="g3y-y2-08b"/>
+                        <outlet property="alternativasView" destination="aar-GR-hj4" id="vPF-Ze-SZE"/>
+                        <outlet property="enunciadoImagem" destination="ecG-Iq-0W5" id="Obq-gH-g9t"/>
+                        <outlet property="enunciadoLabel" destination="t7z-jx-Wdf" id="Myt-UF-d7d"/>
+                        <outlet property="progressBar" destination="IwZ-Mc-grz" id="tyP-c2-BI8"/>
+                        <outlet property="proximaOutlet" destination="fMU-T6-AMJ" id="BSa-vI-gQn"/>
+                        <outlet property="vidasTexto" destination="GzA-GT-bf7" id="Quq-om-3Fv"/>
+                        <outlet property="vidasView" destination="7qr-61-haa" id="8yY-AN-v4t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC3-ps-DIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1088,7 +1115,6 @@ terra crescer bem!</string>
         <image name="Estrela" width="233" height="222"/>
         <image name="FlorRosa ComVaso" width="1116" height="1905"/>
         <image name="FlorRosa NaBolinha" width="2247" height="2367"/>
-        <image name="FlorRosa SemVaso" width="1116" height="1356"/>
         <image name="FlorRoxa ComVaso" width="841" height="1904"/>
         <image name="FlorRoxa NaBolinha" width="2248" height="2398"/>
         <image name="FloresAmarl NaBolinha" width="2247" height="2376"/>
@@ -1104,10 +1130,9 @@ terra crescer bem!</string>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4RU-87-eI3"/>
-        <segue reference="mgK-46-Gr4"/>
+        <segue reference="K7f-0O-sBw"/>
         <segue reference="inb-Db-Mcl"/>
-        <segue reference="x2A-Gv-MG8"/>
-        <segue reference="yNz-xT-zRi"/>
+        <segue reference="23Z-dV-IP3"/>
+        <segue reference="Tr2-qd-0Km"/>
     </inferredMetricsTieBreakers>
 </document>

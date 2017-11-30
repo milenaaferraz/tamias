@@ -21,7 +21,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var terra00: UIImageView!
     @IBOutlet weak var planta00: UIImageView!
     @IBOutlet weak var terra01: UIImageView!
+    @IBOutlet weak var planta01: UIImageView!
     @IBOutlet weak var terra02: UIImageView!
+    @IBOutlet weak var planta02: UIImageView!
     // Linha 1
     @IBOutlet weak var terra10: UIImageView!
     @IBOutlet weak var planta10: UIImageView!
