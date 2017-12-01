@@ -1175,7 +1175,6 @@ terra crescer bem!</string>
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7DH-X1-thG"/>
         <segue reference="mgK-46-Gr4"/>
         <segue reference="LFe-ep-5zC"/>
         <segue reference="x2A-Gv-MG8"/>
