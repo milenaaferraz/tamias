@@ -76,6 +76,7 @@ class Exercicio1ViewController: UIViewController {
         
         rodadaEx1 = rodadaEx1 + 1
         progressBar.progress = 1
+        progressBar.isHidden = false
  
         if rodadaEx1 < 5 {
            
@@ -114,11 +115,9 @@ class Exercicio1ViewController: UIViewController {
     
     // funcao de clicar nas alternativas
     func clicaNaAlternativa (_ alternativa:UIButton) {
-        
-        self.progressBar.progress = 0.0
-        
+                
         if alternativa.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Você acertou! Parabéns 🌵"
+            feedbackLabel.text = "Você acertou! Parabéns!"
         }
         else if alternativa.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
             
@@ -130,6 +129,7 @@ class Exercicio1ViewController: UIViewController {
             
             if vidas <= 0 {
                 verRecompensaOutlet.setTitle("TERMINAR", for: .normal)
+                verRecompensaOutlet.backgroundColor = UIColor.blue
                 verRecompensaOutlet.isHidden = false
             }
             proximaOutlet.isHidden = false
@@ -138,6 +138,7 @@ class Exercicio1ViewController: UIViewController {
             verRecompensaOutlet.isHidden = false
         }
         
+        progressBar.isHidden = true
         alternativasView.isHidden = true
         feedbackLabel.isHidden = false
     }
@@ -172,12 +173,12 @@ class Exercicio1ViewController: UIViewController {
                 viewController.titulo = "POXA!"
                 viewController.mensagem = "VOCÊ PERDEU"
                 viewController.legenda = "Infelizmente, você não conseguiu a recompensa... Tente de novo!"
-                viewController.imagem = #imageLiteral(resourceName: "Mosca")
+                viewController.imagem = #imageLiteral(resourceName: "Mosca").withRenderingMode(.alwaysOriginal)
             } else {
                 viewController.titulo = "PARABÉNS"
                 viewController.mensagem = "VOCÊ GANHOU"
                 viewController.legenda = "1 x CACTO"
-                viewController.imagem = #imageLiteral(resourceName: "Cacto2 NaBolinha")
+                viewController.imagem = #imageLiteral(resourceName: "Cacto2 NaBolinha").withRenderingMode(.alwaysOriginal)
             }
         }
     }
