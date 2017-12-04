@@ -1082,6 +1082,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="jXI-f5-x1i"/>
                     </view>
+                    <connections>
+                        <outlet property="cactoImagem" destination="AcE-gO-g6k" id="oI4-8E-GaV"/>
+                        <outlet property="ganhouLabel" destination="pgs-Cm-ESM" id="Ufb-Aj-LQ9"/>
+                        <outlet property="legendaLabel" destination="aCZ-IH-0a3" id="hyq-YB-zLb"/>
+                        <outlet property="parabensLabel" destination="Wtb-Cp-zOf" id="QE4-BR-B5r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYF-lu-tWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1110,9 +1116,9 @@
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zdt-xC-bfI"/>
-        <segue reference="WXv-In-ufc"/>
-        <segue reference="9O4-yR-ZbS"/>
+        <segue reference="mgK-46-Gr4"/>
+        <segue reference="pc0-wk-935"/>
+        <segue reference="x2A-Gv-MG8"/>
         <segue reference="mZX-D0-7C3"/>
     </inferredMetricsTieBreakers>
 </document>

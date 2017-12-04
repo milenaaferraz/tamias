@@ -10,9 +10,28 @@ import UIKit
 
 class RecompensaViewController: UIViewController {
 
+    var vidasRestantes:Int = 0
+    var titulo:String = ""
+    var mensagem:String = ""
+    var legenda:String = ""
+    var imagem:UIImage = #imageLiteral(resourceName: "Mosca")
+        
+    @IBOutlet weak var parabensLabel: UILabel!
+    
+    @IBOutlet weak var ganhouLabel: UILabel!
+    
+    @IBOutlet weak var cactoImagem: UIImageView!
+    
+    @IBOutlet weak var legendaLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        parabensLabel.text = titulo
+        ganhouLabel.text = mensagem
+        cactoImagem.image = imagem
+        legendaLabel.text = legenda
+        
         // Do any additional setup after loading the view.
     }
 
