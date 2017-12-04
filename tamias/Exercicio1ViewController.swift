@@ -33,116 +33,66 @@ class Exercicio1ViewController: UIViewController {
     
     // alternativas
     @IBOutlet weak var alternativasView: UIView!
-    @IBOutlet weak var alternativa1Outlet: UIButton!
-    @IBAction func alternativa1Botao(_ sender: Any) {
+    
+    // funcao de clicar nas alternativas
+    func clicaNaAlternativa (_ alternativa:UIButton) {
         
-        if alternativa1Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
+        if alternativa.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
             feedbackLabel.text = "Você acertou! Parabéns 🌵"
         }
-        else if alternativa1Outlet.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
+        else if alternativa.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
+            
             feedbackLabel.text = "Poxa, você errou..."
+            
+            vidas = vidas - 1
+            if vida3.image == #imageLiteral(resourceName: "coracaoCheio") {
+                vida3.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+            } else if vida2.image == #imageLiteral(resourceName: "coracaoCheio"){
+                vida2.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+            } else {
+                vida1.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+            }
         }
         
         if (rodadaEx1 < 4) {
-        proximaOutlet.isHidden = false
+            
+            if vidas == 0 {
+                proximaOutlet.setTitle("TERMINAR", for: .normal)
+            }
+            proximaOutlet.isHidden = false
+            
         } else {
-        verRecompensaOutlet.isHidden = false
+            verRecompensaOutlet.isHidden = false
         }
+        
         alternativasView.isHidden = true
         feedbackLabel.isHidden = false
+    }
+    
+    
+    @IBOutlet weak var alternativa1Outlet: UIButton!
+    @IBAction func alternativa1Botao(_ sender: Any) {
         
-        alternativa1Outlet.setTitle("", for: .normal)
-        alternativa2Outlet.setTitle("", for: .normal)
-        alternativa3Outlet.setTitle("", for: .normal)
-        alternativa4Outlet.setTitle("", for: .normal)
+        clicaNaAlternativa(alternativa1Outlet)
+        
     }
     
     @IBOutlet weak var alternativa2Outlet: UIButton!
     @IBAction func alternativa2Botao(_ sender: Any) {
         
-        if alternativa2Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Você acertou! Parabéns 🌵"
-            if vida1.image == #imageLiteral(resourceName: "coracaoCheio") {
-                if vida2.image == #imageLiteral(resourceName: "coracaoCheio") {
-                    if vida3.image == #imageLiteral(resourceName: "coracaoCheio") {
-                        vida3.image = #imageLiteral(resourceName: "coracaoVazio")
-                    } else {
-                        vida2.image = #imageLiteral(resourceName: "coracaoVazio")
-                    } else {
-                        
-                    }
-                }
-            }
-        }
-        else if alternativa2Outlet.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Poxa, você errou..."
-            vidas = vidas - 1
-            
-        }
-        
-        if (rodadaEx1 < 4) {
-            proximaOutlet.isHidden = false
-        } else {
-            verRecompensaOutlet.isHidden = false
-        }
-        alternativasView.isHidden = true
-        feedbackLabel.isHidden = false
-        
-        alternativa1Outlet.setTitle("", for: .normal)
-        alternativa2Outlet.setTitle("", for: .normal)
-        alternativa3Outlet.setTitle("", for: .normal)
-        alternativa4Outlet.setTitle("", for: .normal)
+        clicaNaAlternativa(alternativa2Outlet)
 
     }
     @IBOutlet weak var alternativa3Outlet: UIButton!
     @IBAction func alternativa3Botao(_ sender: Any) {
         
-        if alternativa3Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Você acertou! Parabéns 🌵"
-        }
-        else if alternativa3Outlet.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Poxa, você errou..."
-        }
-        
-        if (rodadaEx1 < 4) {
-            proximaOutlet.isHidden = false
-            
-        } else {
-            verRecompensaOutlet.isHidden = false
-        }
-        
-        alternativasView.isHidden = true
-        feedbackLabel.isHidden = false
-        
-        alternativa1Outlet.setTitle("", for: .normal)
-        alternativa2Outlet.setTitle("", for: .normal)
-        alternativa3Outlet.setTitle("", for: .normal)
-        alternativa4Outlet.setTitle("", for: .normal)
+        clicaNaAlternativa(alternativa3Outlet)
         
     }
     @IBOutlet weak var alternativa4Outlet: UIButton!
     @IBAction func alternativa4Botao(_ sender: Any) {
         
-        if alternativa4Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Você acertou! Parabéns 🌵"
-        }
-        else if alternativa4Outlet.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Poxa, você errou..."
-        }
-        
-        if (rodadaEx1 < 4) {
-            proximaOutlet.isHidden = false
-        } else {
-            verRecompensaOutlet.isHidden = false
-        }
-        alternativasView.isHidden = true
-        feedbackLabel.isHidden = false
-        
-        alternativa1Outlet.setTitle("", for: .normal)
-        alternativa2Outlet.setTitle("", for: .normal)
-        alternativa3Outlet.setTitle("", for: .normal)
-        alternativa4Outlet.setTitle("", for: .normal)
-        
+        clicaNaAlternativa(alternativa4Outlet)
         
     }
     
