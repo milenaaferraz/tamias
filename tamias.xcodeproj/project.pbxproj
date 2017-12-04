@@ -30,6 +30,7 @@
 		28DCCA321FCD878B00610076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DCCA301FCD878B00610076 /* LaunchScreen.storyboard */; };
 		28DCCA3D1FCD878B00610076 /* tamiasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA3C1FCD878B00610076 /* tamiasTests.swift */; };
 		28DCCA481FCD878B00610076 /* tamiasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA471FCD878B00610076 /* tamiasUITests.swift */; };
+		3D1A27391FD5C1BA00DFAFAA /* BauCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A27381FD5C1BA00DFAFAA /* BauCollectionViewCell.swift */; };
 		3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		28DCCA431FCD878B00610076 /* tamiasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamiasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DCCA471FCD878B00610076 /* tamiasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamiasUITests.swift; sourceTree = "<group>"; };
 		28DCCA491FCD878B00610076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1A27381FD5C1BA00DFAFAA /* BauCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BauCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				05D413461FCF52EB0093491C /* Exercicio1ViewController.swift */,
 				05D413441FCF4F8E0093491C /* Exercicio1Pergunta.swift */,
 				05D413401FCEE1370093491C /* BauViewController.swift */,
+				3D1A27381FD5C1BA00DFAFAA /* BauCollectionViewCell.swift */,
 				05D4133A1FCED4BE0093491C /* BauCollectionViewController.swift */,
 				05D413381FCED4A20093491C /* MetasViewController.swift */,
 				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
@@ -329,6 +332,7 @@
 				05D413491FCF531D0093491C /* PreExercicioViewController.swift in Sources */,
 				05D413411FCEE1370093491C /* BauViewController.swift in Sources */,
 				05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */,
+				3D1A27391FD5C1BA00DFAFAA /* BauCollectionViewCell.swift in Sources */,
 				3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */,
 				282DAEE11FCF578300B59CAC /* Exercicio2ViewController.swift in Sources */,
 				05D413471FCF52EB0093491C /* Exercicio1ViewController.swift in Sources */,

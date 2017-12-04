@@ -9,8 +9,9 @@
 import UIKit
 
 class BauViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
-    
 
+    var imagensDosItens = ["Cacto1 NaBolinha"]
+    
     @IBOutlet weak var BauCollectionView: UICollectionView!
     
     @IBOutlet weak var metasOutlet: UIButton!
@@ -29,15 +30,21 @@ class BauViewController: UIViewController,UICollectionViewDelegate, UICollection
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated
+        
+        self.BauCollectionView.delegate = self
+        self.BauCollectionView.dataSource = self
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return imagensDosItens.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaDoBau", for: indexPath) as! BauCollectionViewCell
+        
+        cell.celulaImageView.image = UIImage(named:imagensDosItens[indexPath.row])
+        return cell
     }
     
     
