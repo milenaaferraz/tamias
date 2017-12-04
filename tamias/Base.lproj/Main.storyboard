@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -700,7 +700,7 @@
                                         <string key="content">Um jardim tem necessidades especiais! E cada pequena coisa que ele precisa deve ser dosada.
 Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de terra crescer bem!</string>
                                         <attributes>
-                                            <font key="NSFont" size="14" name="Dosis-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -779,31 +779,47 @@ Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="SFu-jG-kbs">
-                                <rect key="frame" x="47" y="192" width="95" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK0-1U-e2P">
+                                <rect key="frame" x="185" y="186" width="77" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Girassol ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="Oss-H1-9fJ">
-                                <rect key="frame" x="177" y="192" width="95" height="120"/>
+                                <state key="normal" title="Button" image="Girassol ComVaso"/>
+                                <connections>
+                                    <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="jGa-tC-kTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-q6-GwR">
+                                <rect key="frame" x="193" y="346" width="60" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cacto1 ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="ZrX-vo-hnr">
-                                <rect key="frame" x="47" y="354" width="95" height="120"/>
+                                <state key="normal" title="Button" image="FlorRoxa ComVaso"/>
+                                <connections>
+                                    <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="cnI-Uu-Dgo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-Wz-anj">
+                                <rect key="frame" x="70" y="346" width="55" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRoxa ComVaso" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-cu-q6p">
-                                <rect key="frame" x="177" y="354" width="95" height="120"/>
+                                <state key="normal" title="Button" image="Cacto1 ComVaso"/>
+                                <connections>
+                                    <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="2uS-ZH-q2S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9I-xp-e63">
+                                <rect key="frame" x="59" y="188" width="78" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="FlorRosa ComVaso"/>
+                                <connections>
+                                    <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="gJa-KU-QYr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2bi-XC-gvN"/>
                     </view>
                     <connections>
-                        <outlet property="imagem1" destination="SFu-jG-kbs" id="jOF-6p-ndl"/>
-                        <outlet property="imagem2" destination="Oss-H1-9fJ" id="fup-N6-Ncx"/>
-                        <outlet property="imagem3" destination="ZrX-vo-hnr" id="Thb-7o-2gC"/>
-                        <outlet property="imagem4" destination="g8m-cu-q6p" id="QHu-CD-idH"/>
+                        <outlet property="flor1" destination="x9I-xp-e63" id="mcZ-Ut-MdL"/>
+                        <outlet property="flor2" destination="hK0-1U-e2P" id="8S1-nM-Kci"/>
+                        <outlet property="flor3" destination="Apm-Wz-anj" id="74j-rZ-ads"/>
+                        <outlet property="flor4" destination="2Nd-q6-GwR" id="XYi-iI-J1c"/>
                         <outlet property="instrucaoNoJogo" destination="GZ9-wv-rCT" id="Eiv-44-9qR"/>
                         <outlet property="numeroPontos" destination="hnC-2c-dVJ" id="l5o-7D-aW6"/>
                         <outlet property="suaPontuacao" destination="GlF-Na-Jns" id="OSo-aF-013"/>
