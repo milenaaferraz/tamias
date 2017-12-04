@@ -47,7 +47,6 @@ class Exercicio1ViewController: UIViewController {
         
         clicaNaAlternativa(alternativa2Outlet)
 
-
     }
     @IBOutlet weak var alternativa3Outlet: UIButton!
     @IBAction func alternativa3Botao(_ sender: Any) {

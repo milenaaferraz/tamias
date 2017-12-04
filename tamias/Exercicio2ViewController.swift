@@ -9,10 +9,10 @@
 import UIKit
 
 class Exercicio2ViewController:UIViewController {
-
-    @IBOutlet weak var core3: UIImageView!
-    @IBOutlet weak var core2: UIImageView!
-    @IBOutlet weak var core1: UIImageView!
+    
+    @IBOutlet weak var vida1: UIImageView!
+    @IBOutlet weak var vida3: UIImageView!
+    @IBOutlet weak var vida2: UIImageView!
     
     @IBOutlet weak var flor4: UIButton!
     @IBOutlet weak var flor3: UIButton!
@@ -26,15 +26,32 @@ class Exercicio2ViewController:UIViewController {
     var pontuacao = 0
     var timer: Timer? = nil
     var indice: Int = 0
+    var vidas = 3
     
     var clickUsuario: [Int] = []
     var sequenciaQueAparece: [Int] = []
     let listaDeSequencias: [[Int]] = [[1,2,3,4], [1,2,4,3], [1,3,2,4], [1,3,4,2], [1,4,3,2], [1,4,2,3], [2,1,3,4], [2,1,4,3], [2,3,1,4], [2,3,4,1], [2,4,1,3], [2,4,3,1], [3,1,2,4], [3,1,4,2], [3,2,1,4], [3,2,4,1], [3,4,1,2], [3,4,2,1], [4,1,2,3], [4,1,3,2], [4,2,1,3], [4,2,3,1], [4,3,1,2], [4,3,2,1]]
     
+    //// funcoes
+    // funcao errou
+    func errou() {
+        
+        self.vidas = self.vidas - 1
+        if self.vida3.image == #imageLiteral(resourceName: "coracaoCheio") {
+            self.vida3.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+        } else if self.vida2.image == #imageLiteral(resourceName: "coracaoCheio"){
+            self.vida2.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+        } else {
+            self.vida1.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+        }
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    
+        
         flor1.isHidden = true
         flor2.isHidden = true
         flor3.isHidden = true
@@ -49,6 +66,8 @@ class Exercicio2ViewController:UIViewController {
         let florCerta3 = #imageLiteral(resourceName: "Cacto1 ComVaso").withRenderingMode(.alwaysOriginal)
         flor3.setImage(florCerta3, for: .normal)
         
+        let florCerta4 = #imageLiteral(resourceName: "FlorRoxa ComVaso").withRenderingMode(.alwaysOriginal)
+        flor4.setImage(florCerta4, for: .normal)
         
         //DETERMINA A SEQUENCIA ALEATÓRIA DAS FLORES
         let numero = arc4random_uniform(UInt32(listaDeSequencias.count))
@@ -57,29 +76,43 @@ class Exercicio2ViewController:UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: true) { (timer) in
-            if self.indice == 4{
-                timer.invalidate()
-            }else{
-                let numero = self.sequenciaQueAparece[self.indice]
-    
-                if numero == 1{
-                    self.flor1.isHidden = false
-                }else if numero == 2{
-                    self.flor2.isHidden = false
-                }else if numero == 3{
-                    self.flor3.isHidden = false
-                }else if numero == 4{
-                    self.flor4.isHidden = false
+       
+            timer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: true) { (timer) in
+                if self.indice == 4{
+                    timer.invalidate()
+                }else{
+                    let numero = self.sequenciaQueAparece[self.indice]
+                    
+                    if numero == 1{
+                        self.flor1.isHidden = false
+                    }else if numero == 2{
+                        self.flor2.isHidden = false
+                    }else if numero == 3{
+                        self.flor3.isHidden = false
+                    }else if numero == 4{
+                        self.flor4.isHidden = false
+                    }
+                    
+                    self.indice = self.indice + 1
                 }
-    
-                self.indice = self.indice + 1
             }
-        }
+       
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+    }
+    
+    func gameOver() {
+        if clickUsuario == sequenciaQueAparece {   // array.cont < 4
+            pontuacao = pontuacao + 10
+            numeroPontos.text = "\(pontuacao)"
+            print(clickUsuario)
+            print(sequenciaQueAparece)
+        } else {
+            errou()
+        }
         
     }
 
@@ -93,7 +126,7 @@ class Exercicio2ViewController:UIViewController {
             clickUsuario.append(2)
             flor2.isHidden = true
             print(2)
-           
+            
         } else if sender as! UIButton == flor3 {
             clickUsuario.append(3)
             flor3.isHidden = true
@@ -103,16 +136,12 @@ class Exercicio2ViewController:UIViewController {
             flor4.isHidden = true
             print (4)
         }
-        if clickUsuario == sequenciaQueAparece {   // array.cont < 4
-            pontuacao = pontuacao + 10
-            numeroPontos.text = "\(pontuacao)"
-            
-            
-            print(clickUsuario)
-            print(sequenciaQueAparece)
+     
+        if flor1.isHidden && flor2.isHidden && flor3.isHidden && flor4.isHidden {
+            gameOver()
         }
         
+   
     }
     
 }
-
