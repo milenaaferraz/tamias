@@ -135,7 +135,8 @@ class Exercicio1ViewController: UIViewController {
     @IBAction func proximaBotao(_ sender: Any) {
         
         rodadaEx1 = rodadaEx1 + 1
-        progressBar.progress = progressBar.progress + 0.2
+        progressBar.progress = 1
+        
 
  
         if rodadaEx1 < 5 {
@@ -163,6 +164,7 @@ class Exercicio1ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
        
+        progressBar.progress = 1
         proximaOutlet.isHidden = true
         verRecompensaOutlet.isHidden = true
         feedbackLabel.isHidden = true

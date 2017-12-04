@@ -54,8 +54,7 @@ class MetasViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        #imageLiteral(resourceName: "exercicio1Icone")
+    
         let iconeExerc1 = UIImage(named: "exercicio1Icone")?.withRenderingMode(.alwaysOriginal)
         irParaExercOutlet1.setImage(iconeExerc1, for: .normal)
         let iconeExerc2 = UIImage(named: "exercicio2Icones")?.withRenderingMode(.alwaysOriginal)

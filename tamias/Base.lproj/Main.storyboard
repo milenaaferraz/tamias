@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Dosis-Medium.otf">
+        <array key="Dosis-Medium.ttf">
             <string>Dosis-Medium</string>
         </array>
-        <array key="Dosis-Regular.otf">
+        <array key="Dosis-Regular.ttf">
             <string>Dosis-Regular</string>
         </array>
     </customFonts>
@@ -596,6 +596,7 @@
                                 <state key="normal" image="exercicio2Icones"/>
                                 <connections>
                                     <action selector="irParaExercBotao2:" destination="OEH-QA-38o" eventType="touchUpInside" id="PEz-jM-E1H"/>
+                                    <segue destination="ROI-2v-rgV" kind="show" animates="NO" id="lr0-At-eTC"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gota NaBolinha" translatesAutoresizingMaskIntoConstraints="NO" id="bde-Hp-PaX">
@@ -697,10 +698,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Um jardim tem necessidades especiais! E cada pequena coisa que ele precisa deve ser dosada.
-Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de terra crescer bem!</string>
+                                        <string key="content">Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!</string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="16" name="Dosis-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -917,14 +917,21 @@ Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de
                                             <segue destination="RqB-2N-yi1" kind="show" id="zdt-xC-bfI"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="19f-ke-0yB">
+                                        <rect key="frame" x="151" y="41" width="19" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-e1-4pB">
+                                        <rect key="frame" x="178" y="41" width="19" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="m2H-Ik-4hD">
+                                        <rect key="frame" x="124" y="41" width="19" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="IwZ-Mc-grz">
-                                <rect key="frame" x="0.0" y="89.5" width="320" height="1.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-T6-AMJ">
                                 <rect key="frame" x="0.0" y="525" width="320" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1044,6 +1051,11 @@ Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="IwZ-Mc-grz">
+                                <rect key="frame" x="0.0" y="91" width="320" height="1.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dCj-wq-LnH"/>
@@ -1066,7 +1078,7 @@ Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC3-ps-DIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2979.375" y="-295.77464788732397"/>
+            <point key="canvasLocation" x="3016.875" y="-300"/>
         </scene>
         <!--Recompensa View Controller-->
         <scene sceneID="wMN-Hn-hJl">
@@ -1167,6 +1179,7 @@ Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de
         <image name="Gota NaBolinha" width="1128" height="1128"/>
         <image name="Sol" width="234" height="234"/>
         <image name="TerraVazia" width="657" height="427"/>
+        <image name="coracaoCheio" width="325" height="299"/>
         <image name="exercicio1Icone" width="1141" height="1143"/>
         <image name="exercicio1capa" width="1335" height="959"/>
         <image name="exercicio1imagem1" width="797" height="921"/>
@@ -1175,7 +1188,8 @@ Agora vamos escolher as medidas dos cuidados necessários para cada pedacinho de
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K7f-0O-sBw"/>
+        <segue reference="7DH-X1-thG"/>
+        <segue reference="zdt-xC-bfI"/>
         <segue reference="LFe-ep-5zC"/>
         <segue reference="9O4-yR-ZbS"/>
         <segue reference="Tr2-qd-0Km"/>
