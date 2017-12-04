@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Dosis-Medium.otf">
+        <array key="Dosis-Medium.ttf">
             <string>Dosis-Medium</string>
         </array>
-        <array key="Dosis-Regular.otf">
+        <array key="Dosis-Regular.ttf">
             <string>Dosis-Regular</string>
         </array>
     </customFonts>
@@ -262,110 +262,24 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="lH8-qo-45i"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nuH-ge-JRN">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaDoBau" id="nuH-ge-JRN" customClass="BauCollectionViewCell" customModule="tamias" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cacto1 NaBolinha" translatesAutoresizingMaskIntoConstraints="NO" id="Xlu-Pt-Hl1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xlu-Pt-Hl1">
                                                     <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-vr-l12">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
                                             </subviews>
                                         </view>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <size key="customSize" width="82" height="82"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="J5k-eN-lQ6">
-                                        <rect key="frame" x="95" y="0.0" width="82" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRosa NaBolinha" translatesAutoresizingMaskIntoConstraints="NO" id="dEX-bx-JO2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWq-vm-n9x">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
-                                            </subviews>
-                                        </view>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <size key="customSize" width="82" height="82"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="L4E-zh-tbU">
-                                        <rect key="frame" x="190" y="0.0" width="82" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FloresAmarl NaBolinha" translatesAutoresizingMaskIntoConstraints="NO" id="Ur0-MU-vqO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4F-eW-eCz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
-                                            </subviews>
-                                        </view>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <size key="customSize" width="82" height="82"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="C0f-ga-Fdd">
-                                        <rect key="frame" x="0.0" y="92" width="82" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlorRoxa NaBolinha" translatesAutoresizingMaskIntoConstraints="NO" id="s3R-pz-4wU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-od-VMW">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
-                                            </subviews>
-                                        </view>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <size key="customSize" width="82" height="82"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yGA-A6-cK9">
-                                        <rect key="frame" x="95" y="92" width="82" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cacto2 NaBolinha" translatesAutoresizingMaskIntoConstraints="NO" id="DsR-Pd-cuJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zA4-Qv-ket">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
-                                            </subviews>
-                                        </view>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <size key="customSize" width="82" height="82"/>
+                                        <connections>
+                                            <outlet property="celulaImageView" destination="Xlu-Pt-Hl1" id="TEo-Yi-8X6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -407,6 +321,7 @@
                         <viewLayoutGuide key="safeArea" id="v4P-Fo-slu"/>
                     </view>
                     <connections>
+                        <outlet property="BauCollectionView" destination="y4v-dN-f8I" id="nOQ-bW-jKa"/>
                         <outlet property="bauOutlet" destination="aip-xT-35N" id="wmE-7J-wUb"/>
                         <outlet property="jardimBotao" destination="14C-sp-5Kb" id="Gkp-Zd-6mp"/>
                         <outlet property="jardimOutlet" destination="14C-sp-5Kb" id="cnv-On-JEB"/>
@@ -1175,16 +1090,12 @@
     </scenes>
     <resources>
         <image name="Cacto1 ComVaso" width="678" height="1708"/>
-        <image name="Cacto1 NaBolinha" width="2247" height="2409"/>
         <image name="Cacto2 NaBolinha" width="2248" height="2308"/>
         <image name="CercaMelhor" width="2817" height="1037"/>
         <image name="CertoCinza" width="187" height="139"/>
         <image name="Estrela" width="233" height="222"/>
         <image name="FlorRosa ComVaso" width="1116" height="1905"/>
-        <image name="FlorRosa NaBolinha" width="2247" height="2367"/>
         <image name="FlorRoxa ComVaso" width="841" height="1904"/>
-        <image name="FlorRoxa NaBolinha" width="2248" height="2398"/>
-        <image name="FloresAmarl NaBolinha" width="2247" height="2376"/>
         <image name="Girassol ComVaso" width="1050" height="1855"/>
         <image name="Gota" width="148" height="207"/>
         <image name="Gota NaBolinha" width="1128" height="1128"/>
@@ -1200,8 +1111,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zdt-xC-bfI"/>
-        <segue reference="LFe-ep-5zC"/>
+        <segue reference="WXv-In-ufc"/>
         <segue reference="9O4-yR-ZbS"/>
-        <segue reference="Tr2-qd-0Km"/>
+        <segue reference="mZX-D0-7C3"/>
     </inferredMetricsTieBreakers>
 </document>

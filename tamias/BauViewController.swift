@@ -8,8 +8,13 @@
 
 import UIKit
 
-class BauViewController: UIViewController {
+class BauViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
 
+
+    
+    
+    @IBOutlet weak var BauCollectionView: UICollectionView!
+    
     @IBOutlet weak var metasOutlet: UIButton!
     @IBOutlet weak var metasBotao: UIButton!
     
@@ -28,6 +33,16 @@ class BauViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
     
 
     /*
