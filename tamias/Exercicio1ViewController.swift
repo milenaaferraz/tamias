@@ -12,6 +12,7 @@ class Exercicio1ViewController: UIViewController {
 
     var rodadaEx1 = 0
     var conjuntoPerguntas:[Exercicio1Pergunta] = []
+    var vidas = 3
     
     // barra superior
    
@@ -19,6 +20,11 @@ class Exercicio1ViewController: UIViewController {
     @IBOutlet weak var fecharOutlet: UIButton!
     @IBAction func fecharBotao(_ sender: Any) {
     }
+    // vidas
+    @IBOutlet weak var vida1: UIImageView!
+    @IBOutlet weak var vida2: UIImageView!
+    @IBOutlet weak var vida3: UIImageView!
+    
     @IBOutlet weak var progressBar: UIProgressView!
     
     // questao
@@ -56,9 +62,22 @@ class Exercicio1ViewController: UIViewController {
         
         if alternativa2Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
             feedbackLabel.text = "Você acertou! Parabéns 🌵"
+            if vida1.image == #imageLiteral(resourceName: "coracaoCheio") {
+                if vida2.image == #imageLiteral(resourceName: "coracaoCheio") {
+                    if vida3.image == #imageLiteral(resourceName: "coracaoCheio") {
+                        vida3.image = #imageLiteral(resourceName: "coracaoVazio")
+                    } else {
+                        vida2.image = #imageLiteral(resourceName: "coracaoVazio")
+                    } else {
+                        
+                    }
+                }
+            }
         }
         else if alternativa2Outlet.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
             feedbackLabel.text = "Poxa, você errou..."
+            vidas = vidas - 1
+            
         }
         
         if (rodadaEx1 < 4) {
@@ -158,6 +177,21 @@ class Exercicio1ViewController: UIViewController {
     }
     
     @IBOutlet weak var feedbackLabel: UILabel!
+    
+    var timer: Timer?
+    
+    func progressTime() {
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
+            
+            let change: Float = 0.1
+            self.progressBar.progress = self.progressBar.progress + change
+            
+            if self.progressBar.progress >= 1.0 {
+                self.timer?.invalidate()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

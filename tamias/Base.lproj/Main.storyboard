@@ -917,12 +917,12 @@
                                             <segue destination="RqB-2N-yi1" kind="show" id="zdt-xC-bfI"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="19f-ke-0yB">
-                                        <rect key="frame" x="151" y="41" width="19" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-e1-4pB">
                                         <rect key="frame" x="178" y="41" width="19" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="19f-ke-0yB">
+                                        <rect key="frame" x="151" y="41" width="19" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="m2H-Ik-4hD">
@@ -1074,6 +1074,9 @@
                         <outlet property="progressBar" destination="IwZ-Mc-grz" id="tyP-c2-BI8"/>
                         <outlet property="proximaOutlet" destination="fMU-T6-AMJ" id="BSa-vI-gQn"/>
                         <outlet property="verRecompensaOutlet" destination="e5M-XN-y0v" id="tNM-bj-FET"/>
+                        <outlet property="vida1" destination="m2H-Ik-4hD" id="zCc-3Q-fLH"/>
+                        <outlet property="vida2" destination="19f-ke-0yB" id="4JX-uu-44a"/>
+                        <outlet property="vida3" destination="wYo-e1-4pB" id="HLx-KE-GeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC3-ps-DIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1188,7 +1191,6 @@
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7DH-X1-thG"/>
         <segue reference="zdt-xC-bfI"/>
         <segue reference="LFe-ep-5zC"/>
         <segue reference="9O4-yR-ZbS"/>
