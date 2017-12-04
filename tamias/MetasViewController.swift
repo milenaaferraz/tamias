@@ -43,12 +43,10 @@ class MetasViewController: UIViewController {
     
     // Ir para exercícios
     // 1
-    @IBOutlet weak var irParaExercImagem1: UIImageView!
     @IBOutlet weak var irParaExercOutlet1: UIButton!
     @IBAction func irParaExercOutlet1(_ sender: Any) {
     }
     // 2
-    @IBOutlet weak var irParaExercImagem2: UIImageView!
     @IBOutlet weak var irParaExercOutlet2: UIButton!
     @IBAction func irParaExercBotao2(_ sender: Any) {
     }
@@ -56,6 +54,12 @@ class MetasViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        #imageLiteral(resourceName: "exercicio1Icone")
+        let iconeExerc1 = UIImage(named: "exercicio1Icone")?.withRenderingMode(.alwaysOriginal)
+        irParaExercOutlet1.setImage(iconeExerc1, for: .normal)
+        let iconeExerc2 = UIImage(named: "exercicio2Icones")?.withRenderingMode(.alwaysOriginal)
+        irParaExercOutlet2.setImage(iconeExerc2, for: .normal)
 
         // Do any additional setup after loading the view.
     }
