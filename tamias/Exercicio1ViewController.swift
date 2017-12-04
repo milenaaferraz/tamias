@@ -13,18 +13,20 @@ class Exercicio1ViewController: UIViewController {
     var rodadaEx1 = 0
     var conjuntoPerguntas:[Exercicio1Pergunta] = []
     var vidas = 3
+    var timer: Timer?
     
     // barra superior
-   
     @IBOutlet weak var barraSuperiorView: UIView!
     @IBOutlet weak var fecharOutlet: UIButton!
     @IBAction func fecharBotao(_ sender: Any) {
     }
+    
     // vidas
     @IBOutlet weak var vida1: UIImageView!
     @IBOutlet weak var vida2: UIImageView!
     @IBOutlet weak var vida3: UIImageView!
     
+    // progresso
     @IBOutlet weak var progressBar: UIProgressView!
     
     // questao
@@ -33,43 +35,6 @@ class Exercicio1ViewController: UIViewController {
     
     // alternativas
     @IBOutlet weak var alternativasView: UIView!
-    
-    // funcao de clicar nas alternativas
-    func clicaNaAlternativa (_ alternativa:UIButton) {
-        
-        if alternativa.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Você acertou! Parabéns 🌵"
-        }
-        else if alternativa.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
-            
-            feedbackLabel.text = "Poxa, você errou..."
-            
-            vidas = vidas - 1
-            if vida3.image == #imageLiteral(resourceName: "coracaoCheio") {
-                vida3.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
-            } else if vida2.image == #imageLiteral(resourceName: "coracaoCheio"){
-                vida2.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
-            } else {
-                vida1.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
-            }
-        }
-        
-        if (rodadaEx1 < 4) {
-            
-            if vidas == 0 {
-                proximaOutlet.setTitle("TERMINAR", for: .normal)
-            }
-            proximaOutlet.isHidden = false
-            
-        } else {
-            verRecompensaOutlet.isHidden = false
-        }
-        
-        alternativasView.isHidden = true
-        feedbackLabel.isHidden = false
-    }
-    
-    
     @IBOutlet weak var alternativa1Outlet: UIButton!
     @IBAction func alternativa1Botao(_ sender: Any) {
         
@@ -96,17 +61,20 @@ class Exercicio1ViewController: UIViewController {
         
     }
     
+    // feedback
+    @IBOutlet weak var feedbackLabel: UILabel!
+    
+    // ver recompensa
     @IBOutlet weak var verRecompensaOutlet: UIButton!
     @IBAction func verRecompensaBotao(_ sender: Any) {
     }
     
+    // proxima
     @IBOutlet weak var proximaOutlet: UIButton!
     @IBAction func proximaBotao(_ sender: Any) {
         
         rodadaEx1 = rodadaEx1 + 1
         progressBar.progress = 1
-        
-
  
         if rodadaEx1 < 5 {
            
@@ -123,22 +91,71 @@ class Exercicio1ViewController: UIViewController {
             
             alternativasView.isHidden = false
         }
-
+        
     }
     
-    @IBOutlet weak var feedbackLabel: UILabel!
+    //// funcoes
+    // funcao errou
+    func errou() {
+        
+        self.vidas = self.vidas - 1
+        if self.vida3.image == #imageLiteral(resourceName: "coracaoCheio") {
+            self.vida3.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+        } else if self.vida2.image == #imageLiteral(resourceName: "coracaoCheio"){
+            self.vida2.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+        } else {
+            self.vida1.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+        }
+        
+    }
     
-    var timer: Timer?
+    // funcao de clicar nas alternativas
+    func clicaNaAlternativa (_ alternativa:UIButton) {
+        
+        self.progressBar.progress = 0.0
+        
+        if alternativa.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
+            feedbackLabel.text = "Você acertou! Parabéns 🌵"
+        }
+        else if alternativa.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
+            
+            feedbackLabel.text = "Poxa, você errou..."
+            errou()
+        }
+        
+        if (rodadaEx1 < 4) {
+            
+            if vidas == 0 {
+                verRecompensaOutlet.setTitle("TERMINAR", for: .normal)
+            }
+            verRecompensaOutlet.isHidden = false
+            
+        } else {
+            verRecompensaOutlet.isHidden = false
+        }
+        
+        alternativasView.isHidden = true
+        feedbackLabel.isHidden = false
+    }
     
-    func progressTime() {
+    // timer da progress bar
+    func progressTimer () {
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
             
-            let change: Float = 0.1
-            self.progressBar.progress = self.progressBar.progress + change
+            self.progressBar.progress = self.progressBar.progress - 0.05
             
-            if self.progressBar.progress >= 1.0 {
+            if self.progressBar.progress <= 0 {
+                
+                self.alternativasView.isHidden = true
+                self.proximaOutlet.isHidden = false
+                self.feedbackLabel.text = "Ah, o tempo acabou..."
+                self.feedbackLabel.isHidden = false
+
+                self.errou()
+                
                 self.timer?.invalidate()
+                
             }
         }
     }
