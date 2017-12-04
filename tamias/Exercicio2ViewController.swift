@@ -10,8 +10,10 @@ import UIKit
 
 class Exercicio2ViewController:UIViewController {
 
-    var timer: Timer? = nil
-    var indice: Int = 0
+    @IBOutlet weak var core3: UIImageView!
+    @IBOutlet weak var core2: UIImageView!
+    @IBOutlet weak var core1: UIImageView!
+    
     @IBOutlet weak var flor4: UIButton!
     @IBOutlet weak var flor3: UIButton!
     @IBOutlet weak var flor2: UIButton!
@@ -21,6 +23,10 @@ class Exercicio2ViewController:UIViewController {
     @IBOutlet weak var instrucaoNoJogo: UILabel!
     @IBAction func botaox(_ sender: Any) {
     }
+    var pontuacao = 0
+    var timer: Timer? = nil
+    var indice: Int = 0
+    
     var clickUsuario: [Int] = []
     var sequenciaQueAparece: [Int] = []
     let listaDeSequencias: [[Int]] = [[1,2,3,4], [1,2,4,3], [1,3,2,4], [1,3,4,2], [1,4,3,2], [1,4,2,3], [2,1,3,4], [2,1,4,3], [2,3,1,4], [2,3,4,1], [2,4,1,3], [2,4,3,1], [3,1,2,4], [3,1,4,2], [3,2,1,4], [3,2,4,1], [3,4,1,2], [3,4,2,1], [4,1,2,3], [4,1,3,2], [4,2,1,3], [4,2,3,1], [4,3,1,2], [4,3,2,1]]
@@ -28,26 +34,35 @@ class Exercicio2ViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
         flor1.isHidden = true
         flor2.isHidden = true
         flor3.isHidden = true
         flor4.isHidden = true
+        
+        let florCerta1 = #imageLiteral(resourceName: "FlorRosa ComVaso").withRenderingMode(.alwaysOriginal)
+        flor1.setImage(florCerta1, for: .normal)
+        
+        let florCerta2 = #imageLiteral(resourceName: "Girassol ComVaso").withRenderingMode(.alwaysOriginal)
+        flor2.setImage(florCerta2, for: .normal)
+        
+        let florCerta3 = #imageLiteral(resourceName: "Cacto1 ComVaso").withRenderingMode(.alwaysOriginal)
+        flor3.setImage(florCerta3, for: .normal)
+        
         
         //DETERMINA A SEQUENCIA ALEATÓRIA DAS FLORES
         let numero = arc4random_uniform(UInt32(listaDeSequencias.count))
         print(numero)
         sequenciaQueAparece = listaDeSequencias[Int(numero)]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-          timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+    
+    override func viewWillAppear(_ animated: Bool) {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: true) { (timer) in
             if self.indice == 4{
                 timer.invalidate()
             }else{
                 let numero = self.sequenciaQueAparece[self.indice]
-                
+    
                 if numero == 1{
                     self.flor1.isHidden = false
                 }else if numero == 2{
@@ -57,26 +72,46 @@ class Exercicio2ViewController:UIViewController {
                 }else if numero == 4{
                     self.flor4.isHidden = false
                 }
-                
+    
                 self.indice = self.indice + 1
             }
         }
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        
+    }
+    
     @IBAction func click(_ sender: Any) {
         if sender as! UIButton == flor1{
             clickUsuario.append(1)
+            flor1.isHidden = true
             print(1)
         } else if sender as! UIButton == flor2{
             clickUsuario.append(2)
+            flor2.isHidden = true
             print(2)
+           
         } else if sender as! UIButton == flor3 {
             clickUsuario.append(3)
+            flor3.isHidden = true
             print(3)
         } else if sender as! UIButton == flor4 {
             clickUsuario.append(4)
+            flor4.isHidden = true
             print (4)
         }
+        if clickUsuario == sequenciaQueAparece {   // array.cont < 4
+            pontuacao = pontuacao + 10
+            numeroPontos.text = "\(pontuacao)"
+            
+            
+            print(clickUsuario)
+            print(sequenciaQueAparece)
+        }
+        
     }
     
     /*

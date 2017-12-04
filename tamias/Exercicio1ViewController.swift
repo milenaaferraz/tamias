@@ -45,7 +45,42 @@ class Exercicio1ViewController: UIViewController {
     @IBOutlet weak var alternativa2Outlet: UIButton!
     @IBAction func alternativa2Botao(_ sender: Any) {
         
+<<<<<<< Updated upstream
         clicaNaAlternativa(alternativa2Outlet)
+=======
+//        if alternativa2Outlet.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
+//            feedbackLabel.text = "Você acertou! Parabéns 🌵"
+//            if vida1.image == #imageLiteral(resourceName: "coracaoCheio") {
+//                if vida2.image == #imageLiteral(resourceName: "coracaoCheio") {
+//                    if vida3.image == #imageLiteral(resourceName: "coracaoCheio") {
+//                        vida3.image = #imageLiteral(resourceName: "coracaoVazio")
+//                    } else {
+//                        vida2.image = #imageLiteral(resourceName: "coracaoVazio")
+//                    } else {
+//
+//                    }
+//                }
+//            }
+//        }
+//        else if alternativa2Outlet.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
+//            feedbackLabel.text = "Poxa, você errou..."
+//            vidas = vidas - 1
+//
+//        }
+//        
+        if (rodadaEx1 < 4) {
+            proximaOutlet.isHidden = false
+        } else {
+            verRecompensaOutlet.isHidden = false
+        }
+        alternativasView.isHidden = true
+        feedbackLabel.isHidden = false
+        
+        alternativa1Outlet.setTitle("", for: .normal)
+        alternativa2Outlet.setTitle("", for: .normal)
+        alternativa3Outlet.setTitle("", for: .normal)
+        alternativa4Outlet.setTitle("", for: .normal)
+>>>>>>> Stashed changes
 
     }
     @IBOutlet weak var alternativa3Outlet: UIButton!
