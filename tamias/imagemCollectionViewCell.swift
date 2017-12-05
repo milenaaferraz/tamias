@@ -1,5 +1,5 @@
 //
-//  BauCollectionViewCell.swift
+//  imagemCollectionViewCell.swift
 //  tamias
 //
 //  Created by Ana Flávia Nascimento Godoy on 12/4/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BauCollectionViewCell: UICollectionViewCell {
+class imagemCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var celulaImageView: UIImageView!
+    @IBOutlet weak var imagemDaCelula: UIImageView!
 }

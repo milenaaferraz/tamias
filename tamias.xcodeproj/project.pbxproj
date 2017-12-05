@@ -10,15 +10,13 @@
 		05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */; };
 		05C9AD471FD0A901002F9D7F /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD401FD0A901002F9D7F /* Dosis-SemiBold.ttf */; };
 		05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */; };
-		05C9AD491FD0A901002F9D7F /* Dosis-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD421FD0A901002F9D7F /* Dosis-ExtraBold.ttf */; };
+		05C9AD491FD0A901002F9D7F /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD421FD0A901002F9D7F /* Dosis-Bold.ttf */; };
 		05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */; };
 		05C9AD4B1FD0A901002F9D7F /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD441FD0A901002F9D7F /* Dosis-Bold.ttf */; };
 		05C9AD4C1FD0A901002F9D7F /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD451FD0A901002F9D7F /* Dosis-ExtraLight.ttf */; };
 		05D413391FCED4A20093491C /* MetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413381FCED4A20093491C /* MetasViewController.swift */; };
-		05D4133B1FCED4BE0093491C /* BauCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133A1FCED4BE0093491C /* BauCollectionViewController.swift */; };
 		05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */; };
 		05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */; };
-		05D413411FCEE1370093491C /* BauViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413401FCEE1370093491C /* BauViewController.swift */; };
 		05D413451FCF4F8E0093491C /* Exercicio1Pergunta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413441FCF4F8E0093491C /* Exercicio1Pergunta.swift */; };
 		05D413471FCF52EB0093491C /* Exercicio1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413461FCF52EB0093491C /* Exercicio1ViewController.swift */; };
 		05D413491FCF531D0093491C /* PreExercicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413481FCF531D0093491C /* PreExercicioViewController.swift */; };
@@ -30,7 +28,10 @@
 		28DCCA321FCD878B00610076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DCCA301FCD878B00610076 /* LaunchScreen.storyboard */; };
 		28DCCA3D1FCD878B00610076 /* tamiasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA3C1FCD878B00610076 /* tamiasTests.swift */; };
 		28DCCA481FCD878B00610076 /* tamiasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA471FCD878B00610076 /* tamiasUITests.swift */; };
-		3D1A27391FD5C1BA00DFAFAA /* BauCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A27381FD5C1BA00DFAFAA /* BauCollectionViewCell.swift */; };
+		3D1A273F1FD5EDD800DFAFAA /* imagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */; };
+		3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */; };
+		3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */; };
+		3D72DBBB1FD6E65B00ED49D1 /* cacto 1 na bolinha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */; };
 		3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,15 +56,13 @@
 		05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.ttf"; path = "../../../../Downloads/Dosis/Dosis-Light.ttf"; sourceTree = "<group>"; };
 		05C9AD401FD0A901002F9D7F /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-SemiBold.ttf"; path = "../../../../Downloads/Dosis/Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
 		05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Medium.ttf"; path = "../../../../Downloads/Dosis/Dosis-Medium.ttf"; sourceTree = "<group>"; };
-		05C9AD421FD0A901002F9D7F /* Dosis-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-ExtraBold.ttf"; path = "../../../../Downloads/Dosis/Dosis-ExtraBold.ttf"; sourceTree = "<group>"; };
+		05C9AD421FD0A901002F9D7F /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Bold.ttf"; path = "../../../../Downloads/Dosis/Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.ttf"; path = "../../../../Downloads/Dosis/Dosis-Regular.ttf"; sourceTree = "<group>"; };
 		05C9AD441FD0A901002F9D7F /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		05C9AD451FD0A901002F9D7F /* Dosis-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-ExtraLight.ttf"; path = "../../../../Downloads/Dosis/Dosis-ExtraLight.ttf"; sourceTree = "<group>"; };
 		05D413381FCED4A20093491C /* MetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasViewController.swift; sourceTree = "<group>"; };
-		05D4133A1FCED4BE0093491C /* BauCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BauCollectionViewController.swift; sourceTree = "<group>"; };
 		05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecompensaViewController.swift; sourceTree = "<group>"; };
-		05D413401FCEE1370093491C /* BauViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BauViewController.swift; sourceTree = "<group>"; };
 		05D413441FCF4F8E0093491C /* Exercicio1Pergunta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercicio1Pergunta.swift; sourceTree = "<group>"; };
 		05D413461FCF52EB0093491C /* Exercicio1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercicio1ViewController.swift; sourceTree = "<group>"; };
 		05D413481FCF531D0093491C /* PreExercicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreExercicioViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +80,10 @@
 		28DCCA431FCD878B00610076 /* tamiasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamiasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DCCA471FCD878B00610076 /* tamiasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamiasUITests.swift; sourceTree = "<group>"; };
 		28DCCA491FCD878B00610076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D1A27381FD5C1BA00DFAFAA /* BauCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BauCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essevaidarcertoViewController.swift; sourceTree = "<group>"; };
+		3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sementes.storyboard; sourceTree = "<group>"; };
+		3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cacto 1 na bolinha.png"; sourceTree = "<group>"; };
 		3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,13 +138,14 @@
 				28DCCA291FCD878B00610076 /* ViewController.swift */,
 				28DCCA271FCD878B00610076 /* AppDelegate.swift */,
 				28DCCA2B1FCD878B00610076 /* Main.storyboard */,
+				3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */,
 				282DAEE01FCF578300B59CAC /* Exercicio2ViewController.swift */,
 				05D413481FCF531D0093491C /* PreExercicioViewController.swift */,
 				05D413461FCF52EB0093491C /* Exercicio1ViewController.swift */,
 				05D413441FCF4F8E0093491C /* Exercicio1Pergunta.swift */,
-				05D413401FCEE1370093491C /* BauViewController.swift */,
-				3D1A27381FD5C1BA00DFAFAA /* BauCollectionViewCell.swift */,
-				05D4133A1FCED4BE0093491C /* BauCollectionViewController.swift */,
+				3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */,
+				3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */,
+				3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */,
 				05D413381FCED4A20093491C /* MetasViewController.swift */,
 				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
 				05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */,
@@ -177,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				05C9AD441FD0A901002F9D7F /* Dosis-Bold.ttf */,
-				05C9AD421FD0A901002F9D7F /* Dosis-ExtraBold.ttf */,
+				05C9AD421FD0A901002F9D7F /* Dosis-Bold.ttf */,
 				05C9AD451FD0A901002F9D7F /* Dosis-ExtraLight.ttf */,
 				05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */,
 				05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */,
@@ -296,11 +299,13 @@
 			files = (
 				05C9AD4B1FD0A901002F9D7F /* Dosis-Bold.ttf in Resources */,
 				28DCCA321FCD878B00610076 /* LaunchScreen.storyboard in Resources */,
+				3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */,
 				28DCCA2F1FCD878B00610076 /* Assets.xcassets in Resources */,
 				05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */,
 				05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */,
 				05C9AD4C1FD0A901002F9D7F /* Dosis-ExtraLight.ttf in Resources */,
-				05C9AD491FD0A901002F9D7F /* Dosis-ExtraBold.ttf in Resources */,
+				05C9AD491FD0A901002F9D7F /* Dosis-Bold.ttf in Resources */,
+				3D72DBBB1FD6E65B00ED49D1 /* cacto 1 na bolinha.png in Resources */,
 				05C9AD471FD0A901002F9D7F /* Dosis-SemiBold.ttf in Resources */,
 				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
 				28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */,
@@ -328,17 +333,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1A273F1FD5EDD800DFAFAA /* imagemCollectionViewCell.swift in Sources */,
 				28DCCA2A1FCD878B00610076 /* ViewController.swift in Sources */,
 				05D413491FCF531D0093491C /* PreExercicioViewController.swift in Sources */,
-				05D413411FCEE1370093491C /* BauViewController.swift in Sources */,
 				05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */,
-				3D1A27391FD5C1BA00DFAFAA /* BauCollectionViewCell.swift in Sources */,
 				3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */,
+				3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */,
 				282DAEE11FCF578300B59CAC /* Exercicio2ViewController.swift in Sources */,
 				05D413471FCF52EB0093491C /* Exercicio1ViewController.swift in Sources */,
 				05D413391FCED4A20093491C /* MetasViewController.swift in Sources */,
 				28DCCA281FCD878B00610076 /* AppDelegate.swift in Sources */,
-				05D4133B1FCED4BE0093491C /* BauCollectionViewController.swift in Sources */,
 				05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */,
 				05D413451FCF4F8E0093491C /* Exercicio1Pergunta.swift in Sources */,
 			);
