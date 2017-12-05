@@ -76,7 +76,7 @@ class Exercicio1ViewController: UIViewController {
         rodadaEx1 = rodadaEx1 + 1
         progressBar.isHidden = false
  
-        if rodadaEx1 < 5 {
+        if rodadaEx1 < 5 && vidas > 0 {
            
             alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
             alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
@@ -112,23 +112,27 @@ class Exercicio1ViewController: UIViewController {
     
     // funcao de clicar nas alternativas
     func clicaNaAlternativa (_ alternativa:UIButton) {
-                
+        
         if alternativa.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
-            feedbackLabel.text = "Você acertou! Parabéns!"
+            feedbackLabel.text = "Você acertou!"
         }
         else if alternativa.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
             
-            feedbackLabel.text = "Poxa, você errou..."
+            feedbackLabel.text = "Ah, você errou..."
             errou()
         }
         
+       
+        if vidas <= 0 {
+            feedbackLabel.text = "Você não acertou dessa vez e suas vidas acabaram"
+            verRecompensaOutlet.setTitle("TERMINAR", for: .normal)
+            verRecompensaOutlet.backgroundColor = UIColor(red: (122/255), green: (112/255), blue: (106/255), alpha: 1)
+            verRecompensaOutlet.isHidden = false
+        }
+        
+        
         if (rodadaEx1 < 4) {
             
-            if vidas <= 0 {
-                verRecompensaOutlet.setTitle("TERMINAR", for: .normal)
-                verRecompensaOutlet.backgroundColor = UIColor.blue
-                verRecompensaOutlet.isHidden = false
-            }
             proximaOutlet.isHidden = false
             
         } else {
@@ -151,10 +155,17 @@ class Exercicio1ViewController: UIViewController {
                 
                 self.alternativasView.isHidden = true
                 self.proximaOutlet.isHidden = false
-                self.feedbackLabel.text = "Ah, o tempo acabou..."
+                self.feedbackLabel.text = "O tempo acabou..."
                 self.feedbackLabel.isHidden = false
 
+                // vidas acabam
                 self.vidas = 0
+                self.verRecompensaOutlet.setTitle("TERMINAR", for: .normal)
+                self.verRecompensaOutlet.backgroundColor = UIColor(red: (122/255), green: (112/255), blue: (106/255), alpha: 1)
+                self.verRecompensaOutlet.isHidden = false
+                    self.vida3.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+                    self.vida2.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
+                    self.vida1.image = #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
                 
                 self.timer?.invalidate()
                 
@@ -169,7 +180,7 @@ class Exercicio1ViewController: UIViewController {
             if vidas <= 0 {
                 viewController.titulo = "POXA!"
                 viewController.mensagem = "VOCÊ PERDEU"
-                viewController.legenda = "Infelizmente, você não conseguiu a recompensa... Tente de novo!"
+                viewController.legenda = "Infelizmente, você não conseguiu cuidar de todas as terrinhas... Tente de novo!"
                 viewController.imagem = #imageLiteral(resourceName: "Mosca").withRenderingMode(.alwaysOriginal)
             } else {
                 viewController.titulo = "PARABÉNS"
@@ -185,6 +196,7 @@ class Exercicio1ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
        
+        progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 2)
         progressBar.progress = 1
         progressTimer()
         

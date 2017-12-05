@@ -15,7 +15,7 @@ class RecompensaViewController: UIViewController {
     var mensagem:String = ""
     var legenda:String = ""
     var imagem:UIImage = #imageLiteral(resourceName: "Mosca")
-        
+    
     @IBOutlet weak var parabensLabel: UILabel!
     
     @IBOutlet weak var ganhouLabel: UILabel!
