@@ -31,8 +31,7 @@
 		3D1A273F1FD5EDD800DFAFAA /* imagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */; };
 		3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */; };
 		3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */; };
-		3D72DBBB1FD6E65B00ED49D1 /* c1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBBA1FD6E65900ED49D1 /* c1.png */; };
-		3D72DBBD1FD6E82500ED49D1 /* c2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBBC1FD6E82200ED49D1 /* c2.png */; };
+		3D72DBBB1FD6E65B00ED49D1 /* cacto 1 na bolinha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */; };
 		3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +83,7 @@
 		3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essevaidarcertoViewController.swift; sourceTree = "<group>"; };
 		3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sementes.storyboard; sourceTree = "<group>"; };
-		3D72DBBA1FD6E65900ED49D1 /* c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c1.png; sourceTree = "<group>"; };
-		3D72DBBC1FD6E82200ED49D1 /* c2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c2.png; sourceTree = "<group>"; };
+		3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cacto 1 na bolinha.png"; sourceTree = "<group>"; };
 		3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,15 +138,14 @@
 				28DCCA291FCD878B00610076 /* ViewController.swift */,
 				28DCCA271FCD878B00610076 /* AppDelegate.swift */,
 				28DCCA2B1FCD878B00610076 /* Main.storyboard */,
+				3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */,
 				282DAEE01FCF578300B59CAC /* Exercicio2ViewController.swift */,
 				05D413481FCF531D0093491C /* PreExercicioViewController.swift */,
 				05D413461FCF52EB0093491C /* Exercicio1ViewController.swift */,
 				05D413441FCF4F8E0093491C /* Exercicio1Pergunta.swift */,
-				3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */,
 				3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */,
 				3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */,
-				3D72DBBA1FD6E65900ED49D1 /* c1.png */,
-				3D72DBBC1FD6E82200ED49D1 /* c2.png */,
+				3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */,
 				05D413381FCED4A20093491C /* MetasViewController.swift */,
 				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
 				05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */,
@@ -300,7 +297,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D72DBBD1FD6E82500ED49D1 /* c2.png in Resources */,
 				05C9AD4B1FD0A901002F9D7F /* Dosis-Bold.ttf in Resources */,
 				28DCCA321FCD878B00610076 /* LaunchScreen.storyboard in Resources */,
 				3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */,
@@ -309,7 +305,7 @@
 				05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */,
 				05C9AD4C1FD0A901002F9D7F /* Dosis-ExtraLight.ttf in Resources */,
 				05C9AD491FD0A901002F9D7F /* Dosis-Bold.ttf in Resources */,
-				3D72DBBB1FD6E65B00ED49D1 /* c1.png in Resources */,
+				3D72DBBB1FD6E65B00ED49D1 /* cacto 1 na bolinha.png in Resources */,
 				05C9AD471FD0A901002F9D7F /* Dosis-SemiBold.ttf in Resources */,
 				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
 				28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */,
