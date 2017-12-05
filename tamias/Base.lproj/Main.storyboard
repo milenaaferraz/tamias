@@ -794,6 +794,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="UEo-cM-Pbp"/>
+                                    <action selector="entendiBotao:" destination="dkX-i1-nmh" eventType="touchUpInside" id="pfN-Fb-9Xa"/>
                                     <segue destination="XmA-bq-GpO" kind="show" id="ZqZ-rM-8IH"/>
                                 </connections>
                             </button>
@@ -801,8 +802,33 @@
                                 <rect key="frame" x="87" y="260" width="146" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lembre-se que, para cada pedaço de terra, você precisa de 3 gotas de água!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHf-DN-dPe">
-                                <rect key="frame" x="46" y="133" width="228" height="94"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você terá 3 vidas para responder perguntas sobre suas terrinhas. Você tem 1 minuto e meio, preste atenção nas medidas!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHf-DN-dPe">
+                                <rect key="frame" x="54" y="198" width="212" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0G-nl-tEt">
+                                <rect key="frame" x="61" y="393" width="199" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="3At-yW-TnW"/>
+                                    <action selector="okBotao:" destination="dkX-i1-nmh" eventType="touchUpInside" id="fgh-na-HSS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lembre-se que, para cada pedaço de terra, você precisa de 3 gotas de água!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnj-9S-zVV">
+                                <rect key="frame" x="49" y="143" width="222" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -812,6 +838,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VhM-ug-6Jg"/>
                     </view>
+                    <connections>
+                        <outlet property="entendiOutlet" destination="nO4-gc-7XM" id="MOd-bz-vdu"/>
+                        <outlet property="okOutlet" destination="y0G-nl-tEt" id="zHp-3N-RYt"/>
+                        <outlet property="proporcaoImagem" destination="Tq1-oP-Pr2" id="Mn2-wn-E7c"/>
+                        <outlet property="proporcaoLabel" destination="cnj-9S-zVV" id="rar-HP-j0I"/>
+                        <outlet property="regrasLabel" destination="LHf-DN-dPe" id="x8R-pO-Fvy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tb9-Ge-b5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1144,7 +1177,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Tr2-qd-0Km"/>
-        <segue reference="zdt-xC-bfI"/>
-        <segue reference="pc0-wk-935"/>
+        <segue reference="mgK-46-Gr4"/>
+        <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>

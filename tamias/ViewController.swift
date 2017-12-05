@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var qntdDeSol:Int = 0
+    
     @IBOutlet weak var imagemDoFundo: UIImageView!
     
     // Jardim

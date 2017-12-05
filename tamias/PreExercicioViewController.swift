@@ -9,8 +9,50 @@
 import UIKit
 
 class PreExercicioViewController: UIViewController {
-
+    
+    var energia = 5
+    
+    @IBOutlet weak var regrasLabel: UILabel!
+    @IBOutlet weak var proporcaoLabel: UILabel!
+    
+    @IBOutlet weak var proporcaoImagem: UIImageView!
+    
+    @IBOutlet weak var entendiOutlet: UIButton!
+    @IBAction func entendiBotao(_ sender: Any) {
+        
+        
+        energia = energia - 1
+        
+    }
+    
+    @IBOutlet weak var okOutlet: UIButton!
+    @IBAction func okBotao(_ sender: Any) {
+        
+        entendiOutlet.isHidden = false
+        proporcaoImagem.isHidden = false
+        proporcaoLabel.isHidden = false
+       
+        regrasLabel.isHidden = true
+        okOutlet.isHidden = true
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ViewController {
+            
+            if energia > 0 {
+                viewController.qntdDeSol = energia
+            } else {
+                viewController.qntdDeSol = energia
+            }
+        }
+    }
     override func viewDidLoad() {
+        
+        entendiOutlet.isHidden = true
+        proporcaoLabel.isHidden = true
+        proporcaoImagem.isHidden = true
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
