@@ -31,7 +31,7 @@
 		3D1A273F1FD5EDD800DFAFAA /* imagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */; };
 		3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */; };
 		3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */; };
-		3D72DBBB1FD6E65B00ED49D1 /* cacto 1 na bolinha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */; };
+		3D72DBBB1FD6E65B00ED49D1 /* c1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBBA1FD6E65900ED49D1 /* c1.png */; };
 		3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +83,7 @@
 		3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essevaidarcertoViewController.swift; sourceTree = "<group>"; };
 		3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sementes.storyboard; sourceTree = "<group>"; };
-		3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cacto 1 na bolinha.png"; sourceTree = "<group>"; };
+		3D72DBBA1FD6E65900ED49D1 /* c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c1.png; sourceTree = "<group>"; };
 		3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +145,7 @@
 				05D413441FCF4F8E0093491C /* Exercicio1Pergunta.swift */,
 				3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */,
 				3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */,
-				3D72DBBA1FD6E65900ED49D1 /* cacto 1 na bolinha.png */,
+				3D72DBBA1FD6E65900ED49D1 /* c1.png */,
 				05D413381FCED4A20093491C /* MetasViewController.swift */,
 				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
 				05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */,

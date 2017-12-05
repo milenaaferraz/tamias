@@ -56,6 +56,9 @@
                                 <state key="normal" title="JARDIM">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="doI-qT-6PG" kind="show" animates="NO" id="zFX-GT-JcB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKy-ri-jh8">
                                 <rect key="frame" x="212" y="525" width="108" height="43"/>
