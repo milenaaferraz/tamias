@@ -38,8 +38,6 @@ class PreExercicioViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? ViewController {
-            
-            viewController.subtrairSol1 = energia1
            
         }
     }
