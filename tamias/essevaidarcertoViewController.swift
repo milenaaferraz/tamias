@@ -70,8 +70,8 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var collectionViewBoa: UICollectionView!
     
     
-    @IBOutlet weak var numeroDeItens: UILabel!
     
+    @IBOutlet weak var numeroDeItens: UILabel!
     var itensDoJogo = ["c1.png"] // testando com os itens do jogo
     
     
