@@ -21,7 +21,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TelaInicial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +180,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LCD-gW-1Gj" kind="show" id="VfE-oT-fuw"/>
+                                    <segue destination="LCD-gW-1Gj" kind="show" animates="NO" id="VfE-oT-fuw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thd-Ar-KeV">
@@ -333,7 +333,7 @@
         <!--Metas View Controller-->
         <scene sceneID="V8V-8z-EeI">
             <objects>
-                <viewController id="OEH-QA-38o" customClass="MetasViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MetasViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OEH-QA-38o" customClass="MetasViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kfx-oi-QsR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1156,5 +1156,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="K7f-0O-sBw"/>
         <segue reference="inb-Db-Mcl"/>
+        <segue reference="x2A-Gv-MG8"/>
     </inferredMetricsTieBreakers>
 </document>
