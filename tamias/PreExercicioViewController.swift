@@ -10,7 +10,7 @@ import UIKit
 
 class PreExercicioViewController: UIViewController {
     
-    var energia = 5
+    var energia1 = 5
     
     @IBOutlet weak var regrasLabel: UILabel!
     @IBOutlet weak var proporcaoLabel: UILabel!
@@ -20,8 +20,7 @@ class PreExercicioViewController: UIViewController {
     @IBOutlet weak var entendiOutlet: UIButton!
     @IBAction func entendiBotao(_ sender: Any) {
         
-        
-        energia = energia - 1
+        energia1 = energia1 - 1
         
     }
     
@@ -40,11 +39,8 @@ class PreExercicioViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? ViewController {
             
-            if energia > 0 {
-                viewController.qntdDeSol = energia
-            } else {
-                viewController.qntdDeSol = energia
-            }
+            viewController.subtrairSol1 = energia1
+           
         }
     }
     override func viewDidLoad() {

@@ -196,7 +196,6 @@
                         <color key="backgroundColor" red="0.70397619579374304" green="0.84933332668156658" blue="0.54921311414577956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dy6-dK-BJ3"/>
                     <connections>
                         <outlet property="bauBotao" destination="GF1-Pv-Ssy" id="3Xt-I7-Yfd"/>
                         <outlet property="bauOutlet" destination="GF1-Pv-Ssy" id="EgB-Po-Ivi"/>
@@ -277,9 +276,6 @@
                                 <state key="normal" title="JARDIM">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="XNn-WX-YCK" kind="show" animates="NO" id="mZX-D0-7C3"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aip-xT-35N">
                                 <rect key="frame" x="212" y="525" width="108" height="43"/>
@@ -461,7 +457,7 @@
                                 </state>
                                 <connections>
                                     <action selector="jardimBotao:" destination="OEH-QA-38o" eventType="touchUpInside" id="jCD-Cc-7Iw"/>
-                                    <segue destination="XNn-WX-YCK" kind="show" animates="NO" id="Tr2-qd-0Km"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="cm5-SO-0dA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e6-0h-Yzf">
@@ -1135,24 +1131,6 @@
             </objects>
             <point key="canvasLocation" x="437" y="610"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fOf-73-9fi">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XNn-WX-YCK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tNK-Qm-ged">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Uqt-e9-WJM"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0iM-cu-7Qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-983" y="131"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Cacto1 ComVaso" width="678" height="1708"/>
@@ -1176,8 +1154,7 @@
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tr2-qd-0Km"/>
-        <segue reference="mgK-46-Gr4"/>
+        <segue reference="K7f-0O-sBw"/>
         <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>
