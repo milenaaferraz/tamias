@@ -84,8 +84,6 @@ class Exercicio2ViewController:UIViewController {
                 let numero = self.sequenciaQueAparece[self.indice]
                 if numero == 1{
                     self.flor1.isHidden = false
-                    self.flor1.isEnabled = false
-                    
                 }else if numero == 2{
                     self.flor2.isHidden = false
                 }else if numero == 3{
@@ -124,7 +122,7 @@ class Exercicio2ViewController:UIViewController {
         
         if flor1.isHidden && flor2.isHidden && flor3.isHidden && flor4.isHidden {
             gameOverRodada()
-            // clickUsuario.removeAll()
+            
         }
     }
     
