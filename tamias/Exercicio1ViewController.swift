@@ -74,7 +74,6 @@ class Exercicio1ViewController: UIViewController {
     @IBAction func proximaBotao(_ sender: Any) {
         
         rodadaEx1 = rodadaEx1 + 1
-        progressBar.progress = 1
         progressBar.isHidden = false
  
         if rodadaEx1 < 5 {
@@ -92,7 +91,6 @@ class Exercicio1ViewController: UIViewController {
             
             alternativasView.isHidden = false
             
-            progressTimer()
         }
         
     }
@@ -147,7 +145,7 @@ class Exercicio1ViewController: UIViewController {
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
             
-            self.progressBar.progress = self.progressBar.progress - 0.05
+            self.progressBar.progress = self.progressBar.progress - (1/90)
             
             if self.progressBar.progress <= 0 {
                 
@@ -156,7 +154,7 @@ class Exercicio1ViewController: UIViewController {
                 self.feedbackLabel.text = "Ah, o tempo acabou..."
                 self.feedbackLabel.isHidden = false
 
-                self.errou()
+                self.vidas = 0
                 
                 self.timer?.invalidate()
                 
@@ -188,6 +186,8 @@ class Exercicio1ViewController: UIViewController {
         // Do any additional setup after loading the view.
        
         progressBar.progress = 1
+        progressTimer()
+        
         proximaOutlet.isHidden = true
         verRecompensaOutlet.isHidden = true
         feedbackLabel.isHidden = true
