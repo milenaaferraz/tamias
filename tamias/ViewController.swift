@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var qntdDeSol = 5
-    
     @IBOutlet weak var imagemDoFundo: UIImageView!
     
     // Jardim
@@ -66,18 +64,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var bauBotao: UIButton!
     
     override func viewDidLoad() {
-       
-        textoDoSol.text = "\(qntdDeSol)"
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textoDasGotas.text = "\(25)"
+        textoDoSol.text = "\(5)"
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
+    
 
 }
 
