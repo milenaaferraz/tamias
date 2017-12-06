@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Dosis-Medium.otf">
+        <array key="Dosis-Medium.ttf">
             <string>Dosis-Medium</string>
         </array>
-        <array key="Dosis-Regular.otf">
+        <array key="Dosis-Regular.ttf">
             <string>Dosis-Regular</string>
         </array>
     </customFonts>
@@ -176,7 +176,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="BAÚ">
+                                <state key="normal" title="SEMENTES">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -234,106 +234,10 @@
             </objects>
             <point key="canvasLocation" x="264.375" y="130.98591549295776"/>
         </scene>
-        <!--Bau View Controller-->
-        <scene sceneID="01I-2G-EHG">
-            <objects>
-                <viewController id="3oN-iv-3H1" customClass="BauViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="55w-SZ-sZi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r6I-oW-IHC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 ITENS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGd-ij-k3b">
-                                        <rect key="frame" x="120" y="48" width="81" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.70457679033279419" green="0.79448419809341431" blue="0.20337402820587158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-gi-Tfz">
-                                <rect key="frame" x="0.0" y="525" width="108" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="METAS">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="OEH-QA-38o" kind="show" animates="NO" id="WXv-In-ufc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14C-sp-5Kb">
-                                <rect key="frame" x="107" y="525" width="105" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="JARDIM">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aip-xT-35N">
-                                <rect key="frame" x="212" y="525" width="108" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="BAÚ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y4v-dN-f8I">
-                                <rect key="frame" x="23" y="99" width="272" height="383"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewLayout key="collectionViewLayout" id="lH8-qo-45i"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaDoBau" id="nuH-ge-JRN" customClass="BauCollectionViewCell" customModule="tamias" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xlu-Pt-Hl1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <size key="customSize" width="82" height="82"/>
-                                        <connections>
-                                            <outlet property="celulaImageView" destination="Xlu-Pt-Hl1" id="TEo-Yi-8X6"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="v4P-Fo-slu"/>
-                    </view>
-                    <connections>
-                        <outlet property="BauCollectionView" destination="y4v-dN-f8I" id="nOQ-bW-jKa"/>
-                        <outlet property="bauOutlet" destination="aip-xT-35N" id="wmE-7J-wUb"/>
-                        <outlet property="jardimBotao" destination="14C-sp-5Kb" id="Gkp-Zd-6mp"/>
-                        <outlet property="jardimOutlet" destination="14C-sp-5Kb" id="cnv-On-JEB"/>
-                        <outlet property="metasBotao" destination="gRn-gi-Tfz" id="Rx2-ap-gde"/>
-                        <outlet property="metasOutlet" destination="gRn-gi-Tfz" id="fE3-Vx-SYz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iji-8n-rAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1095" y="446.83098591549299"/>
-        </scene>
         <!--Metas View Controller-->
         <scene sceneID="V8V-8z-EeI">
             <objects>
-                <viewController id="OEH-QA-38o" customClass="MetasViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MetasViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OEH-QA-38o" customClass="MetasViewController" customModule="tamias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kfx-oi-QsR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,12 +369,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="BAÚ">
+                                <state key="normal" title="SEMENTES">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="3oN-iv-3H1" kind="show" animates="NO" id="9O4-yR-ZbS"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1m-vI-vcW">
                                 <rect key="frame" x="16" y="363" width="0.0" height="0.0"/>
@@ -612,7 +513,7 @@
                                     <fragment>
                                         <string key="content">Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!</string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="17" name="Dosis-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1154,7 +1055,7 @@
         <image name="fundo" width="2667" height="4734"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Q2m-9Q-aCO"/>
-        <segue reference="pc0-wk-935"/>
+        <segue reference="K7f-0O-sBw"/>
+        <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>
