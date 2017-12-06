@@ -31,11 +31,19 @@ class RecompensaViewController: UIViewController {
         ganhouLabel.text = mensagem
         cactoImagem.image = imagem
         legendaLabel.text = legenda
-        
-        // Do any additional setup after loading the view.
-    }
 
-    override func didReceiveMemoryWarning() { 
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if let jardim = segue.destination as? ViewController {
+//
+//            jardim.qntdDeGotasFinal = gotasFinal
+//
+//        }
+//    }
+
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

@@ -15,7 +15,6 @@ class Exercicio1ViewController: UIViewController {
     var conjuntoRecompensas:[classeDasRecompensas] = []
     var vidas = 3
     var timer: Timer?
-    var adicionarGotas = 0
     
     // barra superior
     @IBOutlet weak var barraSuperiorView: UIView!
@@ -75,15 +74,10 @@ class Exercicio1ViewController: UIViewController {
     @IBOutlet weak var proximaOutlet: UIButton!
     @IBAction func proximaBotao(_ sender: Any) {
         
-        rodadaEx1 = rodadaEx1 + 1
+        //        rodadaEx1 = rodadaEx1 + 1
         progressBar.isHidden = false
         
         if rodadaEx1 < 5 && vidas > 0 {
-            
-            alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
-            alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
-            alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
-            alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
             
             proximaOutlet.isHidden = true
             feedbackLabel.isHidden = true
@@ -132,18 +126,28 @@ class Exercicio1ViewController: UIViewController {
             verRecompensaOutlet.isHidden = false
         }
         
+        rodadaEx1 += 1
         
-        if (rodadaEx1 < 4) {
+        if (rodadaEx1 < 5) {
+            
+            alternativa1Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa1, for: .normal)
+            alternativa2Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa2, for: .normal)
+            alternativa3Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa3, for: .normal)
+            alternativa4Outlet.setTitle(conjuntoPerguntas[rodadaEx1].alternativa4, for: .normal)
+            
+            //            if (rodadaEx1 < 4) {
             
             proximaOutlet.isHidden = false
             
         } else {
+            
             verRecompensaOutlet.isHidden = false
         }
         
         progressBar.isHidden = true
         alternativasView.isHidden = true
         feedbackLabel.isHidden = false
+        
     }
     
     // timer da progress bar
@@ -174,26 +178,40 @@ class Exercicio1ViewController: UIViewController {
             }
         }
     }
+    // recompensas aleatorias
+    func randomizar () -> Int {
+        
+        var indiceRecompensa:Int = Int(arc4random_uniform(UInt32(3)))
+        return indiceRecompensa
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? RecompensaViewController {
             
             //// texto
+            // perdeu
             if vidas <= 0 {
                 viewController.titulo = "POXA!"
                 viewController.mensagem = "VOCÊ PERDEU"
                 viewController.legenda = "Infelizmente, você não conseguiu cuidar de todas as terrinhas... Tente de novo!"
                 viewController.imagem = #imageLiteral(resourceName: "Mosca").withRenderingMode(.alwaysOriginal)
+           
+            // ganhou
             } else {
+                
                 viewController.titulo = "PARABÉNS"
                 viewController.mensagem = "VOCÊ GANHOU"
-                viewController.legenda = conjuntoRecompensas[0].legendaRecompensa
-                viewController.imagem = conjuntoRecompensas[0].imagemRecompensa.withRenderingMode(.alwaysOriginal)
+                
+                var i = randomizar()
+                
+                viewController.legenda = conjuntoRecompensas[2].legendaRecompensa
+                viewController.imagem = conjuntoRecompensas[2].imagemRecompensa.withRenderingMode(.alwaysOriginal)
+                
             }
-            
-            
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -253,7 +271,8 @@ class Exercicio1ViewController: UIViewController {
         let recompensaCacto2 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto2 NaBolinha"),
                                                     legendaRecompensa: "1 x CACTO")
         
-        conjuntoRecompensas = [recompensaGotas, recompensaCacto2]
+        conjuntoRecompensas = [recompensaCacto2, recompensaGotas, recompensaGotas]
+        
         
     }
     
