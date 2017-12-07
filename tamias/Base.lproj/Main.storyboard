@@ -963,7 +963,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RqB-2N-yi1" kind="show" id="Q2m-9Q-aCO"/>
+                                    <action selector="jogarNovamente:" destination="djS-jv-hyu" eventType="touchUpInside" id="lue-zX-19m"/>
+                                    <segue destination="RqB-2N-yi1" kind="show" identifier="jogarnovamente" animates="NO" id="nSP-QY-RXX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PARABÉNS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtb-Cp-zOf">
@@ -981,7 +982,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OEH-QA-38o" kind="show" id="pc0-wk-935"/>
+                                    <action selector="fecharTela:" destination="djS-jv-hyu" eventType="touchUpInside" id="DZb-Ug-Rl2"/>
+                                    <segue destination="OEH-QA-38o" kind="show" identifier="xparadesafios" animates="NO" id="LRb-qJ-Rom"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 X CACTO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCZ-IH-0a3">
@@ -1000,6 +1002,7 @@
                         <viewLayoutGuide key="safeArea" id="jXI-f5-x1i"/>
                     </view>
                     <connections>
+                        <outlet property="fecharTela" destination="07L-uh-YyH" id="Qd5-AF-TBO"/>
                         <outlet property="ganhouLabel" destination="pgs-Cm-ESM" id="Ufb-Aj-LQ9"/>
                         <outlet property="legendaLabel" destination="aCZ-IH-0a3" id="hyq-YB-zLb"/>
                         <outlet property="moscaImagem" destination="p4T-gw-UM5" id="ZZ7-2d-a4I"/>
@@ -1044,7 +1047,7 @@
         <image name="regador" width="1710" height="1579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zdt-xC-bfI"/>
-        <segue reference="LFe-ep-5zC"/>
+        <segue reference="nSP-QY-RXX"/>
+        <segue reference="LRb-qJ-Rom"/>
     </inferredMetricsTieBreakers>
 </document>

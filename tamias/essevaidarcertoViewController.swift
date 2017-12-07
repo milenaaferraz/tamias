@@ -11,9 +11,10 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     
     
     @IBOutlet weak var numeroDeItens: UILabel!
-    var itensDoJogo = ["c1.png"] // testando com os itens do jogo
     
+    var stringRecompensa = ""
     
+    var itensDoJogo:[String] = [] // testando com os itens do jogo
     
     // var itensAdd = [] - itens recebidos, que serao adicionados
     
@@ -43,10 +44,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
             numeroDeItens.text = "\(itensDoJogo.count) ITENS"
             
         }
-        
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         
@@ -64,7 +62,6 @@ UICollectionViewDataSource, UICollectionViewDelegate {
         return itensDoJogo.count
         
     }
-    
     
     
     func collectionView(_ collectionView: UICollectionView,
