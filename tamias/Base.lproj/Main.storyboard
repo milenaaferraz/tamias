@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Dosis-Medium.ttf">
+        <array key="Dosis-Medium.otf">
             <string>Dosis-Medium</string>
         </array>
-        <array key="Dosis-Regular.ttf">
+        <array key="Dosis-Regular.otf">
             <string>Dosis-Regular</string>
         </array>
     </customFonts>
@@ -385,8 +385,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="exercicio1Icone"/>
                                 <connections>
-                                    <action selector="irParaExercOutlet1:" destination="OEH-QA-38o" eventType="touchUpInside" id="nXZ-sV-vYu"/>
-                                    <segue destination="RqB-2N-yi1" kind="show" id="K7f-0O-sBw"/>
+                                    <action selector="irParaInstrucao:" destination="OEH-QA-38o" eventType="touchUpInside" id="HMo-4k-Zec"/>
+                                    <segue destination="RqB-2N-yi1" kind="show" id="GFF-Gu-gyE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESAFIOS DO DIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-EA-8Ot">
@@ -401,8 +401,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="exercicio2Icones"/>
                                 <connections>
-                                    <action selector="irParaExercBotao2:" destination="OEH-QA-38o" eventType="touchUpInside" id="PEz-jM-E1H"/>
-                                    <segue destination="ROI-2v-rgV" kind="show" id="nXi-Wo-yec"/>
+                                    <action selector="irParaInstrucao:" destination="OEH-QA-38o" eventType="touchUpInside" id="CaH-tl-JpA"/>
+                                    <segue destination="RqB-2N-yi1" kind="show" id="qqE-HG-7cZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -451,7 +451,6 @@
                                 </state>
                                 <connections>
                                     <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="InU-BF-OLr"/>
-                                    <segue destination="dkX-i1-nmh" kind="show" animates="NO" id="7DH-X1-thG"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1capa" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-Ws-rbx">
@@ -497,7 +496,7 @@
                                     <fragment>
                                         <string key="content">Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!</string>
                                         <attributes>
-                                            <font key="NSFont" size="17" name="Dosis-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -516,6 +515,8 @@
                         <outlet property="tituloTexto" destination="lpG-sz-e8o" id="QK3-aR-ntV"/>
                         <outlet property="tituloView" destination="ksp-Po-sjt" id="gDX-vT-cPx"/>
                         <outlet property="tituloVoltar" destination="lpG-sz-e8o" id="fgh-mb-Zq2"/>
+                        <segue destination="ROI-2v-rgV" kind="show" identifier="paraJogo2" id="zdy-jv-3X6"/>
+                        <segue destination="dkX-i1-nmh" kind="show" identifier="paraJogo1" id="X2K-gZ-1rF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQk-Ta-jb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -560,13 +561,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clique nas plantas na ordem que elas aparecerem." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZ9-wv-rCT">
-                                <rect key="frame" x="41" y="112" width="238" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sua pontuação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlF-Na-Jns">
                                 <rect key="frame" x="98" y="489" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -582,23 +576,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK0-1U-e2P">
-                                <rect key="frame" x="185" y="187" width="77" height="130"/>
+                                <rect key="frame" x="187" y="142" width="81" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Girassol ComVaso"/>
                                 <connections>
                                     <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="jGa-tC-kTa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-q6-GwR">
-                                <rect key="frame" x="193" y="333" width="60" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="FlorRoxa ComVaso"/>
-                                <connections>
-                                    <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="cnI-Uu-Dgo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-Wz-anj">
-                                <rect key="frame" x="70" y="333" width="55" height="130"/>
+                                <rect key="frame" x="69" y="329" width="55" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Cacto1 ComVaso"/>
                                 <connections>
@@ -606,11 +592,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9I-xp-e63">
-                                <rect key="frame" x="59" y="189" width="78" height="128"/>
+                                <rect key="frame" x="57" y="144" width="81" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="FlorRosa ComVaso"/>
                                 <connections>
                                     <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="gJa-KU-QYr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-q6-GwR">
+                                <rect key="frame" x="195" y="329" width="60" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="FlorRoxa ComVaso"/>
+                                <connections>
+                                    <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="cnI-Uu-Dgo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -622,7 +616,6 @@
                         <outlet property="flor2" destination="hK0-1U-e2P" id="8S1-nM-Kci"/>
                         <outlet property="flor3" destination="Apm-Wz-anj" id="74j-rZ-ads"/>
                         <outlet property="flor4" destination="2Nd-q6-GwR" id="XYi-iI-J1c"/>
-                        <outlet property="instrucaoNoJogo" destination="GZ9-wv-rCT" id="Eiv-44-9qR"/>
                         <outlet property="numeroPontos" destination="hnC-2c-dVJ" id="l5o-7D-aW6"/>
                         <outlet property="suaPontuacao" destination="GlF-Na-Jns" id="OSo-aF-013"/>
                         <outlet property="vida1" destination="HZL-R5-1BN" id="mnU-wl-1Wa"/>
@@ -1051,7 +1044,8 @@
         <image name="regador" width="1710" height="1579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zdt-xC-bfI"/>
+        <segue reference="X2K-gZ-1rF"/>
+        <segue reference="mgK-46-Gr4"/>
         <segue reference="LFe-ep-5zC"/>
     </inferredMetricsTieBreakers>
 </document>

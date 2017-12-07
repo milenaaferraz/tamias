@@ -10,6 +10,9 @@ import UIKit
 
 class MetasViewController: UIViewController {
 
+    //var
+    var Escolha = 0
+    
     // calendario
     @IBOutlet weak var dia1View: UIView!
     @IBOutlet weak var dia1Ok: UIImageView!
@@ -44,14 +47,27 @@ class MetasViewController: UIViewController {
     // Ir para exercícios
     // 1
     @IBOutlet weak var irParaExercOutlet1: UIButton!
-    @IBAction func irParaExercOutlet1(_ sender: Any) {
-    }
     // 2
     @IBOutlet weak var irParaExercOutlet2: UIButton!
-    @IBAction func irParaExercBotao2(_ sender: Any) {
+    //Clique nos exercicios para instrucoes
+    
+    @IBAction func irParaInstrucao(_ sender: Any) {
+        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let instrucoes = segue.destination as? InstrucoesViewController {
+        
+            if sender as! UIButton == irParaExercOutlet1{
+                instrucoes.selecionado = "1"
+                
+            } else if sender as! UIButton == irParaExercOutlet2 {
+                instrucoes.selecionado = "2"
+            }
+            }
+        }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -69,6 +85,8 @@ class MetasViewController: UIViewController {
     }
     
 
+    
+    
     /*
     // MARK: - Navigation
 
