@@ -232,7 +232,7 @@ class Exercicio1ViewController: UIViewController {
             alternativa2: "21 GOTAS",
             alternativa3: "14 GOTAS",
             alternativa4: "17 GOTAS",
-            imagemGuia: #imageLiteral(resourceName: "exercicio1soma6"))
+            imagemGuia: #imageLiteral(resourceName: "exercicio1soma7"))
         
         let perg4 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 8 terras
             respostaCerta: "24 GOTAS",
