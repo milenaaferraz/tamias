@@ -6,6 +6,8 @@ class essevaidarcertoViewController: UIViewController,
 UICollectionViewDataSource, UICollectionViewDelegate {
     
     
+    let mediadora = Mediadora.shared
+    
     @IBOutlet weak var collectionViewBoa: UICollectionView!
     
     
@@ -20,6 +22,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     
     override func viewDidLoad() {
         
+        itensDoJogo = mediadora.floresSementes
         
         
         super.viewDidLoad()

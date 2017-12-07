@@ -10,7 +10,11 @@ import UIKit
 
 class RecompensaViewController: UIViewController {
 
+    
+    let mediadora = Mediadora.shared
+    
     @IBAction func jogarNovamente(_ sender: Any) {
+    
     }
         
         
@@ -31,26 +35,26 @@ class RecompensaViewController: UIViewController {
 //
 //            }
 //        }
-    @IBAction func fecharTela(_ sender: Any) {
-        
-        performSegue(withIdentifier: "xparadesafios", sender: sender)
-        
-//        var essevaidarcertoVC = storyboard?.instantiateViewController(withIdentifier: "SementesViewController") as! essevaidarcertoViewController
-//
-//        if legendaLabel.text != "10 X GOTAS" {
-//
-//            essevaidarcertoVC.itensDoJogo.append("c1.png")
-//            present(essevaidarcertoVC, animated: false, completion: nil)
-//
-//            //  sementes.itensDoJogo.append("c1.png")
-//
-//        } else {
-//
-//            essevaidarcertoVC.itensDoJogo.append("")
-//
-//
-//        }
-    }
+//    @IBAction func fecharTela(_ sender: Any) {
+//        
+//        performSegue(withIdentifier: "xparadesafios", sender: sender)
+//        
+////        var essevaidarcertoVC = storyboard?.instantiateViewController(withIdentifier: "SementesViewController") as! essevaidarcertoViewController
+////
+////        if legendaLabel.text != "10 X GOTAS" {
+////
+////            essevaidarcertoVC.itensDoJogo.append("c1.png")
+////            present(essevaidarcertoVC, animated: false, completion: nil)
+////
+////            //  sementes.itensDoJogo.append("c1.png")
+////
+////        } else {
+////
+////            essevaidarcertoVC.itensDoJogo.append("")
+////
+////
+////        }
+//    }
     
     @IBOutlet weak var fecharTela: UIButton! // outlet
     var conjuntoRecompensas:[classeDasRecompensas] = []
@@ -106,6 +110,8 @@ class RecompensaViewController: UIViewController {
             plantaImagem.isHidden = true
             
         } else {
+            
+    
             parabensLabel.text = "PARABÉNS"
             ganhouLabel.text = "VOCÊ GANHOU"
             
@@ -119,7 +125,7 @@ class RecompensaViewController: UIViewController {
                 plantaImagem.isHidden = true
                 
             } else {
-                
+                mediadora.floresSementes.append("c1.png")
                 plantaImagem.image = conjuntoRecompensas[i].imagemRecompensa.withRenderingMode(.alwaysOriginal)
                 regadorImagem.isHidden = true
                 moscaImagem.isHidden = true
@@ -129,17 +135,17 @@ class RecompensaViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "xparadesafios" {
-            
-            var essevaidarcertoVC = segue.destination as! essevaidarcertoViewController
-            
-            essevaidarcertoVC.itensDoJogo.append("c1.png")
-            
-        }
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if segue.identifier == "xparadesafios" {
+//
+////            var essevaidarcertoVC = segue.destination as! essevaidarcertoViewController
+//
+//            essevaidarcertoVC.itensDoJogo.append("c1.png")
+//
+//        }
+//
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

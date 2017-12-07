@@ -29,6 +29,7 @@
 		28DCCA321FCD878B00610076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DCCA301FCD878B00610076 /* LaunchScreen.storyboard */; };
 		28DCCA3D1FCD878B00610076 /* tamiasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA3C1FCD878B00610076 /* tamiasTests.swift */; };
 		28DCCA481FCD878B00610076 /* tamiasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA471FCD878B00610076 /* tamiasUITests.swift */; };
+		3D14B1BD1FD9D67500CC77C3 /* Mediadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14B1BC1FD9D67500CC77C3 /* Mediadora.swift */; };
 		3D1A273F1FD5EDD800DFAFAA /* imagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */; };
 		3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */; };
 		3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */; };
@@ -82,6 +83,7 @@
 		28DCCA431FCD878B00610076 /* tamiasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamiasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DCCA471FCD878B00610076 /* tamiasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamiasUITests.swift; sourceTree = "<group>"; };
 		28DCCA491FCD878B00610076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D14B1BC1FD9D67500CC77C3 /* Mediadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediadora.swift; sourceTree = "<group>"; };
 		3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essevaidarcertoViewController.swift; sourceTree = "<group>"; };
 		3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sementes.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				051970AC1FD73EA900DF7824 /* classeDasRecompensas.swift */,
 				28DCCA271FCD878B00610076 /* AppDelegate.swift */,
 				28DCCA2B1FCD878B00610076 /* Main.storyboard */,
+				3D14B1BC1FD9D67500CC77C3 /* Mediadora.swift */,
 				282DAEE01FCF578300B59CAC /* Exercicio2ViewController.swift */,
 				05D413481FCF531D0093491C /* PreExercicioViewController.swift */,
 				05D413461FCF52EB0093491C /* Exercicio1ViewController.swift */,
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D14B1BD1FD9D67500CC77C3 /* Mediadora.swift in Sources */,
 				3D1A273F1FD5EDD800DFAFAA /* imagemCollectionViewCell.swift in Sources */,
 				28DCCA2A1FCD878B00610076 /* ViewController.swift in Sources */,
 				05D413491FCF531D0093491C /* PreExercicioViewController.swift in Sources */,
