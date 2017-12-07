@@ -125,6 +125,7 @@ class RecompensaViewController: UIViewController {
                 plantaImagem.isHidden = true
                 
             } else {
+                
                 mediadora.floresSementes.append("c1.png")
                 plantaImagem.image = conjuntoRecompensas[i].imagemRecompensa.withRenderingMode(.alwaysOriginal)
                 regadorImagem.isHidden = true
