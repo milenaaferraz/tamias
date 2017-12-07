@@ -39,17 +39,17 @@ class RecompensaViewController: UIViewController {
         let recompTulipa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Tulipa ComVaso"),
                                                 legendaRecompensa: "1 X TULIPA")
         let recompCacto1 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto1 ComVaso"),
-                                                legendaRecompensa: "1 X CACTO")
+                                                legendaRecompensa: "1 X CACTO FLORIDO")
         let recompRoxa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FlorRoxa ComVaso"),
-                                              legendaRecompensa: "1 X ROXA")
+                                              legendaRecompensa: "1 X LAVANDA")
         let recompRosa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FlorRosa ComVaso"),
-                                              legendaRecompensa: "1 X ROSA")
+                                              legendaRecompensa: "1 X GÉRBERA")
         let recompAmarela = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FloresAmarelas ComVaso"),
-                                                 legendaRecompensa: "1 X AMARELA")
+                                                 legendaRecompensa: "1 X ALAMANDA")
         let recompVermelha = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FloresVermelhas ComVaso"),
-                                                  legendaRecompensa: "1 X VERMELHA")
+                                                  legendaRecompensa: "1 X HIBISCO")
         let recompCacto2 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto2 ComVaso"),
-                                                legendaRecompensa: "1 X CACTO")
+                                                legendaRecompensa: "1 X CACTO PALMA")
         
         conjuntoRecompensas = [recompGotas10,recompGirassol,recompGotas10,recompTulipa,recompGotas10,recompCacto1,recompGotas10,recompRoxa,recompGotas10,recompRosa,recompGotas10,recompAmarela,recompGotas10,recompVermelha,recompGotas10,recompCacto2]
         
