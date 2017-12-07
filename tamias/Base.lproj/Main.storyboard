@@ -784,9 +784,9 @@
                                 <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-T6-AMJ">
-                                <rect key="frame" x="0.0" y="525" width="320" height="43"/>
+                                <rect key="frame" x="0.0" y="499" width="320" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.62041789293289185" green="0.39301973581314087" blue="0.23652714490890503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
                                 <state key="normal" title="PRÓXIMA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -824,13 +824,6 @@
                                 <rect key="frame" x="26" y="403" width="264" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suas vidas acabaram!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iky-Qh-7hf">
-                                        <rect key="frame" x="12" y="39" width="240" height="53"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="22"/>
-                                        <color key="textColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKL-1p-gSj">
                                         <rect key="frame" x="12" y="11" width="113" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -902,6 +895,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suas vidas acabaram!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iky-Qh-7hf">
+                                <rect key="frame" x="38" y="438" width="240" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="22"/>
+                                <color key="textColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dCj-wq-LnH"/>
@@ -1045,7 +1045,7 @@
         <image name="exercicio1Icone" width="1141" height="1143"/>
         <image name="exercicio1capa" width="1335" height="959"/>
         <image name="exercicio1imagem1" width="797" height="921"/>
-        <image name="exercicio1soma3" width="2141" height="637"/>
+        <image name="exercicio1soma3" width="2077" height="439"/>
         <image name="exercicio2Icones" width="1142" height="1142"/>
         <image name="fundo" width="2667" height="4734"/>
         <image name="regador" width="1710" height="1579"/>
