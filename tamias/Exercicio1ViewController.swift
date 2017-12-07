@@ -67,6 +67,7 @@ class Exercicio1ViewController: UIViewController {
     // ver recompensa
     @IBOutlet weak var verRecompensaOutlet: UIButton!
     @IBAction func verRecompensaBotao(_ sender: Any) {
+        verRecompensaOutlet.setTitle("", for: .normal)
     }
     
     // proxima
@@ -108,20 +109,24 @@ class Exercicio1ViewController: UIViewController {
     // funcao de clicar nas alternativas
     func clicaNaAlternativa (_ alternativa:UIButton) {
         
+        feedbackLabel.isHidden = false
+        
         if alternativa.titleLabel?.text == conjuntoPerguntas[rodadaEx1].respostaCerta {
+            feedbackLabel.textColor = UIColor(red: (152/255), green: (163/255), blue: (49/255), alpha: 1)
             feedbackLabel.text = "Você acertou!"
         }
+        
         else if alternativa.titleLabel?.text != conjuntoPerguntas[rodadaEx1].respostaCerta {
-            
+            feedbackLabel.textColor = UIColor(red: (158/255), green: (99/255), blue: (59/255), alpha: 1)
             feedbackLabel.text = "Ah, você errou..."
             errou()
         }
         
-        
         if vidas <= 0 {
-            feedbackLabel.text = "Você não acertou dessa vez e suas vidas acabaram"
+            feedbackLabel.textColor = UIColor(red: (158/255), green: (99/255), blue: (59/255), alpha: 1)
+            feedbackLabel.text = "Suas vidas acabaram"
             verRecompensaOutlet.setTitle("TERMINAR", for: .normal)
-            verRecompensaOutlet.backgroundColor = UIColor(red: (122/255), green: (112/255), blue: (106/255), alpha: 1)
+            verRecompensaOutlet.backgroundColor = UIColor(red: (158/255), green: (99/255), blue: (59/255), alpha: 1)
             verRecompensaOutlet.isHidden = false
         }
         
@@ -199,7 +204,7 @@ class Exercicio1ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 2)
+        progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 3)
         progressBar.progress = 1
         progressTimer()
         
