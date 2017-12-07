@@ -27,7 +27,8 @@ class Exercicio2ViewController:UIViewController {
     @IBOutlet weak var numeroPontos: UILabel!
     @IBOutlet weak var suaPontuacao: UILabel!
     @IBAction func botaox(_ sender: Any) {
-    }
+        performSegue(withIdentifier: "xparadesafios", sender: sender)
+   }
     
     var pontuacao = 0
     var timer: Timer? = nil

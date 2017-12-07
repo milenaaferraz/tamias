@@ -35,10 +35,10 @@ class RecompensaViewController: UIViewController {
 //
 //            }
 //        }
-//    @IBAction func fecharTela(_ sender: Any) {
-//        
-//        performSegue(withIdentifier: "xparadesafios", sender: sender)
-//        
+    @IBAction func fecharTela(_ sender: Any) {
+        
+        performSegue(withIdentifier: "xparadesafios", sender: sender)
+    }
 ////        var essevaidarcertoVC = storyboard?.instantiateViewController(withIdentifier: "SementesViewController") as! essevaidarcertoViewController
 ////
 ////        if legendaLabel.text != "10 X GOTAS" {
