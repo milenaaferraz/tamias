@@ -12,7 +12,6 @@ class Exercicio1ViewController: UIViewController {
     
     var rodadaEx1 = 0
     var conjuntoPerguntas:[Exercicio1Pergunta] = []
-    var conjuntoRecompensas:[classeDasRecompensas] = []
     var vidas = 3
     var timer: Timer?
     
@@ -178,36 +177,18 @@ class Exercicio1ViewController: UIViewController {
             }
         }
     }
-    // recompensas aleatorias
-    func randomizar () -> Int {
-        
-        var indiceRecompensa:Int = Int(arc4random_uniform(UInt32(3)))
-        return indiceRecompensa
-        
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? RecompensaViewController {
+        if let recompensas = segue.destination as? RecompensaViewController {
             
             //// texto
             // perdeu
             if vidas <= 0 {
-                viewController.titulo = "POXA!"
-                viewController.mensagem = "VOCÊ PERDEU"
-                viewController.legenda = "Infelizmente, você não conseguiu cuidar de todas as terrinhas... Tente de novo!"
-                viewController.imagem = #imageLiteral(resourceName: "Mosca").withRenderingMode(.alwaysOriginal)
-           
+               recompensas.ganhou = false
+                
             // ganhou
             } else {
-                
-                viewController.titulo = "PARABÉNS"
-                viewController.mensagem = "VOCÊ GANHOU"
-                
-                var i = randomizar()
-                
-                viewController.legenda = conjuntoRecompensas[2].legendaRecompensa
-                viewController.imagem = conjuntoRecompensas[2].imagemRecompensa.withRenderingMode(.alwaysOriginal)
-                
+                recompensas.ganhou = true
             }
         }
     }
@@ -240,12 +221,12 @@ class Exercicio1ViewController: UIViewController {
             alternativa3: "20 GOTAS",
             alternativa4: "25 GOTAS",
             imagemGuia: #imageLiteral(resourceName: "exercicio1soma5"))
-        let perg3 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 6 terras
-            respostaCerta: "18 GOTAS",
-            alternativa1: "9 GOTAS",
-            alternativa2: "16 GOTAS",
-            alternativa3: "18 GOTAS",
-            alternativa4: "30 GOTAS",
+        let perg3 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 7 terras
+            respostaCerta: "21 GOTAS",
+            alternativa1: "28 GOTAS",
+            alternativa2: "21 GOTAS",
+            alternativa3: "14 GOTAS",
+            alternativa4: "17 GOTAS",
             imagemGuia: #imageLiteral(resourceName: "exercicio1soma6"))
         
         let perg4 = Exercicio1Pergunta(enunciado: "Quantas gotas de água você precisa para essa quantidade de terra?", // 8 terras
@@ -265,14 +246,6 @@ class Exercicio1ViewController: UIViewController {
             imagemGuia: #imageLiteral(resourceName: "exercicio1soma10"))
         
         conjuntoPerguntas = [perg1, perg2, perg3, perg4, perg5]
-        
-        let recompensaGotas = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Gota NaBolinha"),
-                                                   legendaRecompensa: "15 x GOTAS")
-        let recompensaCacto2 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto2 NaBolinha"),
-                                                    legendaRecompensa: "1 x CACTO")
-        
-        conjuntoRecompensas = [recompensaCacto2, recompensaGotas, recompensaGotas]
-        
         
     }
     

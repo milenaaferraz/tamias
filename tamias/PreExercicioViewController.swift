@@ -14,6 +14,7 @@ class PreExercicioViewController: UIViewController {
     
     @IBOutlet weak var regrasLabel: UILabel!
     @IBOutlet weak var proporcaoLabel: UILabel!
+    @IBOutlet weak var atencaoLabel: UILabel!
     
     @IBOutlet weak var proporcaoImagem: UIImageView!
     
@@ -31,6 +32,7 @@ class PreExercicioViewController: UIViewController {
         proporcaoImagem.isHidden = false
         proporcaoLabel.isHidden = false
        
+        atencaoLabel.isHidden = true
         regrasLabel.isHidden = true
         okOutlet.isHidden = true
         

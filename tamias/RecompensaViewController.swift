@@ -10,38 +10,81 @@ import UIKit
 
 class RecompensaViewController: UIViewController {
 
-    var vidasRestantes:Int = 0
-    var titulo:String = ""
-    var mensagem:String = ""
-    var legenda:String = ""
-    var imagem:UIImage = #imageLiteral(resourceName: "Mosca")
+    var conjuntoRecompensas:[classeDasRecompensas] = []
+    var ganhou = true
     
     @IBOutlet weak var parabensLabel: UILabel!
-    
     @IBOutlet weak var ganhouLabel: UILabel!
-    
-    @IBOutlet weak var cactoImagem: UIImageView!
-    
     @IBOutlet weak var legendaLabel: UILabel!
+    
+    @IBOutlet weak var regadorImagem: UIImageView!
+    @IBOutlet weak var plantaImagem: UIImageView!
+    @IBOutlet weak var moscaImagem: UIImageView!
+    
+    // recompensas aleatorias
+    func randomizar () -> Int {
+        
+        var indiceRecompensa:Int = Int(arc4random_uniform(UInt32(conjuntoRecompensas.count)))
+        return indiceRecompensa
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let recompGotas10 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "regador"),
+                                                 legendaRecompensa: "10 X GOTAS")
+        let recompGirassol = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Girassol ComVaso"),
+                                                  legendaRecompensa: "1 X GIRASSOL")
+        let recompTulipa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Tulipa ComVaso"),
+                                                legendaRecompensa: "1 X TULIPA")
+        let recompCacto1 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto1 ComVaso"),
+                                                legendaRecompensa: "1 X CACTO")
+        let recompRoxa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FlorRoxa ComVaso"),
+                                              legendaRecompensa: "1 X ROXA")
+        let recompRosa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FlorRosa ComVaso"),
+                                              legendaRecompensa: "1 X ROSA")
+        let recompAmarela = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FloresAmarelas ComVaso"),
+                                                 legendaRecompensa: "1 X AMARELA")
+        let recompVermelha = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FloresVermelhas ComVaso"),
+                                                  legendaRecompensa: "1 X VERMELHA")
+        let recompCacto2 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto2 ComVaso"),
+                                                legendaRecompensa: "1 X CACTO")
+        
+        conjuntoRecompensas = [recompGotas10,recompGirassol,recompGotas10,recompTulipa,recompGotas10,recompCacto1,recompGotas10,recompRoxa,recompGotas10,recompRosa,recompGotas10,recompAmarela,recompGotas10,recompVermelha,recompGotas10,recompCacto2]
+        
+        if ganhou == false {
+            parabensLabel.text = "POXA!"
+            ganhouLabel.text = "VOCÊ PERDEU"
+            legendaLabel.text = "TENTE DE NOVO"
+            
+            moscaImagem.isHidden = false
+            regadorImagem.isHidden = true
+            plantaImagem.isHidden = true
+            
+        } else {
+            parabensLabel.text = "PARABÉNS"
+            ganhouLabel.text = "VOCÊ GANHOU"
+            
+            var i = randomizar()
+            legendaLabel.text = conjuntoRecompensas[i].legendaRecompensa
+            
+            if legendaLabel.text == "10 X GOTAS" {
+                
+                regadorImagem.isHidden = false
+                moscaImagem.isHidden = true
+                plantaImagem.isHidden = true
+                
+            } else {
+                
+                plantaImagem.image = conjuntoRecompensas[i].imagemRecompensa.withRenderingMode(.alwaysOriginal)
+                regadorImagem.isHidden = true
+                moscaImagem.isHidden = true
+                plantaImagem.isHidden = false
 
-        parabensLabel.text = titulo
-        ganhouLabel.text = mensagem
-        cactoImagem.image = imagem
-        legendaLabel.text = legenda
-
+            }
+        }
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if let jardim = segue.destination as? ViewController {
-//
-//            jardim.qntdDeGotasFinal = gotasFinal
-//
-//        }
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
