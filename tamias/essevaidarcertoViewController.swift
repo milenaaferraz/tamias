@@ -74,7 +74,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
             collectionView.dequeueReusableCell(withReuseIdentifier:
                 "collectioncell", for: indexPath) as! imagemCollectionViewCell
         
-        cell.imagemDaCelula.image = UIImage(named:itensDoJogo[indexPath.row]) // nomedoarray[indexPath.row]
+        cell.imagemDaCelula.image = UIImage(named:itensDoJogo[indexPath.row]) //
         
         return cell
         
