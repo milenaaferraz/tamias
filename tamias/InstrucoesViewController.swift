@@ -39,6 +39,8 @@ class InstrucoesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
         if selecionado == "1" {
             tituloTexto.text = "QUANTAS GOTAS?"
             instrucoesDescricao.text = "Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!"
@@ -47,7 +49,8 @@ class InstrucoesViewController: UIViewController {
         if selecionado == "2" {
             tituloTexto.text = "QUAL A ORDEM?"
             instrucoesDescricao.text = "Todo dia aparecem flores novas no seu jardim! Agora irão aparecer quatro na sua tela, e você precisa clicar nelas na ordem que elas surgirem."
-            imagemCapa.image = #imageLiteral(resourceName: "FlorRoxa Morta")
+            imagemCapa.image = #imageLiteral(resourceName: "ex2capainstrucoes")
+             //let capa = #imageLiteral(resourceName: "ex2capainstrucoes").withRenderingMode(.alwaysOriginal)
         }
         
        

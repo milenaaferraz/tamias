@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Dosis-Medium.ttf">
+        <array key="Dosis-Medium.otf">
             <string>Dosis-Medium</string>
         </array>
-        <array key="Dosis-Regular.ttf">
+        <array key="Dosis-Regular.otf">
             <string>Dosis-Regular</string>
         </array>
     </customFonts>
@@ -559,7 +559,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yER-lv-SNM">
-                                        <rect key="frame" x="266" y="0.0" width="54" height="92"/>
+                                        <rect key="frame" x="266" y="-5" width="54" height="92"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="28"/>
                                         <state key="normal" title="x">
@@ -567,6 +567,7 @@
                                         </state>
                                         <connections>
                                             <action selector="botaox:" destination="ROI-2v-rgV" eventType="touchUpInside" id="WIl-bc-tKl"/>
+                                            <segue destination="OEH-QA-38o" kind="show" id="2mg-QE-VLQ"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="Ulp-XU-QYD">
@@ -585,7 +586,7 @@
                                 <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sua pontuação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlF-Na-Jns">
-                                <rect key="frame" x="98" y="489" width="125" height="21"/>
+                                <rect key="frame" x="26" y="489" width="270" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="20"/>
                                 <color key="textColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -630,30 +631,37 @@
                                     <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="cnI-Uu-Dgo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRl-TS-BLY">
-                                <rect key="frame" x="16" y="297" width="288" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-61-nvi">
+                                <rect key="frame" x="0.0" y="508" width="320" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.70446956157684326" green="0.79845380783081055" blue="0.20276737213134766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
+                                <state key="normal" title="PRÓXIMA SEQUÊNCIA">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="proxSeqButton:" destination="ROI-2v-rgV" eventType="touchUpInside" id="VCe-ML-SZA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRl-TS-BLY">
+                                <rect key="frame" x="16" y="278" width="288" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="54"/>
+                                <color key="textColor" red="0.48335111141204834" green="0.44342321157455444" blue="0.41802597045898438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-61-nvi">
-                                <rect key="frame" x="0.0" y="510" width="320" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2bi-XC-gvN"/>
                     </view>
                     <connections>
+                        <outlet property="feedback" destination="CRl-TS-BLY" id="rTq-Rm-ai1"/>
                         <outlet property="flor1" destination="x9I-xp-e63" id="mcZ-Ut-MdL"/>
                         <outlet property="flor2" destination="hK0-1U-e2P" id="8S1-nM-Kci"/>
                         <outlet property="flor3" destination="Apm-Wz-anj" id="74j-rZ-ads"/>
                         <outlet property="flor4" destination="2Nd-q6-GwR" id="XYi-iI-J1c"/>
                         <outlet property="numeroPontos" destination="hnC-2c-dVJ" id="l5o-7D-aW6"/>
+                        <outlet property="proxSeqOutlet" destination="FJh-61-nvi" id="WkF-GP-4jp"/>
                         <outlet property="suaPontuacao" destination="GlF-Na-Jns" id="OSo-aF-013"/>
                         <outlet property="vida1" destination="HZL-R5-1BN" id="mnU-wl-1Wa"/>
                         <outlet property="vida2" destination="vbk-PI-u5f" id="oH1-go-uay"/>
@@ -1083,6 +1091,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="guU-H4-M79"/>
-        <segue reference="DRo-dl-GE1"/>
+        <segue reference="2mg-QE-VLQ"/>
     </inferredMetricsTieBreakers>
 </document>

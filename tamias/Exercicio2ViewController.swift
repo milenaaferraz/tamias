@@ -17,6 +17,10 @@ import UIKit
 
 class Exercicio2ViewController:UIViewController {
     
+    @IBAction func proxSeqButton(_ sender: Any) {
+    }
+    @IBOutlet weak var proxSeqOutlet: UIButton!
+    @IBOutlet weak var feedback: UILabel!
     @IBOutlet weak var vida1: UIImageView!
     @IBOutlet weak var vida3: UIImageView!
     @IBOutlet weak var vida2: UIImageView!
@@ -27,14 +31,15 @@ class Exercicio2ViewController:UIViewController {
     @IBOutlet weak var numeroPontos: UILabel!
     @IBOutlet weak var suaPontuacao: UILabel!
     @IBAction func botaox(_ sender: Any) {
-        performSegue(withIdentifier: "xparadesafios", sender: sender)
    }
     
     var pontuacao = 0
     var timer: Timer? = nil
     var indice: Int = 0
     var vidas = 3
-
+    var regressivo = Timer()
+    var segundos = 3
+    
     var clickUsuario: [Int] = []
     var sequenciaQueAparece: [Int] = []
     let listaDeSequencias: [[Int]] = [[1,2,3,4], [1,2,4,3], [1,3,2,4],[1,3,4,2], [1,4,3,2], [1,4,2,3], [2,1,3,4], [2,1,4,3], [2,3,1,4],[2,3,4,1], [2,4,1,3], [2,4,3,1], [3,1,2,4], [3,1,4,2], [3,2,1,4],[3,2,4,1], [3,4,1,2], [3,4,2,1], [4,1,2,3], [4,1,3,2], [4,2,1,3], [4,2,3,1], [4,3,1,2], [4,3,2,1]]
@@ -43,7 +48,26 @@ class Exercicio2ViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        contagem()
+        
         jogoAparece()
+    }
+    
+    //CONTAR
+    @objc func acao() {
+        segundos -= 1
+        feedback.text = String(segundos)
+        
+        if (segundos == 0) {
+            regressivo.invalidate()
+            feedback.isHidden = true
+        }
+    }
+    
+    //CONTAGEM REGRESSIVA
+    func contagem () {
+        regressivo = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Exercicio2ViewController.acao), userInfo: nil, repeats: true)
     }
     
     //JOGO COMEÇA
@@ -66,6 +90,8 @@ class Exercicio2ViewController:UIViewController {
         
         let florCerta4 = #imageLiteral(resourceName: "FlorRoxa ComVaso").withRenderingMode(.alwaysOriginal)
         flor4.setImage(florCerta4, for: .normal)
+        
+        
         
         //DETERMINA A SEQUENCIA ALEATÓRIA DAS FLORES
         var numero = arc4random_uniform(UInt32(listaDeSequencias.count))
