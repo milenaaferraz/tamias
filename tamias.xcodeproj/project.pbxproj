@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		051970AD1FD73EA900DF7824 /* classeDasRecompensas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051970AC1FD73EA900DF7824 /* classeDasRecompensas.swift */; };
-		05C9AD461FD0A901002F9D7F /* Dosis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */; };
-		05C9AD481FD0A901002F9D7F /* Dosis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */; };
-		05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */; };
+		05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */; };
+		05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */; };
+		05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */; };
 		05D413391FCED4A20093491C /* MetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413381FCED4A20093491C /* MetasViewController.swift */; };
 		05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */; };
 		05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */; };
@@ -27,9 +27,18 @@
 		28DCCA481FCD878B00610076 /* tamiasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCCA471FCD878B00610076 /* tamiasUITests.swift */; };
 		3D14B1BD1FD9D67500CC77C3 /* Mediadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14B1BC1FD9D67500CC77C3 /* Mediadora.swift */; };
 		3D1A273F1FD5EDD800DFAFAA /* imagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */; };
+		3D35F2F11FDC116600FF8603 /* sacoMargarida.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2E71FDC116500FF8603 /* sacoMargarida.png */; };
+		3D35F2F21FDC116600FF8603 /* sacoRoxa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2E81FDC116500FF8603 /* sacoRoxa.png */; };
+		3D35F2F31FDC116600FF8603 /* sacoGerbera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2E91FDC116500FF8603 /* sacoGerbera.png */; };
+		3D35F2F41FDC116600FF8603 /* sacoGirassol.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2EA1FDC116500FF8603 /* sacoGirassol.png */; };
+		3D35F2F51FDC116600FF8603 /* sacoCacto2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2EB1FDC116500FF8603 /* sacoCacto2.png */; };
+		3D35F2F61FDC116600FF8603 /* sacoTulipa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2EC1FDC116500FF8603 /* sacoTulipa.png */; };
+		3D35F2F71FDC116600FF8603 /* sacoCacto1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2ED1FDC116500FF8603 /* sacoCacto1.png */; };
+		3D35F2F81FDC116600FF8603 /* sacoVermelha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2EE1FDC116600FF8603 /* sacoVermelha.png */; };
+		3D35F2F91FDC116600FF8603 /* sacoRosa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2EF1FDC116600FF8603 /* sacoRosa.png */; };
+		3D35F2FA1FDC116600FF8603 /* sacoAmarela.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2F01FDC116600FF8603 /* sacoAmarela.png */; };
 		3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */; };
 		3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */; };
-		3D72DBBB1FD6E65B00ED49D1 /* c1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBBA1FD6E65900ED49D1 /* c1.png */; };
 		3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,9 +61,9 @@
 
 /* Begin PBXFileReference section */
 		051970AC1FD73EA900DF7824 /* classeDasRecompensas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classeDasRecompensas.swift; sourceTree = "<group>"; };
-		05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.otf"; path = "../../../../Downloads/dosis/Dosis-Light.otf"; sourceTree = "<group>"; };
-		05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Medium.otf"; path = "../../../../Downloads/dosis/Dosis-Medium.otf"; sourceTree = "<group>"; };
-		05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.otf"; path = "../../../../Downloads/dosis/Dosis-Regular.otf"; sourceTree = "<group>"; };
+		05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.ttf"; path = "../../../../Downloads/Dosis/Dosis-Light.ttf"; sourceTree = "<group>"; };
+		05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Medium.ttf"; path = "../../../../Downloads/Dosis/Dosis-Medium.ttf"; sourceTree = "<group>"; };
+		05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.ttf"; path = "../../../../Downloads/Dosis/Dosis-Regular.ttf"; sourceTree = "<group>"; };
 		05D413381FCED4A20093491C /* MetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasViewController.swift; sourceTree = "<group>"; };
 		05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecompensaViewController.swift; sourceTree = "<group>"; };
@@ -77,9 +86,18 @@
 		28DCCA491FCD878B00610076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D14B1BC1FD9D67500CC77C3 /* Mediadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediadora.swift; sourceTree = "<group>"; };
 		3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagemCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D35F2E71FDC116500FF8603 /* sacoMargarida.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoMargarida.png; sourceTree = "<group>"; };
+		3D35F2E81FDC116500FF8603 /* sacoRoxa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoRoxa.png; sourceTree = "<group>"; };
+		3D35F2E91FDC116500FF8603 /* sacoGerbera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoGerbera.png; sourceTree = "<group>"; };
+		3D35F2EA1FDC116500FF8603 /* sacoGirassol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoGirassol.png; sourceTree = "<group>"; };
+		3D35F2EB1FDC116500FF8603 /* sacoCacto2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoCacto2.png; sourceTree = "<group>"; };
+		3D35F2EC1FDC116500FF8603 /* sacoTulipa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoTulipa.png; sourceTree = "<group>"; };
+		3D35F2ED1FDC116500FF8603 /* sacoCacto1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoCacto1.png; sourceTree = "<group>"; };
+		3D35F2EE1FDC116600FF8603 /* sacoVermelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoVermelha.png; sourceTree = "<group>"; };
+		3D35F2EF1FDC116600FF8603 /* sacoRosa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoRosa.png; sourceTree = "<group>"; };
+		3D35F2F01FDC116600FF8603 /* sacoAmarela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoAmarela.png; sourceTree = "<group>"; };
 		3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essevaidarcertoViewController.swift; sourceTree = "<group>"; };
 		3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sementes.storyboard; sourceTree = "<group>"; };
-		3D72DBBA1FD6E65900ED49D1 /* c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c1.png; sourceTree = "<group>"; };
 		3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,10 +161,19 @@
 				3D1A273E1FD5EDD700DFAFAA /* imagemCollectionViewCell.swift */,
 				3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */,
 				3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */,
-				3D72DBBA1FD6E65900ED49D1 /* c1.png */,
 				05D413381FCED4A20093491C /* MetasViewController.swift */,
 				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
 				05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */,
+				3D35F2F01FDC116600FF8603 /* sacoAmarela.png */,
+				3D35F2ED1FDC116500FF8603 /* sacoCacto1.png */,
+				3D35F2EB1FDC116500FF8603 /* sacoCacto2.png */,
+				3D35F2E91FDC116500FF8603 /* sacoGerbera.png */,
+				3D35F2EA1FDC116500FF8603 /* sacoGirassol.png */,
+				3D35F2E71FDC116500FF8603 /* sacoMargarida.png */,
+				3D35F2EF1FDC116600FF8603 /* sacoRosa.png */,
+				3D35F2E81FDC116500FF8603 /* sacoRoxa.png */,
+				3D35F2EC1FDC116500FF8603 /* sacoTulipa.png */,
+				3D35F2EE1FDC116600FF8603 /* sacoVermelha.png */,
 				3DDF3AA41FCDFDA500DB2446 /* DosisFont */,
 				3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */,
 				28DCCA2E1FCD878B00610076 /* Assets.xcassets */,
@@ -177,9 +204,9 @@
 		3DDF3AA41FCDFDA500DB2446 /* DosisFont */ = {
 			isa = PBXGroup;
 			children = (
-				05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */,
-				05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */,
-				05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */,
+				05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */,
+				05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */,
+				05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */,
 			);
 			path = DosisFont;
 			sourceTree = "<group>";
@@ -292,13 +319,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DCCA321FCD878B00610076 /* LaunchScreen.storyboard in Resources */,
+				3D35F2F21FDC116600FF8603 /* sacoRoxa.png in Resources */,
 				3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */,
+				3D35F2F11FDC116600FF8603 /* sacoMargarida.png in Resources */,
+				3D35F2F61FDC116600FF8603 /* sacoTulipa.png in Resources */,
 				28DCCA2F1FCD878B00610076 /* Assets.xcassets in Resources */,
-				05C9AD481FD0A901002F9D7F /* Dosis-Medium.otf in Resources */,
-				05C9AD461FD0A901002F9D7F /* Dosis-Light.otf in Resources */,
-				3D72DBBB1FD6E65B00ED49D1 /* c1.png in Resources */,
-				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.otf in Resources */,
+				3D35F2F41FDC116600FF8603 /* sacoGirassol.png in Resources */,
+				3D35F2FA1FDC116600FF8603 /* sacoAmarela.png in Resources */,
+				05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */,
+				3D35F2F71FDC116600FF8603 /* sacoCacto1.png in Resources */,
+				3D35F2F31FDC116600FF8603 /* sacoGerbera.png in Resources */,
+				3D35F2F91FDC116600FF8603 /* sacoRosa.png in Resources */,
+				3D35F2F81FDC116600FF8603 /* sacoVermelha.png in Resources */,
+				05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */,
+				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
 				28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */,
+				3D35F2F51FDC116600FF8603 /* sacoCacto2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
