@@ -18,6 +18,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Main-->
+        <scene sceneID="Ycf-tD-Zfz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Jcs-qq-ndm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mG6-UM-WOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="-19"/>
+        </scene>
         <!--Essevaidarcerto View Controller-->
         <scene sceneID="WRa-la-FRv">
             <objects>
@@ -48,6 +56,9 @@
                                 <state key="normal" title="METAS">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kFZ-oW-PDN" kind="show" animates="NO" id="hiZ-Zd-yY9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SME-29-76m">
                                 <rect key="frame" x="108" y="510" width="105" height="58"/>
@@ -96,6 +107,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="imagemDaCelula" destination="G8F-J4-2ta" id="bOu-Cf-gcF"/>
+                                            <segue destination="Jcs-qq-ndm" kind="show" identifier="indoPlantar" animates="NO" id="VOR-kl-ZtV"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -113,13 +125,21 @@
             </objects>
             <point key="canvasLocation" x="163.125" y="89.788732394366193"/>
         </scene>
+        <!--MetasViewController-->
+        <scene sceneID="jEb-gZ-8cG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MetasViewController" id="kFZ-oW-PDN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVl-GJ-i03" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-221" y="500"/>
+        </scene>
         <!--Main-->
         <scene sceneID="oF7-pM-TDh">
             <objects>
                 <viewControllerPlaceholder storyboardName="Main" id="Zu1-lg-qOn" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4f-5f-VHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="497"/>
+            <point key="canvasLocation" x="206" y="712"/>
         </scene>
     </scenes>
 </document>

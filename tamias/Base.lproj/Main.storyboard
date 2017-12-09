@@ -377,6 +377,9 @@
                                 <state key="normal" title="SEMENTES">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bCe-iE-g6P" kind="show" animates="NO" id="qAT-FA-cl9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1m-vI-vcW">
                                 <rect key="frame" x="16" y="363" width="0.0" height="0.0"/>
@@ -444,6 +447,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eL-QY-NFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1095" y="-298.94366197183098"/>
+        </scene>
+        <!--SementesViewController-->
+        <scene sceneID="82u-kq-6gF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sementes" referencedIdentifier="SementesViewController" id="bCe-iE-g6P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaG-iG-h2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1139" y="235"/>
         </scene>
         <!--Instrucoes View Controller-->
         <scene sceneID="TqD-kl-hCf">
@@ -1072,6 +1083,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qqE-HG-7cZ"/>
-        <segue reference="DRo-dl-GE1"/>
+        <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>
