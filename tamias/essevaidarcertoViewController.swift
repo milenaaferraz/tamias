@@ -16,9 +16,8 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     
     var stringRecompensa = ""
     
-    var itensDoJogo:[String] = [] // testando com os itens do jogo
+    var itensDoJogo:[String] = []
     
-    // var itensAdd = [] - itens recebidos, que serao adicionados
     
     override func viewDidLoad() {
         
@@ -74,9 +73,17 @@ UICollectionViewDataSource, UICollectionViewDelegate {
             collectionView.dequeueReusableCell(withReuseIdentifier:
                 "collectioncell", for: indexPath) as! imagemCollectionViewCell
         
-        cell.imagemDaCelula.image = UIImage(named:itensDoJogo[indexPath.row]) //
+        cell.imagemDaCelula.image = UIImage(named:itensDoJogo[indexPath.row])
         
         return cell
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+
+     //   let cell = collectionViewBoa!.cellForItem(at: indexPath)
+  
         
     }
     
