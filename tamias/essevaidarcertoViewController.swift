@@ -82,10 +82,9 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
 
-     //   let cell = collectionViewBoa!.cellForItem(at: indexPath)
-  
+      mediadora.florPraPlantar.append(itensDoJogo[indexPath.row])
         
+      
     }
-    
     
 }

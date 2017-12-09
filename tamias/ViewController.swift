@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var mediadora = Mediadora.shared
+    
     @IBOutlet weak var imagemDoFundo: UIImageView!
     
     // Jardim
@@ -69,6 +71,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         textoDasGotas.text = "\(25)"
         textoDoSol.text = "\(5)"
+        
+        if mediadora.florPraPlantar.count > 0 {
+       
+            planta00.image = UIImage(named:mediadora.florPraPlantar[0])
+            
+        }
         
     }
     
