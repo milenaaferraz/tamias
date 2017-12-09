@@ -526,6 +526,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ex2capainstrucoes" translatesAutoresizingMaskIntoConstraints="NO" id="VkR-dI-t0U">
+                                <rect key="frame" x="-1" y="90" width="321" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hmr-t1-zm9"/>
@@ -533,6 +537,7 @@
                     <connections>
                         <outlet property="comecarOutlet" destination="fB2-hr-fEf" id="5NC-Gk-MhV"/>
                         <outlet property="imagemCapa" destination="U7c-Ws-rbx" id="HgD-mE-uaH"/>
+                        <outlet property="imagemCapa2" destination="VkR-dI-t0U" id="V2d-ZP-irO"/>
                         <outlet property="instrucoesDescricao" destination="GNy-3F-ZHJ" id="ThX-t7-ADG"/>
                         <outlet property="instrucoesTitulo" destination="Ysa-P0-k5G" id="mxX-VE-PFE"/>
                         <outlet property="tituloTexto" destination="lpG-sz-e8o" id="QK3-aR-ntV"/>
@@ -999,7 +1004,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kh-JZ-TsO">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="irParaInstru1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kh-JZ-TsO">
                                 <rect key="frame" x="0.0" y="503" width="320" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1009,7 +1014,7 @@
                                 </state>
                                 <connections>
                                     <action selector="jogarNovamente:" destination="djS-jv-hyu" eventType="touchUpInside" id="lue-zX-19m"/>
-                                    <segue destination="RqB-2N-yi1" kind="show" animates="NO" id="guU-H4-M79"/>
+                                    <segue destination="RqB-2N-yi1" kind="show" identifier="irParaInstr1" id="feG-CV-Wcn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PARABÉNS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtb-Cp-zOf">
@@ -1056,7 +1061,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYF-lu-tWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4134.375" y="-300"/>
+            <point key="canvasLocation" x="4151" y="-300"/>
         </scene>
         <!--SementesViewController-->
         <scene sceneID="s2p-to-9CV">
@@ -1081,6 +1086,7 @@
         <image name="Sol" width="234" height="234"/>
         <image name="TerraVazia" width="657" height="427"/>
         <image name="coracaoCheio" width="325" height="299"/>
+        <image name="ex2capainstrucoes" width="3109" height="2235"/>
         <image name="exercicio1Icone" width="3501" height="1747"/>
         <image name="exercicio1capa" width="1335" height="959"/>
         <image name="exercicio1imagem1" width="797" height="921"/>

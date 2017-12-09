@@ -20,6 +20,7 @@ class InstrucoesViewController: UIViewController {
    
     // Capa
     @IBOutlet weak var imagemCapa: UIImageView!
+    @IBOutlet weak var imagemCapa2: UIImageView!
     
     // Instrucoes
     @IBOutlet weak var instrucoesTitulo: UILabel!
@@ -44,24 +45,14 @@ class InstrucoesViewController: UIViewController {
         if selecionado == "1" {
             tituloTexto.text = "QUANTAS GOTAS?"
             instrucoesDescricao.text = "Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!"
+            imagemCapa2.isHidden = true
         }
         
         if selecionado == "2" {
             tituloTexto.text = "QUAL A ORDEM?"
             instrucoesDescricao.text = "Todo dia aparecem flores novas no seu jardim! Agora irão aparecer quatro na sua tela, e você precisa clicar nelas na ordem que elas surgirem."
-            imagemCapa.image = #imageLiteral(resourceName: "ex2capainstrucoes")
-             //let capa = #imageLiteral(resourceName: "ex2capainstrucoes").withRenderingMode(.alwaysOriginal)
+            imagemCapa.isHidden = true
         }
-        
-       
-        
-//        //1
-//        tituloTexto.text = nomeDoJogo
-//        instrucoesDescricao.text = instrucoesTexto
-//        //2
-//        tituloTexto.text = nomeDoJogo2
-//        instrucoesDescricao.text = instrucoesTexto2
-        
     }
 
     override func didReceiveMemoryWarning() {
