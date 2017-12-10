@@ -17,11 +17,15 @@ import UIKit
 
 class Exercicio2ViewController:UIViewController {
     
+    @IBAction func terminarBotao(_ sender: Any) {
+    }
+    @IBOutlet weak var terminarOutlet: UIButton!
     @IBAction func proxSeqButton(_ sender: Any) {
         jogoAparece()
         acertouErrou.isHidden = true
         proxSeqOutlet.isHidden = true
     }
+    
     @IBOutlet weak var proxSeqOutlet: UIButton!
     @IBOutlet weak var acertouErrou: UILabel!
     @IBOutlet weak var feedback: UILabel!
@@ -92,6 +96,7 @@ class Exercicio2ViewController:UIViewController {
         flor3.isHidden = true
         flor4.isHidden = true
         proxSeqOutlet.isHidden = true
+        terminarOutlet.isHidden = true
         
     }
     
@@ -176,6 +181,21 @@ class Exercicio2ViewController:UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let recompensas = segue.destination as? RecompensaViewController {
+            
+            //// texto
+            // perdeu
+            if pontuacao >= 100 {
+                recompensas.ganhou = true
+                
+                // ganhou
+            } else {
+                recompensas.ganhou = false
+            }
+        }
+    }
+    
     //ACABA A RODADA
     func gameOverRodada() {
         // acertou
@@ -199,7 +219,11 @@ class Exercicio2ViewController:UIViewController {
             }
             acertouErrou.isHidden = false
             acertouErrou.text = "Ah, você errou..."  //texto do feedback
+            if vidas > 0 {
             proxSeqOutlet.isHidden = false
+            } else {
+                terminarOutlet.isHidden = false
+            }
         }
         
         clickUsuario.removeAll()

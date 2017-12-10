@@ -519,7 +519,7 @@
                                     <fragment>
                                         <string key="content">Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!</string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="17" name="Dosis-ExtraLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -634,7 +634,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-61-nvi">
                                 <rect key="frame" x="0.0" y="498" width="320" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70446956157684326" green="0.79845380783081055" blue="0.20276737213134766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.62041789293289185" green="0.39301973581314087" blue="0.23652714490890503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
                                 <state key="normal" title="PRÓXIMA SEQUÊNCIA">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -657,6 +657,20 @@
                                 <color key="textColor" red="0.48335111141204834" green="0.44342321157455444" blue="0.41802597045898438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ab-Fm-bPq">
+                                <rect key="frame" x="0.0" y="497" width="320" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70446956159999996" green="0.79845380779999997" blue="0.20276737210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
+                                <state key="normal" title="TERMINAR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="proxSeqButton:" destination="ROI-2v-rgV" eventType="touchUpInside" id="t45-7N-wXJ"/>
+                                    <action selector="terminarBotao:" destination="ROI-2v-rgV" eventType="touchUpInside" id="qeu-Rm-LZP"/>
+                                    <segue destination="djS-jv-hyu" kind="show" id="tgQ-eA-Dwa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2bi-XC-gvN"/>
@@ -671,6 +685,7 @@
                         <outlet property="numeroPontos" destination="hnC-2c-dVJ" id="l5o-7D-aW6"/>
                         <outlet property="proxSeqOutlet" destination="FJh-61-nvi" id="WkF-GP-4jp"/>
                         <outlet property="suaPontuacao" destination="GlF-Na-Jns" id="OSo-aF-013"/>
+                        <outlet property="terminarOutlet" destination="7ab-Fm-bPq" id="coo-pU-wTa"/>
                         <outlet property="vida1" destination="HZL-R5-1BN" id="mnU-wl-1Wa"/>
                         <outlet property="vida2" destination="vbk-PI-u5f" id="oH1-go-uay"/>
                         <outlet property="vida3" destination="Ulp-XU-QYD" id="AAX-m5-Tob"/>
@@ -1099,7 +1114,8 @@
         <image name="regador" width="1710" height="1579"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Anh-Jo-JBN"/>
         <segue reference="feG-CV-Wcn"/>
-        <segue reference="2mg-QE-VLQ"/>
+        <segue reference="DRo-dl-GE1"/>
     </inferredMetricsTieBreakers>
 </document>
