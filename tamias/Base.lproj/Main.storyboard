@@ -519,7 +519,7 @@
                                     <fragment>
                                         <string key="content">Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!</string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="17" name="Dosis-ExtraLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1090,7 +1090,8 @@
         <image name="regador" width="1710" height="1579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GFF-Gu-gyE"/>
+        <segue reference="X2K-gZ-1rF"/>
+        <segue reference="mgK-46-Gr4"/>
         <segue reference="LFe-ep-5zC"/>
     </inferredMetricsTieBreakers>
 </document>
