@@ -526,10 +526,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ex2capainstrucoes" translatesAutoresizingMaskIntoConstraints="NO" id="VkR-dI-t0U">
-                                <rect key="frame" x="-1" y="90" width="321" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hmr-t1-zm9"/>
@@ -537,7 +533,6 @@
                     <connections>
                         <outlet property="comecarOutlet" destination="fB2-hr-fEf" id="5NC-Gk-MhV"/>
                         <outlet property="imagemCapa" destination="U7c-Ws-rbx" id="HgD-mE-uaH"/>
-                        <outlet property="imagemCapa2" destination="VkR-dI-t0U" id="V2d-ZP-irO"/>
                         <outlet property="instrucoesDescricao" destination="GNy-3F-ZHJ" id="ThX-t7-ADG"/>
                         <outlet property="instrucoesTitulo" destination="Ysa-P0-k5G" id="mxX-VE-PFE"/>
                         <outlet property="tituloTexto" destination="lpG-sz-e8o" id="QK3-aR-ntV"/>
@@ -1086,7 +1081,6 @@
         <image name="Sol" width="234" height="234"/>
         <image name="TerraVazia" width="657" height="427"/>
         <image name="coracaoCheio" width="325" height="299"/>
-        <image name="ex2capainstrucoes" width="3109" height="2235"/>
         <image name="exercicio1Icone" width="3501" height="1747"/>
         <image name="exercicio1capa" width="1335" height="959"/>
         <image name="exercicio1imagem1" width="797" height="921"/>
@@ -1097,6 +1091,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GFF-Gu-gyE"/>
-        <segue reference="inb-Db-Mcl"/>
+        <segue reference="LFe-ep-5zC"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,9 +10,8 @@ import UIKit
 
 class InstrucoesViewController: UIViewController {
     
-    let capa = #imageLiteral(resourceName: "ex2capainstrucoes").withRenderingMode(.alwaysOriginal)
-    let capa2 = #imageLiteral(resourceName: "exercicio1capa").withRenderingMode(.alwaysOriginal)
-
+    let capa = #imageLiteral(resourceName: "exercicio1capa").withRenderingMode(.alwaysOriginal)
+    let capa2 = #imageLiteral(resourceName: "ex2capainstrucoes").withRenderingMode(.alwaysOriginal)
     
     var selecionado = ""
     
@@ -24,7 +23,7 @@ class InstrucoesViewController: UIViewController {
    
     // Capa
     @IBOutlet weak var imagemCapa: UIImageView!
-    @IBOutlet weak var imagemCapa2: UIImageView!
+    
     
     // Instrucoes
     @IBOutlet weak var instrucoesTitulo: UILabel!
@@ -49,13 +48,13 @@ class InstrucoesViewController: UIViewController {
         if selecionado == "1" {
             tituloTexto.text = "QUANTAS GOTAS?"
             instrucoesDescricao.text = "Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!"
-            imagemCapa.image = capa2
+            imagemCapa.image = capa
         }
         
         if selecionado == "2" {
             tituloTexto.text = "QUAL A ORDEM?"
             instrucoesDescricao.text = "Todo dia aparecem flores novas no seu jardim! Agora irão aparecer quatro na sua tela, e você precisa clicar nelas na ordem que elas surgirem."
-            imagemCapa.image = capa
+            imagemCapa.image = capa2
             
         }
     }
