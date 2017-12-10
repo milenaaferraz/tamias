@@ -16,12 +16,22 @@ class RecompensaViewController: UIViewController {
     @IBAction func jogarNovamente(_ sender: Any) {
     }
     
+    @IBOutlet weak var jogarNovamenteOutlet: UIButton!
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "irParaInstr1"  {
+//            let instrucao1 = storyboard?.instantiateViewController(withIdentifier :"MetasViewController") as! UIViewController
+//        }
+//       }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "irParaInstr1"  {
-            let instrucao1 = storyboard?.instantiateViewController(withIdentifier :"MetasViewController") as! UIViewController
-        
+        if let instrucoes = segue.destination as? InstrucoesViewController {
+            
+            if sender as! UIButton == jogarNovamenteOutlet{
+                instrucoes.selecionado = "1"
+            }
         }
     }
+        
+    
         
     
     @IBAction func fecharTela(_ sender: Any) {

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Dosis-Medium.ttf">
+        <array key="Dosis-Medium.otf">
             <string>Dosis-Medium</string>
         </array>
-        <array key="Dosis-Regular.ttf">
+        <array key="Dosis-Regular.otf">
             <string>Dosis-Regular</string>
         </array>
     </customFonts>
@@ -519,7 +519,7 @@
                                     <fragment>
                                         <string key="content">Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!</string>
                                         <attributes>
-                                            <font key="NSFont" size="17" name="Dosis-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1047,6 +1047,7 @@
                     </view>
                     <connections>
                         <outlet property="ganhouLabel" destination="pgs-Cm-ESM" id="Ufb-Aj-LQ9"/>
+                        <outlet property="jogarNovamenteOutlet" destination="7kh-JZ-TsO" id="M4e-j6-2V4"/>
                         <outlet property="legendaLabel" destination="aCZ-IH-0a3" id="hyq-YB-zLb"/>
                         <outlet property="moscaImagem" destination="p4T-gw-UM5" id="ZZ7-2d-a4I"/>
                         <outlet property="parabensLabel" destination="Wtb-Cp-zOf" id="QE4-BR-B5r"/>
@@ -1090,8 +1091,7 @@
         <image name="regador" width="1710" height="1579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X2K-gZ-1rF"/>
-        <segue reference="mgK-46-Gr4"/>
-        <segue reference="LFe-ep-5zC"/>
+        <segue reference="feG-CV-Wcn"/>
+        <segue reference="DRo-dl-GE1"/>
     </inferredMetricsTieBreakers>
 </document>
