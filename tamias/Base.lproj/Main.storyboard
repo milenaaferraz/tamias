@@ -650,11 +650,19 @@
                                 <color key="textColor" red="0.48335111141204834" green="0.44342321157455444" blue="0.41802597045898438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-ac-u5h">
+                                <rect key="frame" x="26" y="286" width="270" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2bi-XC-gvN"/>
                     </view>
                     <connections>
+                        <outlet property="acertouErrou" destination="L5v-ac-u5h" id="vJl-I2-GNL"/>
                         <outlet property="feedback" destination="CRl-TS-BLY" id="rTq-Rm-ai1"/>
                         <outlet property="flor1" destination="x9I-xp-e63" id="mcZ-Ut-MdL"/>
                         <outlet property="flor2" destination="hK0-1U-e2P" id="8S1-nM-Kci"/>
@@ -1092,6 +1100,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="feG-CV-Wcn"/>
-        <segue reference="DRo-dl-GE1"/>
+        <segue reference="2mg-QE-VLQ"/>
     </inferredMetricsTieBreakers>
 </document>

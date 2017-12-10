@@ -19,6 +19,7 @@ class Exercicio2ViewController:UIViewController {
     
     @IBAction func proxSeqButton(_ sender: Any) {
     }
+    @IBOutlet weak var acertouErrou: UILabel!
     @IBOutlet weak var proxSeqOutlet: UIButton!
     @IBOutlet weak var feedback: UILabel!
     @IBOutlet weak var vida1: UIImageView!
