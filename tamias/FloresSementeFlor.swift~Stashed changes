@@ -11,11 +11,11 @@ import Foundation
 
 class FloresSementeFlor {
     
-    var sementeDeSementes:[String]
-    var florPraPlantar:[String]
+    var semente:String
+    var flor:String
     
-    init (sementeDeSementes:[String], florPraPlantar:[String]) {
-        self.sementeDeSementes = sementeDeSementes
-        self.florPraPlantar = florPraPlantar
+    init (semente:String, flor:String) {
+        self.semente = semente
+        self.flor = flor
     }
 }

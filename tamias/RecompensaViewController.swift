@@ -63,23 +63,23 @@ class RecompensaViewController: UIViewController {
         super.viewDidLoad()
         
         let recompGotas10 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "regador"),
-                                                 legendaRecompensa: "10 X GOTAS", sementesRecompensa: "c1.png")
+                                                 legendaRecompensa: "10 X GOTAS", sementesRecompensa: "c1.png", imagemPlantar: "")
         let recompGirassol = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Girassol ComVaso"),
-                                                  legendaRecompensa: "1 X GIRASSOL", sementesRecompensa: "sacoGirassol.png")
+                                                  legendaRecompensa: "1 X GIRASSOL", sementesRecompensa: "sacoGirassol.png", imagemPlantar: "florGirassol.png")
         let recompTulipa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Tulipa ComVaso"),
-                                                legendaRecompensa: "1 X TULIPA", sementesRecompensa: "sacoTulipa.png")
+                                                legendaRecompensa: "1 X TULIPA", sementesRecompensa: "sacoTulipa.png", imagemPlantar: "florTulipa.png")
         let recompCacto1 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto1 ComVaso"),
-                                                legendaRecompensa: "1 X CACTO FLORIDO", sementesRecompensa: "sacoCacto1.png")
+                                                legendaRecompensa: "1 X CACTO FLORIDO", sementesRecompensa: "sacoCacto1.png", imagemPlantar: "florCacto1.png")
         let recompRoxa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FlorRoxa ComVaso"),
-                                              legendaRecompensa: "1 X LAVANDA", sementesRecompensa: "sacoRoxa.png")
+                                              legendaRecompensa: "1 X LAVANDA", sementesRecompensa: "sacoRoxa.png", imagemPlantar: "florRoxa.png")
         let recompRosa = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FlorRosa ComVaso"),
-                                              legendaRecompensa: "1 X GÉRBERA", sementesRecompensa: "sacoGerbera.png")
+                                              legendaRecompensa: "1 X GÉRBERA", sementesRecompensa: "sacoGerbera.png", imagemPlantar: "florGerbera.png")
         let recompAmarela = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FloresAmarelas ComVaso"),
-                                                 legendaRecompensa: "1 X ALAMANDA", sementesRecompensa: "sacoAmarela.png")
+                                                 legendaRecompensa: "1 X ALAMANDA", sementesRecompensa: "sacoAmarela.png", imagemPlantar: "florAmarela.png")
         let recompVermelha = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "FloresVermelhas ComVaso"),
-                                                  legendaRecompensa: "1 X HIBISCO", sementesRecompensa: "sacoVermelha.png")
+                                                  legendaRecompensa: "1 X HIBISCO", sementesRecompensa: "sacoVermelha.png", imagemPlantar: "florVermelha.png")
         let recompCacto2 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto2 ComVaso"),
-                                                legendaRecompensa: "1 X CACTO PALMA", sementesRecompensa:"sacoCacto2.png")
+                                                legendaRecompensa: "1 X CACTO PALMA", sementesRecompensa:"sacoCacto2.png", imagemPlantar: "florCacto2.png")
         
         conjuntoRecompensas = [recompGotas10,recompGirassol,recompGotas10,recompTulipa,recompGotas10,recompCacto1,recompGotas10,recompRoxa,recompGotas10,recompRosa,recompGotas10,recompAmarela,recompGotas10,recompVermelha,recompGotas10,recompCacto2]
         
@@ -111,7 +111,7 @@ class RecompensaViewController: UIViewController {
                 
         
                 plantaImagem.image = conjuntoRecompensas[i].imagemRecompensa.withRenderingMode(.alwaysOriginal)
-                mediadora.floresSementes.append(conjuntoRecompensas[i].sementesRecompensa)
+                mediadora.floresSementes.append(conjuntoRecompensas[i])
                 
                 regadorImagem.isHidden = true
                 moscaImagem.isHidden = true

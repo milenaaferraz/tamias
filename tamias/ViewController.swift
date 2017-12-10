@@ -69,12 +69,13 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         textoDasGotas.text = "\(25)"
         textoDoSol.text = "\(5)"
         
-        if mediadora.florPraPlantar.count > 0 {
+                if mediadora.floresSementes.count > 0 {
        
-            planta00.image = UIImage(named:mediadora.florPraPlantar[0])
+            planta00.image = UIImage(named:mediadora.floresSementes[0].imagemPlantar)
             
         }
         

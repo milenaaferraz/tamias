@@ -40,6 +40,14 @@
 		3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */; };
 		3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */; };
 		3D7A5FB11FDD7725005BB624 /* FloresSementeFlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB01FDD7725005BB624 /* FloresSementeFlor.swift */; };
+		3D7A5FBA1FDD7DC1005BB624 /* florCacto1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB21FDD7DBF005BB624 /* florCacto1.png */; };
+		3D7A5FBB1FDD7DC1005BB624 /* florGerbera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB31FDD7DC0005BB624 /* florGerbera.png */; };
+		3D7A5FBC1FDD7DC1005BB624 /* florRoxa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB41FDD7DC0005BB624 /* florRoxa.png */; };
+		3D7A5FBD1FDD7DC1005BB624 /* florCacto2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB51FDD7DC0005BB624 /* florCacto2.png */; };
+		3D7A5FBE1FDD7DC1005BB624 /* florAmarela.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB61FDD7DC0005BB624 /* florAmarela.png */; };
+		3D7A5FBF1FDD7DC1005BB624 /* florVermelha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB71FDD7DC1005BB624 /* florVermelha.png */; };
+		3D7A5FC01FDD7DC1005BB624 /* florGirassol.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB81FDD7DC1005BB624 /* florGirassol.png */; };
+		3D7A5FC11FDD7DC1005BB624 /* florTulipa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB91FDD7DC1005BB624 /* florTulipa.png */; };
 		3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +108,14 @@
 		3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essevaidarcertoViewController.swift; sourceTree = "<group>"; };
 		3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sementes.storyboard; sourceTree = "<group>"; };
 		3D7A5FB01FDD7725005BB624 /* FloresSementeFlor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloresSementeFlor.swift; sourceTree = "<group>"; };
+		3D7A5FB21FDD7DBF005BB624 /* florCacto1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florCacto1.png; sourceTree = "<group>"; };
+		3D7A5FB31FDD7DC0005BB624 /* florGerbera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florGerbera.png; sourceTree = "<group>"; };
+		3D7A5FB41FDD7DC0005BB624 /* florRoxa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florRoxa.png; sourceTree = "<group>"; };
+		3D7A5FB51FDD7DC0005BB624 /* florCacto2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florCacto2.png; sourceTree = "<group>"; };
+		3D7A5FB61FDD7DC0005BB624 /* florAmarela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florAmarela.png; sourceTree = "<group>"; };
+		3D7A5FB71FDD7DC1005BB624 /* florVermelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florVermelha.png; sourceTree = "<group>"; };
+		3D7A5FB81FDD7DC1005BB624 /* florGirassol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florGirassol.png; sourceTree = "<group>"; };
+		3D7A5FB91FDD7DC1005BB624 /* florTulipa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florTulipa.png; sourceTree = "<group>"; };
 		3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +182,7 @@
 				05D413381FCED4A20093491C /* MetasViewController.swift */,
 				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
 				05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */,
+				3D7A5FB01FDD7725005BB624 /* FloresSementeFlor.swift */,
 				3D35F2F01FDC116600FF8603 /* sacoAmarela.png */,
 				3D35F2ED1FDC116500FF8603 /* sacoCacto1.png */,
 				3D35F2EB1FDC116500FF8603 /* sacoCacto2.png */,
@@ -176,6 +193,14 @@
 				3D35F2E81FDC116500FF8603 /* sacoRoxa.png */,
 				3D35F2EC1FDC116500FF8603 /* sacoTulipa.png */,
 				3D35F2EE1FDC116600FF8603 /* sacoVermelha.png */,
+				3D7A5FB21FDD7DBF005BB624 /* florCacto1.png */,
+				3D7A5FB51FDD7DC0005BB624 /* florCacto2.png */,
+				3D7A5FB31FDD7DC0005BB624 /* florGerbera.png */,
+				3D7A5FB41FDD7DC0005BB624 /* florRoxa.png */,
+				3D7A5FB61FDD7DC0005BB624 /* florAmarela.png */,
+				3D7A5FB71FDD7DC1005BB624 /* florVermelha.png */,
+				3D7A5FB81FDD7DC1005BB624 /* florGirassol.png */,
+				3D7A5FB91FDD7DC1005BB624 /* florTulipa.png */,
 				3DDF3AA41FCDFDA500DB2446 /* DosisFont */,
 				3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */,
 				28DCCA2E1FCD878B00610076 /* Assets.xcassets */,
@@ -323,19 +348,27 @@
 			files = (
 				28DCCA321FCD878B00610076 /* LaunchScreen.storyboard in Resources */,
 				3D35F2F21FDC116600FF8603 /* sacoRoxa.png in Resources */,
+				3D7A5FC01FDD7DC1005BB624 /* florGirassol.png in Resources */,
+				3D7A5FBB1FDD7DC1005BB624 /* florGerbera.png in Resources */,
 				3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */,
 				3D35F2F11FDC116600FF8603 /* sacoMargarida.png in Resources */,
 				3D35F2F61FDC116600FF8603 /* sacoTulipa.png in Resources */,
+				3D7A5FBE1FDD7DC1005BB624 /* florAmarela.png in Resources */,
+				3D7A5FC11FDD7DC1005BB624 /* florTulipa.png in Resources */,
 				28DCCA2F1FCD878B00610076 /* Assets.xcassets in Resources */,
 				3D35F2F41FDC116600FF8603 /* sacoGirassol.png in Resources */,
+				3D7A5FBD1FDD7DC1005BB624 /* florCacto2.png in Resources */,
 				3D35F2FA1FDC116600FF8603 /* sacoAmarela.png in Resources */,
 				05C9AD481FD0A901002F9D7F /* Dosis-Medium.otf in Resources */,
 				3D35F2F71FDC116600FF8603 /* sacoCacto1.png in Resources */,
+				3D7A5FBA1FDD7DC1005BB624 /* florCacto1.png in Resources */,
 				3D35F2F31FDC116600FF8603 /* sacoGerbera.png in Resources */,
 				3D35F2F91FDC116600FF8603 /* sacoRosa.png in Resources */,
+				3D7A5FBF1FDD7DC1005BB624 /* florVermelha.png in Resources */,
 				3D35F2F81FDC116600FF8603 /* sacoVermelha.png in Resources */,
-				05C9AD461FD0A901002F9D7F /* Dosis-Light.otf in Resources */,
-				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.otf in Resources */,
+				05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */,
+				3D7A5FBC1FDD7DC1005BB624 /* florRoxa.png in Resources */,
+				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
 				28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */,
 				3D35F2F51FDC116600FF8603 /* sacoCacto2.png in Resources */,
 			);

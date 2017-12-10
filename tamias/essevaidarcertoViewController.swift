@@ -16,7 +16,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     
     var stringRecompensa = ""
     
-    var itensDoJogo:[String] = []
+    var itensDoJogo:[classeDasRecompensas] = []
     
     
     override func viewDidLoad() {
@@ -73,7 +73,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
             collectionView.dequeueReusableCell(withReuseIdentifier:
                 "collectioncell", for: indexPath) as! imagemCollectionViewCell
         
-        cell.imagemDaCelula.image = UIImage(named:itensDoJogo[indexPath.row])
+        cell.imagemDaCelula.image = UIImage(named:itensDoJogo[indexPath.row].sementesRecompensa)
         
         return cell
         
@@ -82,7 +82,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
 
-      mediadora.florPraPlantar.append(itensDoJogo[indexPath.row])
+      mediadora.florPraPlantar.append(itensDoJogo[indexPath.row].imagemPlantar)
         
       
     }
