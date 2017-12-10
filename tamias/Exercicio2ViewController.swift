@@ -197,7 +197,9 @@ class Exercicio2ViewController:UIViewController {
             } else {
                 self.vida1.image =  #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
             }
+            acertouErrou.isHidden = false
             acertouErrou.text = "Ah, você errou..."  //texto do feedback
+            proxSeqOutlet.isHidden = false
         }
         
         clickUsuario.removeAll()
