@@ -654,7 +654,7 @@
                                 <rect key="frame" x="26" y="286" width="270" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="29"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.48335111141204834" green="0.44342321157455444" blue="0.41802597045898438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

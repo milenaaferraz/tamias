@@ -93,6 +93,8 @@ class Exercicio2ViewController:UIViewController {
         flor2.isHidden = true
         flor3.isHidden = true
         flor4.isHidden = true
+        proxSeqOutlet.isHidden = true
+        
     }
     
     ///JOGO COMEÇA
@@ -166,7 +168,12 @@ class Exercicio2ViewController:UIViewController {
         }
         
         if flor1.isHidden && flor2.isHidden && flor3.isHidden && flor4.isHidden {
-            gameOverRodada()
+            if clickUsuario == sequenciaQueAparece {
+                acertouErrou.text = "Você acertou!"
+            } else {
+                acertouErrou.text = "Ah, você errou..."
+            }
+//            gameOverRodada()
             
         }
     }
