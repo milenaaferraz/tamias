@@ -49,9 +49,20 @@ class Exercicio2ViewController:UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        contagem()
+//        firstTask { (success) -> Void in
+//            if success {
+//                // do second task if success
+//                jogoAparece()
+//            }
+//        }
+//
+        self.jogoDesaparece()
+        self.contagem()
+       
+
+
         
-        jogoAparece()
+        
     }
     
     //CONTAR
@@ -62,23 +73,32 @@ class Exercicio2ViewController:UIViewController {
         if (segundos == 0) {
             regressivo.invalidate()
             feedback.isHidden = true
+            jogoAparece()
         }
     }
     
     //CONTAGEM REGRESSIVA
-    func contagem () {
+//    func firstTask(completion: (_ success: Bool) -> Void) {
+//        // Do something
+    func contagem (){
         regressivo = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Exercicio2ViewController.acao), userInfo: nil, repeats: true)
     }
+//        completion(true)
+//
+//    }
     
-    //JOGO COMEÇA
-    func jogoAparece() {
-        
-        //CARREGA AS FLORES
+    func jogoDesaparece () {
         flor1.isHidden = true
         flor2.isHidden = true
         flor3.isHidden = true
         flor4.isHidden = true
+    }
+    
+    ///JOGO COMEÇA
+    func jogoAparece() {
         
+        //CARREGA AS FLORES
+    
         let florCerta1 = #imageLiteral(resourceName: "FlorRosa ComVaso").withRenderingMode(.alwaysOriginal)
         flor1.setImage(florCerta1, for: .normal)
 
@@ -90,8 +110,6 @@ class Exercicio2ViewController:UIViewController {
         
         let florCerta4 = #imageLiteral(resourceName: "FlorRoxa ComVaso").withRenderingMode(.alwaysOriginal)
         flor4.setImage(florCerta4, for: .normal)
-        
-        
         
         //DETERMINA A SEQUENCIA ALEATÓRIA DAS FLORES
         var numero = arc4random_uniform(UInt32(listaDeSequencias.count))
