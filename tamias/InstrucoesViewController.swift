@@ -24,6 +24,7 @@ class InstrucoesViewController: UIViewController {
    
     // Capa
     @IBOutlet weak var imagemCapa: UIImageView!
+    @IBOutlet weak var imagemCapa2: UIImageView!
     
     // Instrucoes
     @IBOutlet weak var instrucoesTitulo: UILabel!
@@ -57,16 +58,6 @@ class InstrucoesViewController: UIViewController {
             imagemCapa.image = capa
             
         }
-        
-       
-        
-//        //1
-//        tituloTexto.text = nomeDoJogo
-//        instrucoesDescricao.text = instrucoesTexto
-//        //2
-//        tituloTexto.text = nomeDoJogo2
-//        instrucoesDescricao.text = instrucoesTexto2
-        
     }
 
     override func didReceiveMemoryWarning() {

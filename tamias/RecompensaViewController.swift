@@ -14,13 +14,17 @@ class RecompensaViewController: UIViewController {
     let mediadora = Mediadora.shared
     
     @IBAction func jogarNovamente(_ sender: Any) {
-    
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "irParaInstr1"  {
+            let instrucao1 = storyboard?.instantiateViewController(withIdentifier :"MetasViewController") as! UIViewController
         
+        }
+    }
         
     
     @IBAction func fecharTela(_ sender: Any) {
-        
         performSegue(withIdentifier: "xparadesafios", sender: sender)
     }
 
