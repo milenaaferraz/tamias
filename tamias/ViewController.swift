@@ -14,6 +14,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imagemDoFundo: UIImageView!
     
+
+    @IBAction func toqueTerrinha(_ sender: UITapGestureRecognizer) {
+        
+        var local = sender.location(in: self.view)
+        
+        if planta00.frame.contains(local) {
+            
+            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        }
+    }
+    
+    
     // Jardim
     @IBOutlet weak var viewDoJardim: UIView!
     @IBOutlet weak var imagemDaCerca: UIImageView!
@@ -77,18 +90,18 @@ class ViewController: UIViewController {
     }
     
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-        super.viewWillAppear(false)
-        
-        if mediadora.floresPlantadas.count > 0 {
-            
-            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
-            
-            
-        }
-        
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//
+//        super.viewWillAppear(false)
+//
+//        if mediadora.floresPlantadas.count > 0 {
+//
+//            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+//
+//
+//        }
+//
+//    }
     
     
     override func didReceiveMemoryWarning() {
