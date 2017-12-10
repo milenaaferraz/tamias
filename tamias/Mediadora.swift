@@ -13,13 +13,14 @@ class Mediadora {  // agua, sol, plantinhas do jardim
     
     static let shared = Mediadora()
     
-    var floresSementes:[classeDasRecompensas]
+    var floresDoBau:[classeDasRecompensas]
     var florPraPlantar:[String]
-    
+    var floresPlantadas:[classeDasRecompensas]
     private init() {
         
-        self.floresSementes = []
+        self.floresDoBau = []
         self.florPraPlantar = []
+        self.floresPlantadas = []
     }
     
 }

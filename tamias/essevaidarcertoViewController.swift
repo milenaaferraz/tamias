@@ -14,14 +14,9 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var numeroDeItens: UILabel!
     
-    var stringRecompensa = ""
-    
-    var itensDoJogo:[classeDasRecompensas] = []
-    
     
     override func viewDidLoad() {
         
-        itensDoJogo = mediadora.floresSementes
         
         
         super.viewDidLoad()
@@ -51,7 +46,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         
-        return itensDoJogo.count
+        return mediadora.floresDoBau.count
         
     }
     
@@ -63,7 +58,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
             collectionView.dequeueReusableCell(withReuseIdentifier:
                 "collectioncell", for: indexPath) as! imagemCollectionViewCell
         
-        cell.imagemDaCelula.image = UIImage(named:itensDoJogo[indexPath.row].sementesRecompensa)
+        cell.imagemDaCelula.image = UIImage(named:mediadora.floresDoBau[indexPath.row].sementesRecompensa)
         
         return cell
         
@@ -72,7 +67,11 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
 
-      mediadora.florPraPlantar.append(itensDoJogo[indexPath.row].imagemPlantar)
+
+        
+        mediadora.floresPlantadas.append(mediadora.floresDoBau[indexPath.row])
+
+        mediadora.floresDoBau.remove(at: 0)
         
       
     }

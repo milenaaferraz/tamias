@@ -73,10 +73,12 @@ class ViewController: UIViewController {
         textoDasGotas.text = "\(25)"
         textoDoSol.text = "\(5)"
         
-                if mediadora.floresSementes.count > 0 {
+                if mediadora.floresPlantadas.count > 0 {
        
-            planta00.image = UIImage(named:mediadora.floresSementes[0].imagemPlantar)
-                    mediadora.floresSementes[0].sementesRecompensa = ""
+            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+                
+                    
+               
         }
         
     }

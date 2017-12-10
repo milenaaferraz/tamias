@@ -111,7 +111,7 @@ class RecompensaViewController: UIViewController {
                 
         
                 plantaImagem.image = conjuntoRecompensas[i].imagemRecompensa.withRenderingMode(.alwaysOriginal)
-                mediadora.floresSementes.append(conjuntoRecompensas[i])
+                mediadora.floresDoBau.append(conjuntoRecompensas[i])
                 
                 regadorImagem.isHidden = true
                 moscaImagem.isHidden = true
