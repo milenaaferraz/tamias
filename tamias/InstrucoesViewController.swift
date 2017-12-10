@@ -10,6 +10,10 @@ import UIKit
 
 class InstrucoesViewController: UIViewController {
     
+    let capa = #imageLiteral(resourceName: "ex2capainstrucoes").withRenderingMode(.alwaysOriginal)
+    let capa2 = #imageLiteral(resourceName: "exercicio1capa").withRenderingMode(.alwaysOriginal)
+
+    
     var selecionado = ""
     
     // Título
@@ -44,13 +48,14 @@ class InstrucoesViewController: UIViewController {
         if selecionado == "1" {
             tituloTexto.text = "QUANTAS GOTAS?"
             instrucoesDescricao.text = "Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!"
+            imagemCapa.image = capa2
         }
         
         if selecionado == "2" {
             tituloTexto.text = "QUAL A ORDEM?"
             instrucoesDescricao.text = "Todo dia aparecem flores novas no seu jardim! Agora irão aparecer quatro na sua tela, e você precisa clicar nelas na ordem que elas surgirem."
-            imagemCapa.image = #imageLiteral(resourceName: "ex2capainstrucoes")
-             //let capa = #imageLiteral(resourceName: "ex2capainstrucoes").withRenderingMode(.alwaysOriginal)
+            imagemCapa.image = capa
+            
         }
         
        
