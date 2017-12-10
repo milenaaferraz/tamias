@@ -67,8 +67,6 @@ UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
 
-
-        
         mediadora.floresPlantadas.append(mediadora.floresDoBau[indexPath.row])
 
         mediadora.floresDoBau.remove(at: 0)

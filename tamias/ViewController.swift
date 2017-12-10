@@ -72,16 +72,24 @@ class ViewController: UIViewController {
         
         textoDasGotas.text = "\(25)"
         textoDoSol.text = "\(5)"
+    
+    
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
         
-                if mediadora.floresPlantadas.count > 0 {
-       
+        super.viewWillAppear(false)
+        
+        if mediadora.floresPlantadas.count > 0 {
+            
             planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
-                
-                    
-               
+            
+            
         }
         
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
