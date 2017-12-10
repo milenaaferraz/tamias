@@ -18,9 +18,12 @@ import UIKit
 class Exercicio2ViewController:UIViewController {
     
     @IBAction func proxSeqButton(_ sender: Any) {
+        jogoAparece()
+        acertouErrou.isHidden = true
+        proxSeqOutlet.isHidden = true
     }
-    @IBOutlet weak var acertouErrou: UILabel!
     @IBOutlet weak var proxSeqOutlet: UIButton!
+    @IBOutlet weak var acertouErrou: UILabel!
     @IBOutlet weak var feedback: UILabel!
     @IBOutlet weak var vida1: UIImageView!
     @IBOutlet weak var vida3: UIImageView!
@@ -59,11 +62,6 @@ class Exercicio2ViewController:UIViewController {
 //
         self.jogoDesaparece()
         self.contagem()
-       
-
-
-        
-        
     }
     
     //CONTAR
@@ -168,12 +166,12 @@ class Exercicio2ViewController:UIViewController {
         }
         
         if flor1.isHidden && flor2.isHidden && flor3.isHidden && flor4.isHidden {
-            if clickUsuario == sequenciaQueAparece {
-                acertouErrou.text = "Você acertou!"
-            } else {
-                acertouErrou.text = "Ah, você errou..."
-            }
-//            gameOverRodada()
+//            if clickUsuario == sequenciaQueAparece {
+//                acertouErrou.text = "Você acertou!"
+//            } else {
+//                acertouErrou.text = "Ah, você errou..."
+//            }
+            gameOverRodada()
             
         }
     }
@@ -184,6 +182,9 @@ class Exercicio2ViewController:UIViewController {
         if clickUsuario == sequenciaQueAparece {   // array.cont < 4
             pontuacao = pontuacao + 10
             numeroPontos.text = "\(pontuacao)"
+            acertouErrou.isHidden = false
+            acertouErrou.text = "Você acertou!"    //texto do feedback
+            proxSeqOutlet.isHidden = false
             print(clickUsuario)
             print(sequenciaQueAparece)
             
@@ -196,15 +197,16 @@ class Exercicio2ViewController:UIViewController {
             } else {
                 self.vida1.image =  #imageLiteral(resourceName: "coracaoVazio").withRenderingMode(.alwaysOriginal)
             }
+            acertouErrou.text = "Ah, você errou..."  //texto do feedback
         }
         
         clickUsuario.removeAll()
         sequenciaQueAparece.removeAll()
         
-        if vidas > 0 {
-            jogoAparece()
-            // adicionar modificaçōes na tela
-        }
+//        if vidas > 0 {
+//            jogoAparece()
+//            // adicionar modificaçōes na tela
+//        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
