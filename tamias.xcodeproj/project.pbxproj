@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		051970AD1FD73EA900DF7824 /* classeDasRecompensas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051970AC1FD73EA900DF7824 /* classeDasRecompensas.swift */; };
-		05C9AD461FD0A901002F9D7F /* Dosis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */; };
-		05C9AD481FD0A901002F9D7F /* Dosis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */; };
-		05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */; };
+		05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */; };
+		05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */; };
+		05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */; };
 		05D413391FCED4A20093491C /* MetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413381FCED4A20093491C /* MetasViewController.swift */; };
 		05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */; };
 		05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */; };
@@ -39,7 +39,6 @@
 		3D35F2FA1FDC116600FF8603 /* sacoAmarela.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D35F2F01FDC116600FF8603 /* sacoAmarela.png */; };
 		3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */; };
 		3D72DBB91FD6DF4100ED49D1 /* Sementes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */; };
-		3D7A5FB11FDD7725005BB624 /* FloresSementeFlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB01FDD7725005BB624 /* FloresSementeFlor.swift */; };
 		3D7A5FBA1FDD7DC1005BB624 /* florCacto1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB21FDD7DBF005BB624 /* florCacto1.png */; };
 		3D7A5FBB1FDD7DC1005BB624 /* florGerbera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB31FDD7DC0005BB624 /* florGerbera.png */; };
 		3D7A5FBC1FDD7DC1005BB624 /* florRoxa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB41FDD7DC0005BB624 /* florRoxa.png */; };
@@ -70,9 +69,9 @@
 
 /* Begin PBXFileReference section */
 		051970AC1FD73EA900DF7824 /* classeDasRecompensas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classeDasRecompensas.swift; sourceTree = "<group>"; };
-		05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.otf"; path = "../../../../Downloads/dosis/Dosis-Light.otf"; sourceTree = "<group>"; };
-		05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Medium.otf"; path = "../../../../Downloads/dosis/Dosis-Medium.otf"; sourceTree = "<group>"; };
-		05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.otf"; path = "../../../../Downloads/dosis/Dosis-Regular.otf"; sourceTree = "<group>"; };
+		05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.ttf"; path = "../../../../Downloads/Dosis/Dosis-Light.ttf"; sourceTree = "<group>"; };
+		05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Medium.ttf"; path = "../../../../Downloads/Dosis/Dosis-Medium.ttf"; sourceTree = "<group>"; };
+		05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.ttf"; path = "../../../../Downloads/Dosis/Dosis-Regular.ttf"; sourceTree = "<group>"; };
 		05D413381FCED4A20093491C /* MetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasViewController.swift; sourceTree = "<group>"; };
 		05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecompensaViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +106,6 @@
 		3D35F2F01FDC116600FF8603 /* sacoAmarela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sacoAmarela.png; sourceTree = "<group>"; };
 		3D72DBB61FD6D40100ED49D1 /* essevaidarcertoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essevaidarcertoViewController.swift; sourceTree = "<group>"; };
 		3D72DBB81FD6D4CE00ED49D1 /* Sementes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sementes.storyboard; sourceTree = "<group>"; };
-		3D7A5FB01FDD7725005BB624 /* FloresSementeFlor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloresSementeFlor.swift; sourceTree = "<group>"; };
 		3D7A5FB21FDD7DBF005BB624 /* florCacto1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florCacto1.png; sourceTree = "<group>"; };
 		3D7A5FB31FDD7DC0005BB624 /* florGerbera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florGerbera.png; sourceTree = "<group>"; };
 		3D7A5FB41FDD7DC0005BB624 /* florRoxa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florRoxa.png; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				05D413381FCED4A20093491C /* MetasViewController.swift */,
 				05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */,
 				05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */,
-				3D7A5FB01FDD7725005BB624 /* FloresSementeFlor.swift */,
 				3D35F2F01FDC116600FF8603 /* sacoAmarela.png */,
 				3D35F2ED1FDC116500FF8603 /* sacoCacto1.png */,
 				3D35F2EB1FDC116500FF8603 /* sacoCacto2.png */,
@@ -231,10 +228,9 @@
 		3DDF3AA41FCDFDA500DB2446 /* DosisFont */ = {
 			isa = PBXGroup;
 			children = (
-				05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */,
-				05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */,
-				05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */,
-				3D7A5FB01FDD7725005BB624 /* FloresSementeFlor.swift */,
+				05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */,
+				05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */,
+				05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */,
 			);
 			path = DosisFont;
 			sourceTree = "<group>";
@@ -359,7 +355,7 @@
 				3D35F2F41FDC116600FF8603 /* sacoGirassol.png in Resources */,
 				3D7A5FBD1FDD7DC1005BB624 /* florCacto2.png in Resources */,
 				3D35F2FA1FDC116600FF8603 /* sacoAmarela.png in Resources */,
-				05C9AD481FD0A901002F9D7F /* Dosis-Medium.otf in Resources */,
+				05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */,
 				3D35F2F71FDC116600FF8603 /* sacoCacto1.png in Resources */,
 				3D7A5FBA1FDD7DC1005BB624 /* florCacto1.png in Resources */,
 				3D35F2F31FDC116600FF8603 /* sacoGerbera.png in Resources */,
@@ -405,7 +401,6 @@
 				282DAEE11FCF578300B59CAC /* Exercicio2ViewController.swift in Sources */,
 				05D413471FCF52EB0093491C /* Exercicio1ViewController.swift in Sources */,
 				05D413391FCED4A20093491C /* MetasViewController.swift in Sources */,
-				3D7A5FB11FDD7725005BB624 /* FloresSementeFlor.swift in Sources */,
 				051970AD1FD73EA900DF7824 /* classeDasRecompensas.swift in Sources */,
 				28DCCA281FCD878B00610076 /* AppDelegate.swift in Sources */,
 				05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */,

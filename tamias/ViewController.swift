@@ -76,7 +76,7 @@ class ViewController: UIViewController {
                 if mediadora.floresSementes.count > 0 {
        
             planta00.image = UIImage(named:mediadora.floresSementes[0].imagemPlantar)
-            
+                    mediadora.floresSementes[0].sementesRecompensa = ""
         }
         
     }

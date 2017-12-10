@@ -36,16 +36,6 @@ UICollectionViewDataSource, UICollectionViewDelegate {
         // Do any additional setup after loading the view.
         
         
-        
-        if itensDoJogo.count == 1 {
-            
-            numeroDeItens.text = "1 ITEM"
-            
-        } else if itensDoJogo.count > 1 {
-            
-            numeroDeItens.text = "\(itensDoJogo.count) ITENS"
-            
-        }
     }
     
     override func didReceiveMemoryWarning() {
