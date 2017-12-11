@@ -33,43 +33,43 @@ class ViewController: UIViewController {
             
         } else if planta02.frame.contains(local) {
             
-            planta02.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta02.image = UIImage(named:mediadora.floresPlantadas[2].imagemPlantar)
             mediadora.plantas[0][2] = true
           
             
         } else if planta10.frame.contains(local) {
             
-            planta10.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta10.image = UIImage(named:mediadora.floresPlantadas[3].imagemPlantar)
             mediadora.plantas[1][0] = true
            
             
         } else if planta11.frame.contains(local) {
             
-            planta11.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta11.image = UIImage(named:mediadora.floresPlantadas[4].imagemPlantar)
             mediadora.plantas[1][1] = true
             
             
         } else if planta12.frame.contains(local) {
             
-            planta12.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta12.image = UIImage(named:mediadora.floresPlantadas[5].imagemPlantar)
             mediadora.plantas[1][2] = true
            
             
         } else if planta20.frame.contains(local) {
             
-            planta20.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta20.image = UIImage(named:mediadora.floresPlantadas[6].imagemPlantar)
             mediadora.plantas[2][0] = true
             
             
         } else if planta21.frame.contains(local) {
             
-            planta21.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta21.image = UIImage(named:mediadora.floresPlantadas[7].imagemPlantar)
             mediadora.plantas[2][1] = true
           
             
         } else if planta22.frame.contains(local) {
             
-            planta22.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta22.image = UIImage(named:mediadora.floresPlantadas[8].imagemPlantar)
             mediadora.plantas[2][2] = true
            
         }
@@ -132,9 +132,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        textoDasGotas.text = "\(25)"
-        textoDoSol.text = "\(5)"
-    
+        textoDasGotas.text = "\(mediadora.agua)"
+        textoDoSol.text = "\(mediadora.sol)"
     
     }
     
@@ -147,35 +146,43 @@ class ViewController: UIViewController {
             
             planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
             
-        } else if mediadora.plantas[0][1] == true {
+        }
+        if mediadora.plantas[0][1] == true {
             
             planta01.image = UIImage(named:mediadora.floresPlantadas[1].imagemPlantar)
             
-        } else if mediadora.plantas[0][2] == true {
+        }
+        if mediadora.plantas[0][2] == true {
             
             planta02.image = UIImage(named:mediadora.floresPlantadas[2].imagemPlantar)
             
-        } else if mediadora.plantas[1][0] == true {
+        }
+        if mediadora.plantas[1][0] == true {
             
             planta10.image = UIImage(named:mediadora.floresPlantadas[3].imagemPlantar)
             
-        } else if mediadora.plantas[1][1] == true {
+        }
+        if mediadora.plantas[1][1] == true {
             
             planta11.image = UIImage(named:mediadora.floresPlantadas[4].imagemPlantar)
             
-        } else if mediadora.plantas[1][2] == true {
+        }
+        if mediadora.plantas[1][2] == true {
             
             planta12.image = UIImage(named:mediadora.floresPlantadas[5].imagemPlantar)
             
-        } else if mediadora.plantas[2][0] == true {
+        }
+        if mediadora.plantas[2][0] == true {
             
             planta20.image = UIImage(named:mediadora.floresPlantadas[6].imagemPlantar)
             
-        } else if mediadora.plantas[2][1] == true {
+        }
+        if mediadora.plantas[2][1] == true {
             
             planta21.image = UIImage(named:mediadora.floresPlantadas[7].imagemPlantar)
             
-        } else if mediadora.plantas[2][2] == true {
+        }
+        if mediadora.plantas[2][2] == true {
             
             planta22.image = UIImage(named:mediadora.floresPlantadas[8].imagemPlantar)
         }
