@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,11 +49,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-yB-7dW">
-                                <rect key="frame" x="0.0" y="510" width="108" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-yB-7dW">
+                                <rect key="frame" x="0.0" y="511" width="105" height="57"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
                                 <state key="normal" title="DESAFIOS">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -60,23 +60,10 @@
                                     <segue destination="kFZ-oW-PDN" kind="show" animates="NO" id="hiZ-Zd-yY9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SME-29-76m">
-                                <rect key="frame" x="108" y="510" width="105" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
-                                <state key="normal" title="JARDIM">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Zu1-lg-qOn" kind="show" animates="NO" id="2pX-rx-dTr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKy-ri-jh8">
-                                <rect key="frame" x="212" y="510" width="108" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKy-ri-jh8">
+                                <rect key="frame" x="215" y="511" width="105" height="57"/>
                                 <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
                                 <state key="normal" title="SEMENTES">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -112,8 +99,33 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SME-29-76m">
+                                <rect key="frame" x="108" y="510" width="105" height="58"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                <state key="normal" title="JARDIM">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zu1-lg-qOn" kind="show" animates="NO" id="2pX-rx-dTr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lKy-ri-jh8" firstAttribute="height" secondItem="SME-29-76m" secondAttribute="height" id="0Ef-Jj-74V"/>
+                            <constraint firstItem="6h4-yB-7dW" firstAttribute="leading" secondItem="N2K-6N-998" secondAttribute="leading" id="8iO-kw-D1m"/>
+                            <constraint firstItem="N2K-6N-998" firstAttribute="trailing" secondItem="lKy-ri-jh8" secondAttribute="trailing" id="FpB-z4-sOH"/>
+                            <constraint firstItem="6h4-yB-7dW" firstAttribute="centerY" secondItem="SME-29-76m" secondAttribute="centerY" id="PUq-Hh-un0"/>
+                            <constraint firstItem="6h4-yB-7dW" firstAttribute="width" secondItem="SME-29-76m" secondAttribute="width" id="VIf-pY-qu9"/>
+                            <constraint firstItem="SME-29-76m" firstAttribute="centerX" secondItem="N2K-6N-998" secondAttribute="centerX" id="WC7-3N-YQ6"/>
+                            <constraint firstItem="lKy-ri-jh8" firstAttribute="width" secondItem="SME-29-76m" secondAttribute="width" id="Y5Y-Wm-I9W"/>
+                            <constraint firstItem="6h4-yB-7dW" firstAttribute="height" secondItem="SME-29-76m" secondAttribute="height" id="YGx-cW-DKJ"/>
+                            <constraint firstItem="lKy-ri-jh8" firstAttribute="centerY" secondItem="SME-29-76m" secondAttribute="centerY" id="ZJf-ZZ-cvr"/>
+                            <constraint firstItem="N2K-6N-998" firstAttribute="bottom" secondItem="SME-29-76m" secondAttribute="bottom" id="go6-rO-Aya"/>
+                            <constraint firstItem="SME-29-76m" firstAttribute="width" secondItem="jn3-XH-p7R" secondAttribute="width" multiplier="0.33" id="hwF-Dx-sWj"/>
+                            <constraint firstItem="SME-29-76m" firstAttribute="height" secondItem="jn3-XH-p7R" secondAttribute="height" multiplier="0.1" id="tup-28-aYC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="N2K-6N-998"/>
                     </view>
                     <connections>
