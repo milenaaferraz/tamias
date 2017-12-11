@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Dosis-Medium.ttf">
+        <array key="Dosis-Medium.otf">
             <string>Dosis-Medium</string>
         </array>
-        <array key="Dosis-Regular.ttf">
+        <array key="Dosis-Regular.otf">
             <string>Dosis-Regular</string>
         </array>
     </customFonts>
@@ -611,7 +611,7 @@
                                         </state>
                                         <connections>
                                             <action selector="botaox:" destination="ROI-2v-rgV" eventType="touchUpInside" id="WIl-bc-tKl"/>
-                                            <segue destination="OEH-QA-38o" kind="show" id="2mg-QE-VLQ"/>
+                                            <segue destination="RqB-2N-yi1" kind="show" id="ZGd-Uq-t2L"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coracaoCheio" translatesAutoresizingMaskIntoConstraints="NO" id="Ulp-XU-QYD">
@@ -1245,8 +1245,8 @@
         <image name="regador" width="1710" height="1579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Anh-Jo-JBN"/>
-        <segue reference="mgK-46-Gr4"/>
+        <segue reference="tgQ-eA-Dwa"/>
+        <segue reference="ZGd-Uq-t2L"/>
         <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>
