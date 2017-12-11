@@ -196,6 +196,13 @@ class Exercicio1ViewController: UIViewController {
                 recompensas.ganhou = true
             }
         }
+        
+        if let jogarNovamente = segue.destination as? RecompensaViewController {
+            
+            if sender as! UIButton == self.verRecompensaOutlet{
+                jogarNovamente.qualJogo = "1"
+            }
+        }
     }
     
     
