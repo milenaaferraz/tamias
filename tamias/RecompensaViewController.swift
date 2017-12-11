@@ -10,7 +10,7 @@ import UIKit
 
 class RecompensaViewController: UIViewController {
 
-    
+    var qualJogo = ""
     let mediadora = Mediadora.shared
     
     @IBAction func jogarNovamente(_ sender: Any) {
@@ -25,9 +25,15 @@ class RecompensaViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let instrucoes = segue.destination as? InstrucoesViewController {
             
-            if sender as! UIButton == jogarNovamenteOutlet{
+            if qualJogo == "1"{
                 instrucoes.selecionado = "1"
+            } else {
+                instrucoes.selecionado = "2"
             }
+            
+//            if sender as! UIButton == jogarNovamenteOutlet{
+//                instrucoes.selecionado = "1"
+//            }
         }
     }
         

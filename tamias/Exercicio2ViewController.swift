@@ -55,15 +55,6 @@ class Exercicio2ViewController:UIViewController {
     //CARREGA A TELA
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-//        firstTask { (success) -> Void in
-//            if success {
-//                // do second task if success
-//                jogoAparece()
-//            }
-//        }
-//
         self.jogoDesaparece()
         self.contagem()
     }
@@ -81,14 +72,10 @@ class Exercicio2ViewController:UIViewController {
     }
     
     //CONTAGEM REGRESSIVA
-//    func firstTask(completion: (_ success: Bool) -> Void) {
-//        // Do something
     func contagem (){
         regressivo = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Exercicio2ViewController.acao), userInfo: nil, repeats: true)
     }
-//        completion(true)
-//
-//    }
+
     
     func jogoDesaparece () {
         flor1.isHidden = true
@@ -97,7 +84,6 @@ class Exercicio2ViewController:UIViewController {
         flor4.isHidden = true
         proxSeqOutlet.isHidden = true
         terminarOutlet.isHidden = true
-        
     }
     
     ///JOGO COMEÇA
@@ -171,13 +157,7 @@ class Exercicio2ViewController:UIViewController {
         }
         
         if flor1.isHidden && flor2.isHidden && flor3.isHidden && flor4.isHidden {
-//            if clickUsuario == sequenciaQueAparece {
-//                acertouErrou.text = "Você acertou!"
-//            } else {
-//                acertouErrou.text = "Ah, você errou..."
-//            }
             gameOverRodada()
-            
         }
     }
     
@@ -189,9 +169,16 @@ class Exercicio2ViewController:UIViewController {
             if pontuacao >= 100 {
                 recompensas.ganhou = true
                 
-                // ganhou
+            // ganhou
             } else {
                 recompensas.ganhou = false
+            }
+        }
+        
+        if let jogarNovamente = segue.destination as? RecompensaViewController {
+            
+            if sender as! UIButton == self.terminarOutlet{
+                jogarNovamente.qualJogo = "2"
             }
         }
     }
@@ -228,13 +215,9 @@ class Exercicio2ViewController:UIViewController {
         
         clickUsuario.removeAll()
         sequenciaQueAparece.removeAll()
-        
-//        if vidas > 0 {
-//            jogoAparece()
-//            // adicionar modificaçōes na tela
-//        }
     }
 
+    
     override func viewWillAppear(_ animated: Bool) {
     }
     override func didReceiveMemoryWarning() {
