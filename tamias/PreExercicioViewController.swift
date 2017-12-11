@@ -48,6 +48,7 @@ class PreExercicioViewController: UIViewController {
         entendiOutlet.isHidden = true
         proporcaoLabel.isHidden = true
         proporcaoImagem.isHidden = true
+        proporcaoImagem.image = #imageLiteral(resourceName: "exercicio1imagem1").withRenderingMode(.alwaysOriginal)
         
         super.viewDidLoad()
 
