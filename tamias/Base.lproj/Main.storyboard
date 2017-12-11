@@ -514,29 +514,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB2-hr-fEf">
-                                <rect key="frame" x="0.0" y="501" width="320" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
-                                <state key="normal" title="COMEÇAR DESAFIO">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="InU-BF-OLr"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercicio1capa" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-Ws-rbx">
-                                <rect key="frame" x="-1" y="90" width="321" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercicio1capa" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-Ws-rbx">
+                                <rect key="frame" x="-0.5" y="90" width="320" height="233"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksp-Po-sjt">
-                                <rect key="frame" x="-1" y="0.0" width="321" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksp-Po-sjt">
+                                <rect key="frame" x="-0.5" y="0.0" width="320" height="91"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-vt-sZb">
-                                        <rect key="frame" x="0.0" y="0.0" width="54" height="91"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-vt-sZb">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
                                         <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="39"/>
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -545,26 +530,34 @@
                                             <segue destination="OEH-QA-38o" kind="show" animates="NO" id="LFe-ep-5zC"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QUANTAS GOTAS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-sz-e8o">
-                                        <rect key="frame" x="16" y="19" width="304" height="63"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUANTAS GOTAS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-sz-e8o">
+                                        <rect key="frame" x="16" y="5" width="304" height="86"/>
                                         <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lpG-sz-e8o" secondAttribute="trailing" id="Byb-AO-HhI"/>
+                                    <constraint firstItem="lpG-sz-e8o" firstAttribute="width" secondItem="ksp-Po-sjt" secondAttribute="width" multiplier="0.95" id="CHM-aP-T9O"/>
+                                    <constraint firstItem="lpG-sz-e8o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ksp-Po-sjt" secondAttribute="leading" constant="16" id="OSe-fX-6kv"/>
+                                    <constraint firstItem="cOi-vt-sZb" firstAttribute="height" secondItem="ksp-Po-sjt" secondAttribute="height" id="b39-Aj-14H"/>
+                                    <constraint firstItem="lpG-sz-e8o" firstAttribute="height" secondItem="ksp-Po-sjt" secondAttribute="height" multiplier="0.95" id="chk-wB-pqh"/>
+                                    <constraint firstItem="cOi-vt-sZb" firstAttribute="width" secondItem="ksp-Po-sjt" secondAttribute="width" multiplier="0.2" id="eoa-6K-gom"/>
+                                    <constraint firstItem="cOi-vt-sZb" firstAttribute="centerY" secondItem="ksp-Po-sjt" secondAttribute="centerY" id="rI6-L7-ich"/>
+                                    <constraint firstItem="cOi-vt-sZb" firstAttribute="leading" secondItem="ksp-Po-sjt" secondAttribute="leading" id="rgR-O7-pO3"/>
+                                    <constraint firstAttribute="bottom" secondItem="lpG-sz-e8o" secondAttribute="bottom" id="wNz-Kd-ilx"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSTRUÇÕES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-P0-k5G">
-                                <rect key="frame" x="0.0" y="319" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTRUÇÕES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-P0-k5G">
+                                <rect key="frame" x="0.0" y="322" width="320" height="45.5"/>
                                 <color key="backgroundColor" red="0.92135137319564819" green="0.92549073696136475" blue="0.9295075535774231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-3F-ZHJ">
-                                <rect key="frame" x="32" y="363" width="254" height="138"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-3F-ZHJ">
+                                <rect key="frame" x="32" y="366" width="254" height="135"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Um jardim tem necessidades especiais! Agora vamos escolher as medidas de cada cuidado necessário para suas terrinhas ficarem bem!</string>
@@ -576,8 +569,41 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB2-hr-fEf">
+                                <rect key="frame" x="0.0" y="501" width="320" height="67"/>
+                                <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="22"/>
+                                <state key="normal" title="COMEÇAR DESAFIO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="comecarBotao:" destination="RqB-2N-yi1" eventType="touchUpInside" id="InU-BF-OLr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hmr-t1-zm9" firstAttribute="bottom" secondItem="fB2-hr-fEf" secondAttribute="bottom" id="5im-eh-8kN"/>
+                            <constraint firstItem="Ysa-P0-k5G" firstAttribute="width" secondItem="I3K-7J-dAQ" secondAttribute="width" id="7Do-rh-coI"/>
+                            <constraint firstItem="hmr-t1-zm9" firstAttribute="top" secondItem="ksp-Po-sjt" secondAttribute="top" constant="20" id="BSS-Aj-CtE"/>
+                            <constraint firstItem="fB2-hr-fEf" firstAttribute="centerX" secondItem="hmr-t1-zm9" secondAttribute="centerX" id="Edr-ZG-sA5"/>
+                            <constraint firstItem="U7c-Ws-rbx" firstAttribute="width" secondItem="I3K-7J-dAQ" secondAttribute="width" id="G1G-oF-AJq"/>
+                            <constraint firstItem="GNy-3F-ZHJ" firstAttribute="height" secondItem="I3K-7J-dAQ" secondAttribute="height" multiplier="0.235" id="G4F-VN-Gkk"/>
+                            <constraint firstItem="Ysa-P0-k5G" firstAttribute="height" secondItem="I3K-7J-dAQ" secondAttribute="height" multiplier="0.08" id="Iyy-Jq-RGW"/>
+                            <constraint firstItem="fB2-hr-fEf" firstAttribute="width" secondItem="I3K-7J-dAQ" secondAttribute="width" id="MXO-uC-abH"/>
+                            <constraint firstItem="U7c-Ws-rbx" firstAttribute="centerX" secondItem="hmr-t1-zm9" secondAttribute="centerX" id="OIv-Bp-ftL"/>
+                            <constraint firstItem="GNy-3F-ZHJ" firstAttribute="centerX" secondItem="hmr-t1-zm9" secondAttribute="centerX" id="QiE-cj-Myr"/>
+                            <constraint firstItem="fB2-hr-fEf" firstAttribute="height" secondItem="I3K-7J-dAQ" secondAttribute="height" multiplier="0.12" id="ZTW-Be-ZVm"/>
+                            <constraint firstItem="U7c-Ws-rbx" firstAttribute="top" secondItem="ksp-Po-sjt" secondAttribute="bottom" constant="-1" id="hpp-fm-uwX"/>
+                            <constraint firstItem="Ysa-P0-k5G" firstAttribute="top" secondItem="U7c-Ws-rbx" secondAttribute="bottom" constant="-1" id="iIE-Zl-BXU"/>
+                            <constraint firstItem="Ysa-P0-k5G" firstAttribute="centerX" secondItem="hmr-t1-zm9" secondAttribute="centerX" id="jZv-jL-wkc"/>
+                            <constraint firstItem="ksp-Po-sjt" firstAttribute="width" secondItem="I3K-7J-dAQ" secondAttribute="width" id="n2i-PF-eHG"/>
+                            <constraint firstItem="ksp-Po-sjt" firstAttribute="centerX" secondItem="hmr-t1-zm9" secondAttribute="centerX" id="pfM-mh-7iQ"/>
+                            <constraint firstItem="ksp-Po-sjt" firstAttribute="height" secondItem="I3K-7J-dAQ" secondAttribute="height" multiplier="0.16" id="q1s-6i-VW9"/>
+                            <constraint firstItem="GNy-3F-ZHJ" firstAttribute="width" secondItem="I3K-7J-dAQ" secondAttribute="width" multiplier="0.8" id="rXL-Pr-3hj"/>
+                            <constraint firstItem="U7c-Ws-rbx" firstAttribute="height" secondItem="I3K-7J-dAQ" secondAttribute="height" multiplier="0.41" id="ruP-pe-GHV"/>
+                            <constraint firstItem="GNy-3F-ZHJ" firstAttribute="top" secondItem="Ysa-P0-k5G" secondAttribute="bottom" constant="-1.5" id="zEv-Eb-O7I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hmr-t1-zm9"/>
                     </view>
                     <connections>
@@ -1269,7 +1295,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Anh-Jo-JBN"/>
-        <segue reference="zdt-xC-bfI"/>
-        <segue reference="DRo-dl-GE1"/>
+        <segue reference="qqE-HG-7cZ"/>
+        <segue reference="LFe-ep-5zC"/>
     </inferredMetricsTieBreakers>
 </document>
