@@ -17,12 +17,61 @@ class ViewController: UIViewController {
 
     @IBAction func toqueTerrinha(_ sender: UITapGestureRecognizer) {
         
-        var local = sender.location(in: self.view)
+        let local = sender.location(in: self.viewDoJardim)
         
         if planta00.frame.contains(local) {
             
             planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[0][0] = true
+    
+
+        } else if planta01.frame.contains(local) {
             
+             planta01.image = UIImage(named:mediadora.floresPlantadas[1].imagemPlantar)
+             mediadora.plantas[0][1] = true
+        
+            
+        } else if planta02.frame.contains(local) {
+            
+            planta02.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[0][2] = true
+          
+            
+        } else if planta10.frame.contains(local) {
+            
+            planta10.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[1][0] = true
+           
+            
+        } else if planta11.frame.contains(local) {
+            
+            planta11.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[1][1] = true
+            
+            
+        } else if planta12.frame.contains(local) {
+            
+            planta12.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[1][2] = true
+           
+            
+        } else if planta20.frame.contains(local) {
+            
+            planta20.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[2][0] = true
+            
+            
+        } else if planta21.frame.contains(local) {
+            
+            planta21.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[2][1] = true
+          
+            
+        } else if planta22.frame.contains(local) {
+            
+            planta22.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            mediadora.plantas[2][2] = true
+           
         }
     }
     
@@ -89,19 +138,49 @@ class ViewController: UIViewController {
     
     }
     
-    
-//    override func viewWillAppear(_ animated: Bool) {
 //
-//        super.viewWillAppear(false)
-//
-//        if mediadora.floresPlantadas.count > 0 {
-//
-//            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
-//
-//
-//        }
-//
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+
+        super.viewWillAppear(false)
+        
+        if mediadora.plantas[0][0] == true {
+            
+            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[0][1] == true {
+            
+            planta01.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[0][2] == true {
+            
+            planta02.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[1][0] == true {
+            
+            planta10.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[1][1] == true {
+            
+            planta11.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[1][2] == true {
+            
+            planta12.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[2][0] == true {
+            
+            planta20.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[2][1] == true {
+            
+            planta21.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            
+        } else if mediadora.plantas[2][2] == true {
+            
+            planta22.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+        }
+        
+    }
     
     
     override func didReceiveMemoryWarning() {
