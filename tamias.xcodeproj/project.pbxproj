@@ -373,8 +373,8 @@
 				3D35F2F81FDC116600FF8603 /* sacoVermelha.png in Resources */,
 				05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */,
 				3D7A5FBC1FDD7DC1005BB624 /* florRoxa.png in Resources */,
-				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
 				3DF52A9B1FDDB6FA00688E83 /* jardim.storyboard in Resources */,
+				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
 				28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */,
 				3D35F2F51FDC116600FF8603 /* sacoCacto2.png in Resources */,
 			);

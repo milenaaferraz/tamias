@@ -204,7 +204,8 @@ class Exercicio1ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 3)
+        enunciadoImagem.image = #imageLiteral(resourceName: "exercicio1soma3").withRenderingMode(.alwaysOriginal)
+        progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 5)
         progressBar.progress = 1
         progressTimer()
         
