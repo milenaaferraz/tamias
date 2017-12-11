@@ -38,14 +38,13 @@ class Exercicio2ViewController:UIViewController {
     @IBOutlet weak var flor1: UIButton!
     @IBOutlet weak var numeroPontos: UILabel!
     @IBOutlet weak var suaPontuacao: UILabel!
+    
     @IBAction func botaox(_ sender: Any) {
         //segue pra tela de instrucao do jogo 2
-        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let instrucoes = segue.destination as? InstrucoesViewController {
-                    instrucoes.selecionado = "2"
-                }
-            }
-        }
+        
+        
+         
+    }
    
     
     var pontuacao = 0
@@ -187,6 +186,10 @@ class Exercicio2ViewController:UIViewController {
             if sender as! UIButton == self.terminarOutlet{
                 jogarNovamente.qualJogo = "2"
             }
+        }
+        
+        if let instrucoes = segue.destination as? InstrucoesViewController {
+            instrucoes.selecionado = "2"
         }
     }
     

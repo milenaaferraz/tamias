@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		051970AD1FD73EA900DF7824 /* classeDasRecompensas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051970AC1FD73EA900DF7824 /* classeDasRecompensas.swift */; };
-		05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */; };
-		05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */; };
-		05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */; };
+		05C9AD461FD0A901002F9D7F /* Dosis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */; };
+		05C9AD481FD0A901002F9D7F /* Dosis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */; };
+		05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */; };
 		05D413391FCED4A20093491C /* MetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D413381FCED4A20093491C /* MetasViewController.swift */; };
 		05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */; };
 		05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */; };
@@ -69,9 +69,9 @@
 
 /* Begin PBXFileReference section */
 		051970AC1FD73EA900DF7824 /* classeDasRecompensas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classeDasRecompensas.swift; sourceTree = "<group>"; };
-		05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.ttf"; path = "../../../../Downloads/Dosis/Dosis-Light.ttf"; sourceTree = "<group>"; };
-		05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Medium.ttf"; path = "../../../../Downloads/Dosis/Dosis-Medium.ttf"; sourceTree = "<group>"; };
-		05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.ttf"; path = "../../../../Downloads/Dosis/Dosis-Regular.ttf"; sourceTree = "<group>"; };
+		05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.otf"; path = "../../../../Downloads/dosis/Dosis-Light.otf"; sourceTree = "<group>"; };
+		05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Medium.otf"; path = "../../../../Downloads/dosis/Dosis-Medium.otf"; sourceTree = "<group>"; };
+		05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Regular.otf"; path = "../../../../Downloads/dosis/Dosis-Regular.otf"; sourceTree = "<group>"; };
 		05D413381FCED4A20093491C /* MetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasViewController.swift; sourceTree = "<group>"; };
 		05D4133C1FCED4E40093491C /* InstrucoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		05D4133E1FCED4FD0093491C /* RecompensaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecompensaViewController.swift; sourceTree = "<group>"; };
@@ -228,9 +228,9 @@
 		3DDF3AA41FCDFDA500DB2446 /* DosisFont */ = {
 			isa = PBXGroup;
 			children = (
-				05C9AD3F1FD0A901002F9D7F /* Dosis-Light.ttf */,
-				05C9AD411FD0A901002F9D7F /* Dosis-Medium.ttf */,
-				05C9AD431FD0A901002F9D7F /* Dosis-Regular.ttf */,
+				05C9AD3F1FD0A901002F9D7F /* Dosis-Light.otf */,
+				05C9AD411FD0A901002F9D7F /* Dosis-Medium.otf */,
+				05C9AD431FD0A901002F9D7F /* Dosis-Regular.otf */,
 			);
 			path = DosisFont;
 			sourceTree = "<group>";
@@ -355,16 +355,16 @@
 				3D35F2F41FDC116600FF8603 /* sacoGirassol.png in Resources */,
 				3D7A5FBD1FDD7DC1005BB624 /* florCacto2.png in Resources */,
 				3D35F2FA1FDC116600FF8603 /* sacoAmarela.png in Resources */,
-				05C9AD481FD0A901002F9D7F /* Dosis-Medium.ttf in Resources */,
+				05C9AD481FD0A901002F9D7F /* Dosis-Medium.otf in Resources */,
 				3D35F2F71FDC116600FF8603 /* sacoCacto1.png in Resources */,
 				3D7A5FBA1FDD7DC1005BB624 /* florCacto1.png in Resources */,
 				3D35F2F31FDC116600FF8603 /* sacoGerbera.png in Resources */,
 				3D35F2F91FDC116600FF8603 /* sacoRosa.png in Resources */,
 				3D7A5FBF1FDD7DC1005BB624 /* florVermelha.png in Resources */,
 				3D35F2F81FDC116600FF8603 /* sacoVermelha.png in Resources */,
-				05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */,
+				05C9AD461FD0A901002F9D7F /* Dosis-Light.otf in Resources */,
 				3D7A5FBC1FDD7DC1005BB624 /* florRoxa.png in Resources */,
-				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
+				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.otf in Resources */,
 				28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */,
 				3D35F2F51FDC116600FF8603 /* sacoCacto2.png in Resources */,
 			);

@@ -39,8 +39,8 @@ class PreExercicioViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? ViewController {
-           
+        if let instrucoes = segue.destination as? InstrucoesViewController {
+            instrucoes.selecionado = "1"
         }
     }
     override func viewDidLoad() {
