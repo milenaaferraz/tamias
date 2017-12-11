@@ -10,6 +10,8 @@ import UIKit
 
 class InstrucoesViewController: UIViewController {
     
+    let mediadora = Mediadora.shared
+    
     let capa = #imageLiteral(resourceName: "exercicio1capa").withRenderingMode(.alwaysOriginal)
     let capa2 = #imageLiteral(resourceName: "ex2capainstrucoes").withRenderingMode(.alwaysOriginal)
     
@@ -34,9 +36,16 @@ class InstrucoesViewController: UIViewController {
     @IBOutlet weak var comecarOutlet: UIButton!
     @IBAction func comecarBotao(_ sender: Any) {
         if selecionado == "1" {
+            
            performSegue(withIdentifier: "paraJogo1", sender: nil)
+            
+            mediadora.sol = mediadora.sol - 1
+        
         } else {
+            
             performSegue(withIdentifier: "paraJogo2", sender: nil)
+            
+            mediadora.sol = mediadora.sol - 1
         }
     }
     
