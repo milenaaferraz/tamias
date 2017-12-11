@@ -32,60 +32,61 @@ class ViewController: UIViewController {
         simOutlet.isHidden = true
         naoOutlet.isHidden = true
         temCertezaSera.isHidden = true
-        
-        if mediadora.plantas[0][0] == true {
+        if let plantinha = mediadora.plantas[0] {
             
-            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta00.image = UIImage(named:plantinha.imagemPlantar)
             terra00.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[0][1] == true {
+        if let plantinha = mediadora.plantas[1] {
             
-            planta01.image = UIImage(named:mediadora.floresPlantadas[1].imagemPlantar)
+            planta01.image = UIImage(named:plantinha.imagemPlantar)
             terra01.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[0][2] == true {
+        if let plantinha = mediadora.plantas[2]  {
             
-            planta02.image = UIImage(named:mediadora.floresPlantadas[2].imagemPlantar)
+            planta02.image = UIImage(named:plantinha.imagemPlantar)
             terra02.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[1][0] == true {
+        if let plantinha = mediadora.plantas[3] {
             
-            planta10.image = UIImage(named:mediadora.floresPlantadas[3].imagemPlantar)
+            planta10.image = UIImage(named:plantinha.imagemPlantar)
             terra10.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[1][1] == true {
+        if let plantinha = mediadora.plantas[4]  {
             
-            planta11.image = UIImage(named:mediadora.floresPlantadas[4].imagemPlantar)
+            planta11.image = UIImage(named:plantinha.imagemPlantar)
             terra11.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[1][2] == true {
+        if let plantinha = mediadora.plantas[5] {
             
-            planta12.image = UIImage(named:mediadora.floresPlantadas[5].imagemPlantar)
+            planta12.image = UIImage(named:plantinha.imagemPlantar)
             terra12.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[2][0] == true {
+        if let plantinha = mediadora.plantas[6] {
             
-            planta20.image = UIImage(named:mediadora.floresPlantadas[6].imagemPlantar)
+            planta20.image = UIImage(named:plantinha.imagemPlantar)
             terra20.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
-            
         }
-        if mediadora.plantas[2][1] == true {
+        if let plantinha = mediadora.plantas[7]  {
             
-            planta21.image = UIImage(named:mediadora.floresPlantadas[7].imagemPlantar)
+            planta21.image = UIImage(named:plantinha.imagemPlantar)
             terra21.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[2][2] == true {
+        if let plantinha = mediadora.plantas[8]  {
             
-            planta22.image = UIImage(named:mediadora.floresPlantadas[8].imagemPlantar)
+            planta22.image = UIImage(named:plantinha.imagemPlantar)
             terra22.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
+            
         }
+        
+        
         
         
         
@@ -94,6 +95,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var simOutlet: UIButton!
     
     @IBAction func naoCerteza(_ sender: Any) {
+        
+        bauOutlet.isHidden = false
+        jardimOutlet.isHidden = false
+        metasOutlet.isHidden = false
+        
+        viewDoSol.isHidden = false
+        textoDoSol.isHidden = false
+        imagemDoSol.isHidden = false
+        
+        viewDasGotas.isHidden = false
+        textoDasGotas.isHidden = false
+        imagemDaGota.isHidden = false
+        
+        simOutlet.isHidden = true
+        naoOutlet.isHidden = true
+        temCertezaSera.isHidden = true
+
         
         
     }
@@ -125,73 +143,75 @@ class ViewController: UIViewController {
 
         
         let local = sender.location(in: self.viewDoJardim)
-                
+        
+        let recompensaPlantinhaVaiPlantar: classeDasRecompensas = mediadora.floresPlantadas.last!
+        
         if planta00.frame.contains(local) {
             
-            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
-            mediadora.plantas[0][0] = true
+            planta00.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[0] = recompensaPlantinhaVaiPlantar
             
             terra00.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
     
 
         } else if planta01.frame.contains(local) {
             
-             planta01.image = UIImage(named:mediadora.floresPlantadas[1].imagemPlantar)
-             mediadora.plantas[0][1] = true
+            planta01.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[1] = recompensaPlantinhaVaiPlantar
             
             terra01.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
         
             
         } else if planta02.frame.contains(local) {
             
-            planta02.image = UIImage(named:mediadora.floresPlantadas[2].imagemPlantar)
-            mediadora.plantas[0][2] = true
+            planta02.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[2] = recompensaPlantinhaVaiPlantar
           
             terra02.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
             
         } else if planta10.frame.contains(local) {
             
-            planta10.image = UIImage(named:mediadora.floresPlantadas[3].imagemPlantar)
-            mediadora.plantas[1][0] = true
+            planta10.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[3] = recompensaPlantinhaVaiPlantar
             
             terra10.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
            
             
         } else if planta11.frame.contains(local) {
             
-            planta11.image = UIImage(named:mediadora.floresPlantadas[4].imagemPlantar)
-            mediadora.plantas[1][1] = true
+            planta11.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[4] = recompensaPlantinhaVaiPlantar
             
             terra11.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
             
             
         } else if planta12.frame.contains(local) {
             
-            planta12.image = UIImage(named:mediadora.floresPlantadas[5].imagemPlantar)
-            mediadora.plantas[1][2] = true
+            planta12.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[5] = recompensaPlantinhaVaiPlantar
             
             terra12.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
            
             
         } else if planta20.frame.contains(local) {
             
-            planta20.image = UIImage(named:mediadora.floresPlantadas[6].imagemPlantar)
-            mediadora.plantas[2][0] = true
+            planta20.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[6] = recompensaPlantinhaVaiPlantar
             
             terra20.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
             
         } else if planta21.frame.contains(local) {
             
-            planta21.image = UIImage(named:mediadora.floresPlantadas[7].imagemPlantar)
-            mediadora.plantas[2][1] = true
+            planta21.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[7] = recompensaPlantinhaVaiPlantar
             
             terra21.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
           
             
         } else if planta22.frame.contains(local) {
             
-            planta22.image = UIImage(named:mediadora.floresPlantadas[8].imagemPlantar)
-            mediadora.plantas[2][2] = true
+            planta22.image = UIImage(named: recompensaPlantinhaVaiPlantar.imagemPlantar)
+            mediadora.plantas[8] = recompensaPlantinhaVaiPlantar
             
             terra22.image = #imageLiteral(resourceName: "TerraSelecionada").withRenderingMode(.alwaysOriginal)
            
@@ -286,56 +306,57 @@ class ViewController: UIViewController {
         
         temCertezaSera.isHidden = true
         
-        if mediadora.plantas[0][0] == true {
+
+        if let plantinha = mediadora.plantas[0] {
             
-            planta00.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta00.image = UIImage(named:plantinha.imagemPlantar)
             terra00.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[0][1] == true {
+        if let plantinha = mediadora.plantas[1] {
             
-            planta01.image = UIImage(named:mediadora.floresPlantadas[1].imagemPlantar)
+            planta01.image = UIImage(named:plantinha.imagemPlantar)
             terra01.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[0][2] == true {
+        if let plantinha = mediadora.plantas[2]  {
             
-            planta02.image = UIImage(named:mediadora.floresPlantadas[2].imagemPlantar)
+            planta02.image = UIImage(named:plantinha.imagemPlantar)
             terra02.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[1][0] == true {
+        if let plantinha = mediadora.plantas[3] {
             
-            planta10.image = UIImage(named:mediadora.floresPlantadas[3].imagemPlantar)
+            planta10.image = UIImage(named:plantinha.imagemPlantar)
             terra10.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[1][1] == true {
+        if let plantinha = mediadora.plantas[4]  {
             
-            planta11.image = UIImage(named:mediadora.floresPlantadas[4].imagemPlantar)
+            planta11.image = UIImage(named:plantinha.imagemPlantar)
             terra11.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[1][2] == true {
+        if let plantinha = mediadora.plantas[5] {
             
-            planta12.image = UIImage(named:mediadora.floresPlantadas[5].imagemPlantar)
+            planta12.image = UIImage(named:plantinha.imagemPlantar)
             terra12.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[2][0] == true {
+        if let plantinha = mediadora.plantas[6] {
             
-            planta20.image = UIImage(named:mediadora.floresPlantadas[6].imagemPlantar)
+            planta20.image = UIImage(named:plantinha.imagemPlantar)
             terra20.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
         }
-        if mediadora.plantas[2][1] == true {
+        if let plantinha = mediadora.plantas[7]  {
             
-            planta21.image = UIImage(named:mediadora.floresPlantadas[7].imagemPlantar)
+            planta21.image = UIImage(named:plantinha.imagemPlantar)
             terra21.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }
-        if mediadora.plantas[2][2] == true {
+        if let plantinha = mediadora.plantas[8]  {
             
-            planta22.image = UIImage(named:mediadora.floresPlantadas[8].imagemPlantar)
+            planta22.image = UIImage(named:plantinha.imagemPlantar)
             terra22.image = #imageLiteral(resourceName: "TerraPlantada").withRenderingMode(.alwaysOriginal)
             
         }

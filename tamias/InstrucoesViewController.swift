@@ -46,7 +46,9 @@ class InstrucoesViewController: UIViewController {
             performSegue(withIdentifier: "paraJogo2", sender: nil)
             
             mediadora.sol = mediadora.sol - 1
+            
         }
+        
     }
     
     override func viewDidLoad() {

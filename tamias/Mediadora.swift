@@ -6,7 +6,7 @@
 //  Copyright © 2017 Milena Almeida Ferraz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 class Mediadora {  // agua, sol, plantinhas do jardim
@@ -16,14 +16,13 @@ class Mediadora {  // agua, sol, plantinhas do jardim
     var floresDoBau:[classeDasRecompensas]
     var florPraPlantar:[String]
     var floresPlantadas:[classeDasRecompensas]
-    var plantas:[[Bool]]
+    var plantas: [classeDasRecompensas?]
     var sol:Int
     var agua:Int
     
     private init() {
-        self.plantas = [[false,false,false]
-                        ,[false,false,false]
-                        ,[false,false,false]]
+
+        self.plantas = [nil, nil, nil, nil, nil, nil, nil, nil, nil]
         self.floresDoBau = []
         self.florPraPlantar = []
         self.floresPlantadas = []
