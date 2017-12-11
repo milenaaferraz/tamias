@@ -48,9 +48,6 @@
 		3D7A5FC01FDD7DC1005BB624 /* florGirassol.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB81FDD7DC1005BB624 /* florGirassol.png */; };
 		3D7A5FC11FDD7DC1005BB624 /* florTulipa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7A5FB91FDD7DC1005BB624 /* florTulipa.png */; };
 		3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */; };
-		3DF52A9B1FDDB6FA00688E83 /* jardim.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF52A9A1FDDB6F900688E83 /* jardim.storyboard */; };
-		3DF52A9D1FDDB73000688E83 /* jardimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF52A9C1FDDB73000688E83 /* jardimViewController.swift */; };
-		3DF52AA11FDDBA7500688E83 /* terrinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF52AA01FDDBA7500688E83 /* terrinhaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,9 +115,6 @@
 		3D7A5FB81FDD7DC1005BB624 /* florGirassol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florGirassol.png; sourceTree = "<group>"; };
 		3D7A5FB91FDD7DC1005BB624 /* florTulipa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florTulipa.png; sourceTree = "<group>"; };
 		3DDF3A901FCDDD2500DB2446 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		3DF52A9A1FDDB6F900688E83 /* jardim.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jardim.storyboard; sourceTree = "<group>"; };
-		3DF52A9C1FDDB73000688E83 /* jardimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jardimViewController.swift; sourceTree = "<group>"; };
-		3DF52AA01FDDBA7500688E83 /* terrinhaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = terrinhaCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +145,6 @@
 		28DCCA1B1FCD878B00610076 = {
 			isa = PBXGroup;
 			children = (
-				3DF52A9A1FDDB6F900688E83 /* jardim.storyboard */,
-				3DF52A9C1FDDB73000688E83 /* jardimViewController.swift */,
-				3DF52AA01FDDBA7500688E83 /* terrinhaCollectionViewCell.swift */,
 				28DCCA261FCD878B00610076 /* tamias */,
 				28DCCA3B1FCD878B00610076 /* tamiasTests */,
 				28DCCA461FCD878B00610076 /* tamiasUITests */,
@@ -373,7 +364,6 @@
 				3D35F2F81FDC116600FF8603 /* sacoVermelha.png in Resources */,
 				05C9AD461FD0A901002F9D7F /* Dosis-Light.ttf in Resources */,
 				3D7A5FBC1FDD7DC1005BB624 /* florRoxa.png in Resources */,
-				3DF52A9B1FDDB6FA00688E83 /* jardim.storyboard in Resources */,
 				05C9AD4A1FD0A901002F9D7F /* Dosis-Regular.ttf in Resources */,
 				28DCCA2D1FCD878B00610076 /* Main.storyboard in Resources */,
 				3D35F2F51FDC116600FF8603 /* sacoCacto2.png in Resources */,
@@ -408,14 +398,12 @@
 				05D4133F1FCED4FD0093491C /* RecompensaViewController.swift in Sources */,
 				3DDF3A911FCDDD2500DB2446 /* TabBarViewController.swift in Sources */,
 				3D72DBB71FD6D40100ED49D1 /* essevaidarcertoViewController.swift in Sources */,
-				3DF52A9D1FDDB73000688E83 /* jardimViewController.swift in Sources */,
 				282DAEE11FCF578300B59CAC /* Exercicio2ViewController.swift in Sources */,
 				05D413471FCF52EB0093491C /* Exercicio1ViewController.swift in Sources */,
 				05D413391FCED4A20093491C /* MetasViewController.swift in Sources */,
 				051970AD1FD73EA900DF7824 /* classeDasRecompensas.swift in Sources */,
 				28DCCA281FCD878B00610076 /* AppDelegate.swift in Sources */,
 				05D4133D1FCED4E40093491C /* InstrucoesViewController.swift in Sources */,
-				3DF52AA11FDDBA7500688E83 /* terrinhaCollectionViewCell.swift in Sources */,
 				05D413451FCF4F8E0093491C /* Exercicio1Pergunta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
