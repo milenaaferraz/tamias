@@ -197,6 +197,37 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tem certeza de que quer plantar?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KZ-XI-Qte">
+                                <rect key="frame" x="43" y="107" width="234" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hr6-O2-rqs">
+                                <rect key="frame" x="43" y="432" width="108" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                <state key="normal" title="SIM">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="simCerteza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dsp-Ji-OOT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtI-PN-QNt">
+                                <rect key="frame" x="169" y="432" width="108" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                <state key="normal" title="NAO">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="naoCerteza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JwX-g2-yup"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70397619579374304" green="0.84933332668156658" blue="0.54921311414577956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -210,6 +241,7 @@
                         <outlet property="imagemDoSol" destination="poV-Ts-GMe" id="dT4-jT-udu"/>
                         <outlet property="jardimOutlet" destination="thd-Ar-KeV" id="Lp0-fP-5mg"/>
                         <outlet property="metasOutlet" destination="FYs-eu-Vs7" id="677-Fb-cDm"/>
+                        <outlet property="naoOutlet" destination="TtI-PN-QNt" id="HLG-HB-Wgc"/>
                         <outlet property="planta00" destination="vl2-U7-qbT" id="elW-VC-RBa"/>
                         <outlet property="planta01" destination="PkX-xO-Ikr" id="DEF-Pg-jyo"/>
                         <outlet property="planta02" destination="VRL-gD-yeS" id="Poj-ug-40s"/>
@@ -219,6 +251,8 @@
                         <outlet property="planta20" destination="RvX-jP-pjk" id="10J-Ea-HUx"/>
                         <outlet property="planta21" destination="DUI-RL-TGq" id="duN-C9-JZe"/>
                         <outlet property="planta22" destination="Ve3-Ya-6XE" id="1VJ-qY-ccW"/>
+                        <outlet property="simOutlet" destination="Hr6-O2-rqs" id="06c-Kv-2ij"/>
+                        <outlet property="temCertezaSera" destination="4KZ-XI-Qte" id="poI-hb-5hh"/>
                         <outlet property="terra00" destination="uAE-BE-lBv" id="AR5-gL-NXe"/>
                         <outlet property="terra01" destination="ORM-54-2GH" id="V9b-9w-cKO"/>
                         <outlet property="terra02" destination="R7x-yB-L0d" id="Qqa-V7-2df"/>
@@ -1213,6 +1247,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Anh-Jo-JBN"/>
         <segue reference="mgK-46-Gr4"/>
-        <segue reference="LFe-ep-5zC"/>
+        <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -69,7 +69,7 @@ UICollectionViewDataSource, UICollectionViewDelegate {
 
         mediadora.floresPlantadas.append(mediadora.floresDoBau[indexPath.row])
         mediadora.floresDoBau.remove(at: 0)
-        
+
       
     }
     
