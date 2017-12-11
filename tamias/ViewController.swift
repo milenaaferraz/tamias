@@ -149,35 +149,35 @@ class ViewController: UIViewController {
             
         } else if mediadora.plantas[0][1] == true {
             
-            planta01.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta01.image = UIImage(named:mediadora.floresPlantadas[1].imagemPlantar)
             
         } else if mediadora.plantas[0][2] == true {
             
-            planta02.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta02.image = UIImage(named:mediadora.floresPlantadas[2].imagemPlantar)
             
         } else if mediadora.plantas[1][0] == true {
             
-            planta10.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta10.image = UIImage(named:mediadora.floresPlantadas[3].imagemPlantar)
             
         } else if mediadora.plantas[1][1] == true {
             
-            planta11.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta11.image = UIImage(named:mediadora.floresPlantadas[4].imagemPlantar)
             
         } else if mediadora.plantas[1][2] == true {
             
-            planta12.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta12.image = UIImage(named:mediadora.floresPlantadas[5].imagemPlantar)
             
         } else if mediadora.plantas[2][0] == true {
             
-            planta20.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta20.image = UIImage(named:mediadora.floresPlantadas[6].imagemPlantar)
             
         } else if mediadora.plantas[2][1] == true {
             
-            planta21.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta21.image = UIImage(named:mediadora.floresPlantadas[7].imagemPlantar)
             
         } else if mediadora.plantas[2][2] == true {
             
-            planta22.image = UIImage(named:mediadora.floresPlantadas[0].imagemPlantar)
+            planta22.image = UIImage(named:mediadora.floresPlantadas[8].imagemPlantar)
         }
         
     }

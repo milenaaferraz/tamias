@@ -109,6 +109,8 @@ class RecompensaViewController: UIViewController {
             
             if legendaLabel.text == "10 X GOTAS" {
                 
+                mediadora.agua = mediadora.agua + 10
+                
                 regadorImagem.isHidden = false
                 moscaImagem.isHidden = true
                 plantaImagem.isHidden = true

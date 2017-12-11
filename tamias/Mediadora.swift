@@ -17,6 +17,9 @@ class Mediadora {  // agua, sol, plantinhas do jardim
     var florPraPlantar:[String]
     var floresPlantadas:[classeDasRecompensas]
     var plantas:[[Bool]]
+    var sol:Int
+    var agua:Int
+    
     private init() {
         self.plantas = [[false,false,false]
                         ,[false,false,false]
@@ -24,6 +27,8 @@ class Mediadora {  // agua, sol, plantinhas do jardim
         self.floresDoBau = []
         self.florPraPlantar = []
         self.floresPlantadas = []
+        self.sol = 5
+        self.agua = 0
     }
     
 }
