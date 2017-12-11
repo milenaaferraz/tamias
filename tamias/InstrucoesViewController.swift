@@ -62,7 +62,7 @@ class InstrucoesViewController: UIViewController {
         
         if selecionado == "2" {
             tituloTexto.text = "QUAL A ORDEM?"
-            instrucoesDescricao.text = "Todo dia aparecem flores novas no seu jardim! Agora irão aparecer quatro na sua tela, e você precisa clicar nelas na ordem que elas surgirem. Faça 100 pontos ou mais para ganhar sua recompensa!"
+            instrucoesDescricao.text = "Todo dia aparecem flores novas no seu jardim! Clique nas plantas na ordem que elas surgirem. Faça 100 pontos ou mais para ganhar sua recompensa!"
             imagemCapa.image = capa2
             
         }
