@@ -24,6 +24,7 @@ class Exercicio2ViewController:UIViewController {
         jogoAparece()
         acertouErrou.isHidden = true
         proxSeqOutlet.isHidden = true
+        suaPontuacao.isHidden = false
     }
     
     @IBOutlet weak var proxSeqOutlet: UIButton!
@@ -89,6 +90,7 @@ class Exercicio2ViewController:UIViewController {
         flor3.isHidden = true
         flor4.isHidden = true
         proxSeqOutlet.isHidden = true
+        suaPontuacao.isHidden = false
         terminarOutlet.isHidden = true
     }
     
@@ -202,6 +204,7 @@ class Exercicio2ViewController:UIViewController {
             acertouErrou.isHidden = false
             acertouErrou.text = "Você acertou!"    //texto do feedback
             proxSeqOutlet.isHidden = false
+            suaPontuacao.isHidden = true
             print(clickUsuario)
             print(sequenciaQueAparece)
             
@@ -218,6 +221,7 @@ class Exercicio2ViewController:UIViewController {
             acertouErrou.text = "Ah, você errou..."  //texto do feedback
             if vidas > 0 {
             proxSeqOutlet.isHidden = false
+                suaPontuacao.isHidden = true
             } else {
                 terminarOutlet.isHidden = false
             }

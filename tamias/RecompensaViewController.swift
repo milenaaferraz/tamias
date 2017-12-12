@@ -78,7 +78,7 @@ class RecompensaViewController: UIViewController {
         let recompCacto2 = classeDasRecompensas(imagemRecompensa: #imageLiteral(resourceName: "Cacto2 ComVaso"),
                                                 legendaRecompensa: "1 X CACTO PALMA", sementesRecompensa:"sacoCacto2.png", imagemPlantar: "florCacto2.png")
         
-        conjuntoRecompensas = [recompGotas10,recompGirassol,recompGotas10,recompTulipa,recompGotas10,recompCacto1,recompGotas10,recompRoxa,recompGotas10,recompRosa,recompGotas10,recompAmarela,recompGotas10,recompVermelha,recompGotas10,recompCacto2]
+        conjuntoRecompensas = [recompGotas10,recompGirassol,recompTulipa,recompGotas10,recompCacto1,recompRoxa,recompGotas10,recompRosa,recompAmarela,recompGotas10,recompVermelha,recompCacto2]
         
         if ganhou == false {
             parabensLabel.text = "POXA!"
