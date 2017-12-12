@@ -12,6 +12,7 @@ class MetasViewController: UIViewController {
 
     //var
     var Escolha = 0
+    var mediadora = Mediadora.shared
     
     // calendario
     @IBOutlet weak var dia1View: UIView!
@@ -34,6 +35,11 @@ class MetasViewController: UIViewController {
     @IBOutlet weak var paraHojeTexto: UILabel!
     // Recompensas
     @IBOutlet weak var recompensaTexto: UILabel!
+    
+    @IBOutlet weak var solSemEnergia: UIImageView!
+    @IBOutlet weak var semEnergia: UILabel!
+    
+    @IBOutlet weak var ops: UILabel!
     
     // Botoes barra inferior
     @IBOutlet weak var metasOutlet: UIButton!
@@ -71,12 +77,35 @@ class MetasViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+    
         let iconeExerc1 = UIImage(named: "exercicio1Icone")?.withRenderingMode(.alwaysOriginal)
         irParaExercOutlet1.setImage(iconeExerc1, for: .normal)
         let iconeExerc2 = UIImage(named: "exercicio2Icones")?.withRenderingMode(.alwaysOriginal)
         irParaExercOutlet2.setImage(iconeExerc2, for: .normal)
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(false)
+        
+        if mediadora.sol == 0 {
+            semEnergia.isHidden = false
+            ops.isHidden = false
+            solSemEnergia.isHidden = false
+        
+            irParaExercOutlet1.isHidden = true
+            irParaExercOutlet2.isHidden = true
+            
+        } else {
+            semEnergia.isHidden = true
+            ops.isHidden = true
+            solSemEnergia.isHidden = true
+            
+            irParaExercOutlet1.isHidden = false
+            irParaExercOutlet2.isHidden = false
+        }
     }
 
     override func didReceiveMemoryWarning() {

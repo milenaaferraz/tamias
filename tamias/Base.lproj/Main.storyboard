@@ -533,6 +533,27 @@
                                 <color key="textColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você não tem energia para mais desafios.                                                Volte mais tarde!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQq-eJ-qmf">
+                                <rect key="frame" x="0.0" y="147" width="321" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdS-Zo-KWy">
+                                <rect key="frame" x="0.0" y="220" width="320" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">                                                                                                                                                      Ops...</string>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="33"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sol" translatesAutoresizingMaskIntoConstraints="NO" id="NUs-6F-iJs">
+                                <rect key="frame" x="62" y="170" width="196" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -588,7 +609,10 @@
                         <outlet property="irParaExercOutlet2" destination="ngk-ql-Zto" id="SIC-AI-hmQ"/>
                         <outlet property="jardimOutlet" destination="9XM-sJ-Qzv" id="2Pf-kW-yd4"/>
                         <outlet property="metasOutlet" destination="TjJ-BV-aH3" id="SVe-Rx-rCb"/>
+                        <outlet property="ops" destination="DdS-Zo-KWy" id="Mqd-NG-neB"/>
                         <outlet property="paraHojeTexto" destination="mgI-EA-8Ot" id="sCy-ML-lK3"/>
+                        <outlet property="semEnergia" destination="pQq-eJ-qmf" id="8JY-AG-NZH"/>
+                        <outlet property="solSemEnergia" destination="NUs-6F-iJs" id="pHq-8g-Flu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eL-QY-NFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -624,7 +648,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="OEH-QA-38o" kind="show" animates="NO" id="LFe-ep-5zC"/>
+                                            <segue destination="OEH-QA-38o" kind="show" identifier="voltaMetas" animates="NO" id="LFe-ep-5zC"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUANTAS GOTAS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-sz-e8o">
