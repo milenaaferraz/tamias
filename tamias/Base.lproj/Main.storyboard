@@ -797,13 +797,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sua pontuação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlF-Na-Jns">
-                                <rect key="frame" x="0.0" y="475.5" width="319.5" height="25.5"/>
+                                <rect key="frame" x="0.0" y="475.5" width="319.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="20"/>
                                 <color key="textColor" red="0.48335111139999998" green="0.44342321159999998" blue="0.41802597050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnC-2c-dVJ">
-                                <rect key="frame" x="0.0" y="498" width="320.5" height="34.5"/>
+                                <rect key="frame" x="0.0" y="496" width="320.5" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
