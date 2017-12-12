@@ -90,7 +90,7 @@ class MetasViewController: UIViewController {
         
         super.viewWillAppear(false)
         
-        if mediadora.sol == 0 {
+        if mediadora.sol <= 0 {
             semEnergia.isHidden = false
             ops.isHidden = false
             solSemEnergia.isHidden = false
