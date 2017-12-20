@@ -24,7 +24,7 @@ class Exercicio2ViewController:UIViewController {
         jogoAparece()
         acertouErrou.isHidden = true
         proxSeqOutlet.isHidden = true
-        suaPontuacao.isHidden = false
+        suaPontuacao.isHidden = true
     }
     
     @IBOutlet weak var proxSeqOutlet: UIButton!
