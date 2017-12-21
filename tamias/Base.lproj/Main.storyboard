@@ -228,6 +228,11 @@
                                 <state key="normal" title="NAO">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="naoCerteza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JwX-g2-yup"/>
                                 </connections>
@@ -994,7 +999,7 @@
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0G-nl-tEt">
                                 <rect key="frame" x="80" y="390" width="160" height="56.5"/>
-                                <color key="backgroundColor" red="0.70457679029999998" green="0.79448419810000004" blue="0.2033740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.70588235294117641" green="0.79607843137254897" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="20"/>
                                 <state key="normal" title="OK">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1447,7 +1452,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tgQ-eA-Dwa"/>
-        <segue reference="feG-CV-Wcn"/>
+        <segue reference="mgK-46-Gr4"/>
         <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>
