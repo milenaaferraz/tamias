@@ -116,12 +116,25 @@ class Exercicio2ViewController:UIViewController {
         print(numero)
         sequenciaQueAparece = listaDeSequencias[Int(numero)]
         
+        //DESABILITA OS BOTOES
+        self.flor1.isEnabled = false
+        self.flor2.isEnabled = false
+        self.flor3.isEnabled = false
+        self.flor4.isEnabled = false
+        
         //TEMPO QUE AS FLORES APARECEM
         timer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats:
         true) { (timer) in
             
             if self.indice == 4{
                 timer.invalidate()
+                
+                //HABILITA OS BOTOES DE VOLTA
+                self.flor1.isEnabled = true
+                self.flor2.isEnabled = true
+                self.flor3.isEnabled = true
+                self.flor4.isEnabled = true
+              
                 self.indice = 0
             
             }else{

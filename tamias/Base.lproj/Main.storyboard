@@ -816,7 +816,7 @@
                                     <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="gJa-KU-QYr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-q6-GwR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-q6-GwR">
                                 <rect key="frame" x="191" y="314" width="66" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="FlorRoxa ComVaso"/>
@@ -860,7 +860,7 @@
                                 <color key="textColor" red="0.48335111141204834" green="0.44342321157455444" blue="0.41802597045898438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-Wz-anj">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-Wz-anj">
                                 <rect key="frame" x="68" y="322" width="56" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Cacto1 ComVaso"/>
@@ -868,7 +868,7 @@
                                     <action selector="click:" destination="ROI-2v-rgV" eventType="touchUpInside" id="2uS-ZH-q2S"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK0-1U-e2P">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK0-1U-e2P">
                                 <rect key="frame" x="182" y="137" width="84" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Girassol ComVaso"/>
@@ -1452,7 +1452,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tgQ-eA-Dwa"/>
-        <segue reference="mgK-46-Gr4"/>
+        <segue reference="ZGd-Uq-t2L"/>
         <segue reference="inb-Db-Mcl"/>
     </inferredMetricsTieBreakers>
 </document>
